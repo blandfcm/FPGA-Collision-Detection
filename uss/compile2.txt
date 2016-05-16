@@ -1,0 +1,4 @@
+g++ -DHAVE_CONFIG_H -I. -I../../ode/src  -I../../include -I../../include -DDRAWSTUFF_TEXTURE_PATH="\"/home/connor/Documents/ode-0.13/drawstuff/textures\"" -DdTRIMESH_ENABLED   -pg -MT uss_test2.o -MD -MP -MF .deps/uss_test2.Tpo -c -o uss_test2.o uss_test2.cpp
+mv -f .deps/uss_test2.Tpo .deps/uss_test2.Po
+/bin/bash ../../libtool  --tag=CXX   --mode=link g++  -pg     -o uss_test2 uss_test2.o ../../drawstuff/src/libdrawstuff.la ../../ode/src/libode.la -lGLU -lGL  -lm  -lpthread
+libtool: link: g++ -pg -o uss_test2 uss_test2.o  ../../drawstuff/src/.libs/libdrawstuff.a -lX11 ../../ode/src/.libs/libode.a -lGLU -lGL -lm -lpthread
