@@ -1,0 +1,83 @@
+ode/src/collision_kernel.cpp
+#include:
+	ode/common.h
+	ode/rotation.h
+	ode/objects.h
+	matrix.h
+	odemath.h
+	collision_kernel.h
+	collision_util.h
+	collision_std.h
+	collision_transform.h
+	collision_trimesh_internal.h
+	collision_space_internal.h
+	odeou.h
+	
+ode/src/collision_util.cpp
+#include:
+	ode/common.h
+	ode/collision.h
+	odemath.h
+	collision_util.h
+	
+	
+ode/src/
+	line 87
+
+grep dSpaceCollide
+grep _dCalcVectorDot3
+
+include/ode
+	line 161
+	
+/include/ode/collision.h
+	line 245: dGeomGetAABB @return AABB
+	-'aabb' array has elements (mix, maxx, miny, maxy, minz, maxz)
+	-may return a pre-computed cached bounding box, if it determines that the geom hasn't moved since last AABB calculation
+	-@ingroup collide (package)
+	
+	line 310: dGeomSetCategoryBits
+	-set the "category" bitfield for the given geom
+	-category bitfield is used by spaces to govern which geoms will intereact with each other, bitfield is atleast 32 bits wide
+	-default category values for newly created geoms have all bits set
+	-@ingroup collide
+	
+	line 325: dGeomSetCollideBits
+	-set the "collide" bitfield for the given geom
+	-the collide bitfield is used by spaces to govern which geoms will interact with each other (same description as category bitfield)
+	
+//category and collide bitfields are used in dSpaceCollide and dSpaceCollide2, but not dCollide
+
+	both category and collide bitfields have get methods (dGeomGet[Category/Collide]Bits)
+	
+	line 442:
+	supported control classes:
+	@li dGeomColliderControlClass
+	@li dGeomColliderSetMergeSphereContactsControlCode
+	@li dGeomColliderGetMergeSphereContactsControlCode
+	
+!!	line 738: 'Collision detection'
+	line 792: dCollide
+	-given 2 geoms o1, o2 that potentially intersect, generate contact information for them
+	ODE_API int dCollide(dGeomID o1, dGeomID o2, int flags, dContactGeom *contact, int skip);
+	
+	
+	
+	
+/ode/demo/uss_test2.cpp
+#include <ode/ode.h> <drawstuff(ignore)>
+dSpaceID space;
+	//called by dSpaceCollide when 2 objects in space are potentially colliding
+	static void nearCallback(void *data, dGeomID o1, dGeomID o2){
+		...
+		dContact contact;
+		...
+		//dCollide not in ode/src/ode.cpp
+		//dCollide is in include/ode/collision.h
+		if(int numc = dCollide(o1,o2,1,&contact.geom,sizeof(dContact))){
+			dJointID c = dJointCreateContact (world, contactGroup, &contact);
+			dJointAttach(c,b1,b2);
+		}
+	}
+
+	line 60: dSpaceCollide(space,0, &nearCallback) //find collisions and add contact joints

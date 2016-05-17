@@ -1,0 +1,32 @@
+gcc -o compile2 compile.c
+./compile2
+->do if change .c file
+
+./uss_test2
+gprof uss_test2 gmon.out > uss_analysis2.txt
+
+/demo$ gprof uss_test gmon.out > uss_analysis.txt
+-> '>' = overwrite, '>>' = append to end of file
+
+gprof - call graph:
+index%	time	self	children	called	name
+https://sourceware.org/binutils/docs/gprof/Call-Graph.html
+
+*if vim 'recovery' warning:
+ls -a = shows hidden files
+rm .[filename].txt
+
+'cp' copy files and directories
+'-b' creates backup
+cp -b filename.txt newFile.txt
+
+grep -nr 
+-> -nr = shows line number
+
+https://help.ubuntu.com/community/find
+
+commented out:
+libccd/src/vec3.c	28-72
+libccd/src/ccd.c	88-429
+-no effect on ./uss_test2-
+

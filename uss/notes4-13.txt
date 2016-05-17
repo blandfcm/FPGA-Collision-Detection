@@ -1,0 +1,247 @@
+sphere.cpp:
+	void dxSphere::computeAABB()
+	{
+		aabb[0] = final_posr->pos[0] - radius;
+		aabb[1] = final_posr->pos[0] + radius;
+		aabb[2] = final_posr->pos[1] - radius;
+		aabb[3] = final_posr->pos[1] + radius;
+		aabb[4] = final_posr->pos[2] - radius;
+		aabb[5] = final_posr->pos[2] + radius;	
+	}
+
+ode/src/collision_kernel.cpp
+#include:
+	ode/common.h
+	ode/rotation.h
+	ode/objects.h
+	matrix.h
+	odemath.h
+	collision_kernel.h
+	collision_util.h
+	collision_std.h
+	collision_transform.h
+	collision_trimesh_internal.h
+	collision_space_internal.h
+	odeou.h
+	
+	void dxUserGeom::computeAABB(){
+		user_classes[type-dFirstUserClass].aabb (this,aabb);
+	}
+	
+	int dxUserGeom::AABBTest (dxGeom *o, dReal aabb[6])
+	{
+		dGeomClass *c = &user_classes[type-dFirstUserClass];
+		if(c->aabb_test) return c->aabb_test (this,o,aabb);
+		else return 1;
+	}
+	
+~?	dxGeom constructor in collision_kernel.cpp
+	->line 339
+	dxGeom::AABBTest
+	inline void matrixInvert - idk what the point of this would be as of now
+	void getBodyPosr - more like a set method
+!!	void dxGeom::computerPosr(){
+		dMultiply0_331 (final_posr->pos, body->posr.R,offset_posr->pos);
+		...
+		dMultiply0_333 (all ->R|posr.R)
+		//what is R? 
+		-//rotation? API for geom obj uses R[0-10] = src[0-10] in dGeomCopyRotation()
+	}
+//public API for geometry objects
+!!	void dGeomAABB(dxGeom *g, dReal aabb[6])
+	->line 705
+	void dGeomSetCollideBits(dxGeom *g, unsigned long bits)
+	->line 743
+	void dGeomVectorToWorld( dGeomID g, dReal px, dReal py, dReal pz, dVector3 result){
+		if(no flags & GEOM_PLACEABLE){
+			result[0] = px;
+			result[1] = py;
+			result[2] = pz;
+			return;
+		}
+		g->recomputePosr();
+		dVector3 p;
+		p[0] = px;
+		p[1] = py;
+		p[2] = pz;
+		p[3] = 0;
+		dMultiply0_331(result,g->final_posr->R,p);
+	}
+	void dGeomVectorFromWorld(...){
+		/same as dGeomVectorToWorld till dMult/
+		dMulitply1_331(result,g->final_posr->R,p);
+	}
+//geom offest from body	- line 1009
+	void dGeomSetOffsetPosition(dxGeom *g, dReal x, dReal y, dReal z){
+	g->offset_posr->pos[0] = x;
+	g->offset_posr->pos[1] = y;
+	g->offset_posr->pos[2] = z;
+	}
+	
+______________
+!!!!!!!!!!!
+algorithms are in here
+!!!!!!!!!!!
+ode/src/collision_util.cpp
+#include:
+	ode/common.h
+	ode/collision.h
+	odemath.h
+	collision_util.h
+
+!!!	int dCollideSpheres(dVector3 p1, dReal r1, dVector3p2, dReal r2, dContactGeom *c){
+/\		dReal d = dCalcPointsDistance3(p1,p2);
+	}
+	->line 38
+!	void dLineClosestApproach(const dVector3 pa, const dVector3 ua, const dVector3 pb, const dVector3 ub, dReal *alpha, dReal *beta){
+/\		dReal uaub = dCalcVectorDot3(ua,ub);
+		dReal q1 = dCalcVectorDot3(ua,p);
+		dReal q2 = dCalcVectorDot3(ub,p);
+		dReal d = 1-uaub*uaub;
+	}
+!!!	void dClosestLineSegmentPoints(const dVector3 a1, const dVector3 a2, const dVector3 b1, const dVector3 b2, dVector3 cp1, dVector3 cp2){
+~/\		SET3(a1a2,a2,-,a1);
+		x2 more calls
+		da1 = dCalcVectorDot3(a1a2,a1b1);
+		db1 = dCalcVectorDot3(b1b2,a1b1);
+		x2 more calls for da2/db2,da3/db3
+	}
+!!!	void dClosestLineBoxPoints()
+
+	//given boxes (p1,R1,side1) and (p2,R2,side2), return 1 if they intersect, 0 if not
+	int dBoxTouchesBox() - line 388
+	?AABB 'boxes' or simulated boxes?
+
+//helpers for croteam's collider
+	line 470
+	
+To Find:	
+dReal return type
+aabb[0-5]
+final_posr->pos[0-2] (0-x, 1-y, 2-z)
+diff b/n ode/objects.h and object.h (in #include), also threading_impl used in this context
+
+Points:
+pairwise collision functions for standard geom types (sphere collide w/ sphere/plane/box/etc.)
+
+usually use int return values instead of boolean (if()return 0; //true~? , else() return 1; //false~?)
+	}
+	
+	
+	
+ode/src/collision_kernel.cpp
+#include:
+	ode/common.h
+	ode/rotation.h
+	ode/objects.h
+	matrix.h
+	odemath.h
+	collision_kernel.h
+	collision_util.h
+	collision_std.h
+	collision_transform.h
+	collision_trimesh_internal.h
+	collision_space_internal.h
+	odeou.h
+	
+	void dxUserGeom::computeAABB(){
+		user_classes[type-dFirstUserClass].aabb (this,aabb);
+	}
+	
+	int dxUserGeom::AABBTest (dxGeom *o, dReal aabb[6])
+	{
+		dGeomClass *c = &user_classes[type-dFirstUserClass];
+		if(c->aabb_test) return c->aabb_test (this,o,aabb);
+		else return 1;
+	}
+	
+~?	dxGeom constructor in collision_kernel.cpp
+	->line 339
+	dxGeom::AABBTest
+	inline void matrixInvert - idk what the point of this would be as of now
+	void getBodyPosr - more like a set method
+!!	void dxGeom::computerPosr(){
+		dMultiply0_331 (final_posr->pos, body->posr.R,offset_posr->pos);
+		...
+		dMultiply0_333 (all ->R|posr.R)
+		//what is R? 
+		-//rotation? API for geom obj uses R[0-10] = src[0-10] in dGeomCopyRotation()
+	}
+//public API for geometry objects
+!!	void dGeomAABB(dxGeom *g, dReal aabb[6])
+	->line 705
+	void dGeomSetCollideBits(dxGeom *g, unsigned long bits)
+	->line 743
+	void dGeomVectorToWorld( dGeomID g, dReal px, dReal py, dReal pz, dVector3 result){
+		if(no flags & GEOM_PLACEABLE){
+			result[0] = px;
+			result[1] = py;
+			result[2] = pz;
+			return;
+		}
+		g->recomputePosr();
+		dVector3 p;
+		p[0] = px;
+		p[1] = py;
+		p[2] = pz;
+		p[3] = 0;
+		dMultiply0_331(result,g->final_posr->R,p);
+	}
+	void dGeomVectorFromWorld(...){
+		/same as dGeomVectorToWorld till dMult/
+		dMulitply1_331(result,g->final_posr->R,p);
+	}
+//geom offest from body	- line 1009
+	void dGeomSetOffsetPosition(dxGeom *g, dReal x, dReal y, dReal z){
+	g->offset_posr->pos[0] = x;
+	g->offset_posr->pos[1] = y;
+	g->offset_posr->pos[2] = z;
+	}
+	
+______________
+!!!!!!!!!!!
+algorithms are in here
+!!!!!!!!!!!
+ode/src/collision_util.cpp
+#include:
+	ode/common.h
+	ode/collision.h
+	odemath.h
+	collision_util.h
+
+!!!	int dCollideSpheres(dVector3 p1, dReal r1, dVector3p2, dReal r2, dContactGeom *c){
+/\		dReal d = dCalcPointsDistance3(p1,p2);
+	}
+	->line 38
+!	void dLineClosestApproach(const dVector3 pa, const dVector3 ua, const dVector3 pb, const dVector3 ub, dReal *alpha, dReal *beta){
+/\		dReal uaub = dCalcVectorDot3(ua,ub);
+		dReal q1 = dCalcVectorDot3(ua,p);
+		dReal q2 = dCalcVectorDot3(ub,p);
+		dReal d = 1-uaub*uaub;
+	}
+!!!	void dClosestLineSegmentPoints(const dVector3 a1, const dVector3 a2, const dVector3 b1, const dVector3 b2, dVector3 cp1, dVector3 cp2){
+~/\		SET3(a1a2,a2,-,a1);
+		x2 more calls
+		da1 = dCalcVectorDot3(a1a2,a1b1);
+		db1 = dCalcVectorDot3(b1b2,a1b1);
+		x2 more calls for da2/db2,da3/db3
+	}
+!!!	void dClosestLineBoxPoints()
+
+	//given boxes (p1,R1,side1) and (p2,R2,side2), return 1 if they intersect, 0 if not
+	int dBoxTouchesBox() - line 388
+	?AABB 'boxes' or simulated boxes?
+
+//helpers for croteam's collider
+	line 470
+	
+To Find:	
+dReal return type
+aabb[0-5]
+final_posr->pos[0-2] (0-x, 1-y, 2-z)
+diff b/n ode/objects.h and object.h (in #include), also threading_impl used in this context
+
+Points:
+pairwise collision functions for standard geom types (sphere collide w/ sphere/plane/box/etc.)
+
+usually use int return values instead of boolean (if()return 0; //true~? , else() return 1; //false~?)

@@ -1,0 +1,41 @@
+Spaces:
+A space is a non-placeable geom that can contain other geoms.
+Space objects exist to make collision detection go faster.
+Best to insert individual geoms into a space then call dSpaceCollide, which will perform collision culling (identify which pairs of geoms are potentially intersecting).
+-these pairs will be passed to a callback function, which can in turn call dCollide on them.
+Spaces can contain other spaces; useful for dividing a collision environment into several hierarchies to optimize speed
+
+Collision Detection Functions:
+
+int dCollide(dGeomID o1, dGeomID o2, int flags, dContactGeom *contact, int skip);
+-contact points to an array of dContactGeom structures. These dContactGeom structures may be embedded w/in larger structures in the array
+-if the geoms intersect: returns number of contact points generated (and updates the 'contact' array); otherwise it returns 0 and 'contact' array isn't updated
+-if a space is passed as o1 or o2 then this function will collide all objects contained in o1 w/ all objects contained in o2, and return resulting contact points
+
+
+Space functions: (in /include/ode/collision_space.h)
+dSpaceID dSimpleSpaceCreate(dSpaceID space);
+-creates a "Simple Space" which doesn't do collision culling, just checks every pair of geoms and reports overlapping AABBs.
+
+
+User defined classes:
+functions that will handle collision detection and contact generation b/n X and 1+ other classes must be of type dColliderFn:
+typedef int dColliderFn (dGeomID o1, dGeomID o2, int flags, dContactGeom *contact, int skip);
+
+A function that tests whether a given AABB intersects w/ an instance of X (used as an early-exit test in space collision functions), must be of type dAABBTestFn
+typedef int dAABBTestFn (dGeomID o1, dGeomID o2, dReal aabb2[6]);
+
+
+Utility Functions:
+void dClosestLineSegmentPoints(...)
+int dBoxTouchesBox(...)
+void dInfiniteAABB(...)
+
+
+nearCallback is only called in ode/demo/ directory
+
+!!!
+dxJointContact::...
+-called by dCalcVectorDot3(...), dCalcVectorCross3(...), dPlaneSpace
+in ode/src/joints/contact.cpp <<<---
+
