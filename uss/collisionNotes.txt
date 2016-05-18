@@ -12,5 +12,5 @@ g1 and g2 - are the geometry objects that are colliding
 
 Every Geom is a instance of a class, such as sphere, plane, or box
 
-dCollide is expensive so dSpaceCollide is used to weed out useless tests
+dCollide is expensive so dSpaceCollide is used to weed (blaze) out useless tests
 
