@@ -1,0 +1,24 @@
+ode/src/uss_test.cpp
+static void nearCallback(...){
+	...
+	if(int numc = dCollide (o1,o2,1,&contact.geom,sizeof(dContact))){
+		dJoint c = dJointCreateContact (world, contactgroup, &contact);
+		dJointAttach (c, b1, b2);
+	}
+}
+
+
+ode/src/joints.h
+struct dxJointContact : public dxJoint {
+	int the_m;	//num of rows computed by getInfo1
+	dContact contact;
+	
+	dxJointContact( dxWorld* w );
+	virtual void getSureMaxInfo( SureMaxInfo* info );
+	virtual void getInfo1( Info1* info );
+	virtual void getInfo2( dReal worldFPS, dReal worldERP, const Info2Descr* info );
+	virtual dJointType type() const;
+	virtual size_t size() const;
+};
+
+
