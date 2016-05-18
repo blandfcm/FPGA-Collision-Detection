@@ -1,0 +1,16 @@
+struct dContactGeom {
+	dVector3 pos; 		// contact position
+	dVector3 normal; 	// normal vector
+	dReal depth; 		// penetration depth
+	dGeomID g1,g2;		// the colliding geoms
+};
+
+pos       - records the contact position, in global coordinates.
+normal    - unit length vector that is generally perpindicular to the contact surface.
+depth     - is the depth to which the two bodies inter-penetrate each other.
+g1 and g2 - are the geometry objects that are colliding
+
+Every Geom is a instance of a class, such as sphere, plane, or box
+
+dCollide is expensive so dSpaceCollide is used to weed out useless tests
+
