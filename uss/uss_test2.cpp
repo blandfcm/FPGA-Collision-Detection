@@ -1,5 +1,11 @@
 #include <ode/ode.h>
 #include <drawstuff/drawstuff.h>
+#include <iostream>
+
+using namespace std;
+
+static const int SEGMCNT = 1;
+
 // dynamics and collision objects
 static dWorldID world;
 static dSpaceID space;
@@ -7,11 +13,11 @@ static dSpaceID space;
 static dBodyID lsphere;	
 static dGeomID lsphere_geom;	
 
-static dBodyID rsphere;	
-static dGeomID rsphere_geom;	
-
 static dMass m;
 static dJointGroupID contactgroup;
+static dJointFeedback feedback;
+
+static int flagCheck = 0;
 
 // this is called by dSpaceCollide when two objects in space are
 // potentially colliding.
@@ -29,9 +35,27 @@ static void nearCallback (void *data, dGeomID o1, dGeomID o2)
     contact.surface.bounce_vel = 0.1; //0.1
     // constraint force mixing parameter
     contact.surface.soft_cfm = 0.001;  
+
+//    cout << *dBodyGetForce(lsphere) << " | " << *dBodyGetForce(lsphere) << endl;
+
+    dVector3 pos; 
+    dBodyCopyPosition(lsphere, pos);
+
+    if(pos[0] >= 0 && flagCheck == 0){
+	flagCheck = 1;
+    }
+
+    cout << pos[0] << endl;
+/*    if( < 0){
+	dBodyAddForce(lsphere, -200, 0, 0);
+    }
+*/   
+    
     if (int numc = dCollide (o1,o2,1,&contact.geom,sizeof(dContact))) {
         dJointID c = dJointCreateContact (world,contactgroup,&contact);
         dJointAttach (c,b1,b2);
+	dJointSetFeedback(c, &feedback);
+	flagCheck = 1;
     }
 }
 
@@ -44,10 +68,9 @@ static void start()
     
 // force for the spheres
     dBodyAddForce(lsphere,200,0,0);
-    dBodyAddForce(rsphere,-200,0,0);
 // Top Down View
-    static float xyz[3] = {0.0f,-8.0f,1.0f};
-    static float hpr[3] = {90.0f,0.0f,0.0f};
+    static float xyz[3] = {-1.0f,1.0f,8.0f};
+    static float hpr[3] = {0.0f,-90.0f,0.0f};
     dsSetViewpoint (xyz,hpr);
 }
 
@@ -67,10 +90,18 @@ static void simLoop (int pause)
     pos = dGeomGetPosition (lsphere_geom);
     R = dGeomGetRotation (lsphere_geom);
     dsDrawSphere (pos,R,dGeomSphereGetRadius (lsphere_geom));
-    
-    pos = dGeomGetPosition (rsphere_geom);
-    R = dGeomGetRotation (rsphere_geom);
-    dsDrawSphere (pos,R,dGeomSphereGetRadius (rsphere_geom));
+
+    if(flagCheck == 1){
+	dBodyAddForce(lsphere, -400, 0, 0);
+	flagCheck = 2;
+    }  
+/* 
+    if(flagCheck == 1){
+	dJointFeedback feedback2 = feedback;
+	cout << "Force and Torque on Body1" << feedback.f1[0] << ", " << feedback.f1[0] << endl;
+	}
+*/
+
 }
 
 int main (int argc, char **argv)
@@ -99,14 +130,8 @@ int main (int argc, char **argv)
     dBodySetMass (lsphere,&m);
     dGeomSetBody (lsphere_geom,lsphere);
     
-    rsphere = dBodyCreate (world);
-    rsphere_geom = dCreateSphere (space,0.5);
-    dMassSetSphere (&m,1,0.5);
-    dBodySetMass (rsphere,&m);
-    dGeomSetBody (rsphere_geom,rsphere);
     // set initial position
     dBodySetPosition (lsphere,-5,0,1.5); // 0,0,3
-    dBodySetPosition (rsphere,5,0,1.5); // 0,0,3
     // run simulation
     dsSimulationLoop (argc,argv,352,288,&fn);
     // clean up

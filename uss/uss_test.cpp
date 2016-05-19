@@ -1,5 +1,11 @@
 #include <ode/ode.h>
 #include <drawstuff/drawstuff.h>
+#include <iostream>
+
+using namespace std;
+
+static const int SEGMCNT = 1;
+
 // dynamics and collision objects
 static dWorldID world;
 static dSpaceID space;
@@ -12,6 +18,9 @@ static dGeomID rsphere_geom;
 
 static dMass m;
 static dJointGroupID contactgroup;
+static dJointFeedback feedback;
+
+static int flagCheck = 0;
 
 // this is called by dSpaceCollide when two objects in space are
 // potentially colliding.
@@ -29,19 +38,18 @@ static void nearCallback (void *data, dGeomID o1, dGeomID o2)
     contact.surface.bounce_vel = 0.1; //0.1
     // constraint force mixing parameter
     contact.surface.soft_cfm = 0.001;  
+
     if (int numc = dCollide (o1,o2,1,&contact.geom,sizeof(dContact))) {
         dJointID c = dJointCreateContact (world,contactgroup,&contact);
         dJointAttach (c,b1,b2);
+	dJointSetFeedback(c, &feedback);
+	flagCheck = 1;
     }
 }
 
 // start simulation - set viewpoint (camera)
 static void start()
 {
-// Original View
-//  static float xyz[3] = {2.0f,-2.0f,1.7600f};
-//  static float hpr[3] = {136.000f,-17.0000f,0.0000f};
-    
 // force for the spheres
     dBodyAddForce(lsphere,200,0,0);
     dBodyAddForce(rsphere,-200,0,0);
@@ -70,7 +78,14 @@ static void simLoop (int pause)
     
     pos = dGeomGetPosition (rsphere_geom);
     R = dGeomGetRotation (rsphere_geom);
-    dsDrawSphere (pos,R,dGeomSphereGetRadius (lsphere_geom));
+    dsDrawSphere (pos,R,dGeomSphereGetRadius (rsphere_geom));
+
+    if(flagCheck == 1){
+	dJointFeedback feedback2 = feedback;
+   	cout << feedback2.f1[0] << ", " << feedback2.f2[0] << endl; 
+        flagCheck = 2;
+    }
+
 }
 
 int main (int argc, char **argv)
