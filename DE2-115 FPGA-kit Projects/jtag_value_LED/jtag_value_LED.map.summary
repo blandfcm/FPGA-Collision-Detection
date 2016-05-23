@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon May 23 13:00:01 2016
+Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+Revision Name : jtag_value_LED
+Top-level Entity Name : jtag_value_LED
+Family : Cyclone IV E
+Total logic elements : 172
+    Total combinational functions : 137
+    Dedicated logic registers : 101
+Total registers : 101
+Total pins : 34
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
