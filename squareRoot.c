@@ -2,12 +2,12 @@
 #include <math.h>
 float squareRoot(float n)
 {
+	float x = n;
+	float y = 1.0;
+	float e = 0.000001;
+		
 	if(n >= 1)
 	{
-		float x = n;
-		float y = 1.0;
-		float e = 0.000001;
-		
 		while(x - y > e)
 		{
 			x = (x + y)/2;
@@ -17,11 +17,7 @@ float squareRoot(float n)
 		return x;
 	}
 	else
-	{
-		float x = n;
-		float y = 1;
-		float e = 0.000001;
-		
+	{	
 		while(y - x > e)
 		{
 			y = (x + y)/2;
