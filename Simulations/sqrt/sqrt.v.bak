@@ -1,0 +1,171 @@
+module sqrt
+(
+	input CLK,
+	input RST,
+	input [31:0] n,
+	//output reg [31:0] root,
+	output reg [31:0] res,
+	output reg pos
+);
+	
+reg [31:0] x;
+reg [31:0] y = 32'b00111111100000000000000000000000;
+reg [31:0] e = 32'b00110101100001100011011110111101;
+
+wire CLK2;
+
+//add1
+wire [31:0] y_neg;
+wire [31:0] e_neg;
+
+//add_greater_1
+wire [31:0] output_z_wire;
+wire output_z_ack_wire;
+wire output_z_stb_wire;
+wire input_a_ack_wire;
+wire input_b_ack_wire;
+
+//add_x_minus_y
+wire [31:0] output_z_wire1;
+wire output_z_ack_wire1;
+wire output_z_stb_wire1;
+wire input_a_ack_wire1;
+wire input_b_ack_wire1;
+reg  n_minus_y_rst = 1'b0;
+
+//add_greater_e
+wire [31:0] output_z_wire2;
+wire output_z_ack_wire2;
+wire output_z_stb_wire2;
+wire input_a_ack_wire2;
+wire input_b_ack_wire2;
+reg  greater_e_rst = 1'b0;
+
+assign e_neg = {~e[31], e[30:0]};
+assign y_neg = {~y[31], y[30:0]};
+assign CLK2 = (output_z_stb_wire) ? 1:0;
+
+initial
+begin
+  x[0] = n[0];
+  x[1] = n[1];
+  x[2] = n[2];
+  x[3] = n[3];
+  x[4] = n[4];
+  x[5] = n[5];
+  x[6] = n[6];
+  x[7] = n[7];
+  x[8] = n[8];
+  x[9] = n[9];
+  x[11] = n[11];
+  x[12] = n[12];
+  x[13] = n[13];
+  x[14] = n[14];
+  x[15] = n[15];
+  x[16] = n[16];
+  x[17] = n[17];
+  x[18] = n[18];
+  x[19] = n[19];
+  x[20] = n[20];
+  x[21] = n[21];
+  x[22] = n[22];
+  x[23] = n[23];
+  x[24] = n[24];
+  x[25] = n[25];
+  x[26] = n[26];
+  x[27] = n[27];
+  x[28] = n[28];
+  x[29] = n[29];
+  x[30] = n[30];
+  x[31] = n[31];
+end
+
+//output_z_wire msb == 1 then neg else pos
+adder add_greater_1
+(
+	.input_a(n),
+	.input_b(y_neg),
+	.input_a_stb(1'b1),
+	.input_b_stb(1'b1),
+	.output_z_ack(output_z_ack_wire),
+	.clk(CLK),
+	.rst(1'b0),
+	.output_z(output_z_wire),
+	.output_z_stb(output_z_stb_wire),
+	.input_a_ack(input_a_ack_wire),
+	.input_b_ack(input_b_ack_wire)
+);
+
+//n - y, output_z_wire1 holds result
+adder add_n_minus_y
+(
+	.input_a(n),
+	.input_b(y_neg),
+	.input_a_stb(1'b1),
+	.input_b_stb(1'b1),
+	.output_z_ack(output_z_ack_wire1),
+	.clk(CLK),
+	.rst(n_minus_y),
+	.output_z(output_z_wire1),
+	.output_z_stb(output_z_stb_wire1),
+	.input_a_ack(input_a_ack_wire1),
+	.input_b_ack(input_b_ack_wire1)
+);
+
+//output_z_wire1 - e, output_z_wire2 msb is 0 if x-y > e 
+adder add_greater_e
+(
+	.input_a(xy_result),
+	.input_b(e_neg),
+	.input_a_stb(1'b1),
+	.input_b_stb(1'b1),
+	.output_z_ack(output_z_ack_wire2),
+	.clk(CLK),
+	.rst(greater_e_rst),
+	.output_z(output_z_wire2),
+	.output_z_stb(output_z_stb_wire2),
+	.input_a_ack(input_a_ack_wire2),
+	.input_b_ack(input_b_ack_wire2)
+);
+
+/*
+		while(x - y > e)
+		{
+			x = (x + y)/2;
+			y = n/x;
+		}
+		return x;
+*/
+
+reg [31:0] xy_result;
+always@(output_z_stb_wire1)
+begin
+	xy_result = output_z_wire1;
+end
+
+always @(posedge CLK or negedge RST)
+begin	
+	if(CLK2 == 1'b1)
+	begin
+		res = output_z_wire;
+		if(res[31] == 1'b0)
+		begin
+			pos <= 1'b1; //pos n >= 1
+			if(output_z_wire2[31] == 1'b0)
+			begin
+				n_minus_y_rst <= 1'b0;
+				greater_e_rst <= 1'b0;
+				pos <= 1'b0;
+			end
+		end
+		else
+		begin
+			pos <= 1'b0; //neg n < 1
+			
+		end
+	end
+end
+
+
+
+endmodule
