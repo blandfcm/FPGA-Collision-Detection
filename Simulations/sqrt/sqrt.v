@@ -12,12 +12,14 @@ reg [31:0] res;
 reg [31:0] y = 32'b00111111100000000000000000000000;
 reg [31:0] e = 32'b00110101100001100011011110111101;
 reg [31:0] two = 32'b01000000000000000000000000000000;
-wire CLK2;
 
 //add1
 wire [31:0] x_neg;
 wire [31:0] y_neg;
 wire [31:0] e_neg;
+
+//x_flag
+reg x_flag = 1'b0;
 
 //add_greater_1
 wire [31:0] output_z_wire;
@@ -112,43 +114,6 @@ reg n_by_y_rst = 1'b1;
 assign e_neg = {~e[31], e[30:0]};
 assign x_neg = {~x[31], x[30:0]};
 assign y_neg = {~y[31], y[30:0]};
-assign CLK2 = (output_z_stb_wire) ? 1:0;
-
-always@(posedge CLK2)
-begin
-  x[0] = n[0];
-  x[1] = n[1];
-  x[2] = n[2];
-  x[3] = n[3];
-  x[4] = n[4];
-  x[5] = n[5];
-  x[6] = n[6];
-  x[7] = n[7];
-  x[8] = n[8];
-  x[9] = n[9];
-  x[10] = n[10];
-  x[11] = n[11];
-  x[12] = n[12];
-  x[13] = n[13];
-  x[14] = n[14];
-  x[15] = n[15];
-  x[16] = n[16];
-  x[17] = n[17];
-  x[18] = n[18];
-  x[19] = n[19];
-  x[20] = n[20];
-  x[21] = n[21];
-  x[22] = n[22];
-  x[23] = n[23];
-  x[24] = n[24];
-  x[25] = n[25];
-  x[26] = n[26];
-  x[27] = n[27];
-  x[28] = n[28];
-  x[29] = n[29];
-  x[30] = n[30];
-  x[31] = n[31];
-end
 
 //output_z_wire msb == 1 then neg else pos
 //can delete later, does same as add_x_minus_y
@@ -324,98 +289,108 @@ always @(posedge CLK or negedge RST)
 begin	
 	if(RST == 1'b1)
 	begin
+		x_flag <= 1'b0;
 		y <= 32'b00111111100000000000000000000000;
 		
-		x_minus_y_rst = 1'b1;
-		greater_e_rst1 = 1'b1;
-		x_plus_y_rst1 = 1'b1;
-		by_two_rst1 = 1'b1;
-		n_by_x_rst = 1'b1;
+		x_minus_y_rst <= 1'b1;
+		greater_e_rst1 <= 1'b1;
+		x_plus_y_rst1 <= 1'b1;
+		by_two_rst1 <= 1'b1;
+		n_by_x_rst <= 1'b1;
 		
-		y_minus_x_rst = 1'b1;
-		greater_e_rst2 = 1'b1;
-		x_plus_y_rst2 = 1'b1;
-		by_two_rst2 = 1'b1;
-		n_by_y_rst = 1'b1;
+		y_minus_x_rst <= 1'b1;
+		greater_e_rst2 <= 1'b1;
+		x_plus_y_rst2 <= 1'b1;
+		by_two_rst2 <= 1'b1;
+		n_by_y_rst <= 1'b1;
 	end
-	if(CLK2 == 1'b1)
+	else
 	begin
-		x_minus_y_rst = 1'b0;
-		y_minus_x_rst = 1'b0;
-		if(output_z_stb_wire1 == 1'b1)
+		if(output_z_stb_wire == 1'b1)
 		begin
-			//greater_e_rst1 <= 1'b0;		
-			res <= output_z_wire;
-			if(res[31] == 1'b0)
-			begin //n >= 1
-				pos <= 1'b1;
-				greater_e_rst1 <= 1'b0;	
-				if(output_z_stb_wire2 == 1'b1)
-				begin
-					//if(x-y) > e
-					if(output_z_wire2[31] == 1'b0)
-					begin
-						x_plus_y_rst1 <= 1'b0;	
-						//x+y
-						if(output_z_stb_wire3 == 1'b1)
-						begin
-							by_two_rst1 <= 1'b0;
-							//x = (x+y)/2
-							if(output_z_stb_wire4 == 1'b1)
-							begin
-								x <= output_z_wire4;
-								n_by_x_rst <= 1'b0;
-								y = n/x;
-								//y = n/x
-								if(output_z_stb_wire5 == 1'b1)
-								begin
-									y <= output_z_wire5;
-									root <= output_z_wire4;
-									x_minus_y_rst <= 1'b1;
-									greater_e_rst1 <= 1'b1;	
-									x_plus_y_rst1 <= 1'b1;
-									by_two_rst1 <= 1'b1;
-									n_by_x_rst <= 1'b1;
-								end
-							end
-						end
-					end	
-				end
+			if(x_flag == 1'b0)
+			begin
+				x <= n;
+				x_flag <= 1'b1;
 			end
-			else
-			begin //n < 1
-				pos <= 1'b0;
-				greater_e_rst2 <= 1'b0;	
-				if(output_z_stb_wire7 == 1'b1)
-				begin
-					//if(x-y) > e
-					if(output_z_wire7[31] == 1'b0)
+				
+			x_minus_y_rst = 1'b0;
+			y_minus_x_rst = 1'b0;
+			if(output_z_stb_wire1 == 1'b1)
+			begin
+				//greater_e_rst1 <= 1'b0;		
+				res <= output_z_wire;
+				if(res[31] == 1'b0)
+				begin //n >= 1
+					pos <= 1'b1;
+					greater_e_rst1 <= 1'b0;	
+					if(output_z_stb_wire2 == 1'b1)
 					begin
-						x_plus_y_rst2 <= 1'b0;	
-						//x+y
-						if(output_z_stb_wire8 == 1'b1)
+						//if(x-y) > e
+						if(output_z_wire2[31] == 1'b0)
 						begin
-							by_two_rst2 <= 1'b0;
-							//y = (x+y)/2
-							if(output_z_stb_wire9 == 1'b1)
+							x_plus_y_rst1 <= 1'b0;	
+							//x+y
+							if(output_z_stb_wire3 == 1'b1)
 							begin
-								y <= output_z_wire9;
-								n_by_y_rst <= 1'b0;
-								//x = n/y
-								if(output_z_stb_wire10 == 1'b1)
+								by_two_rst1 <= 1'b0;
+								//x = (x+y)/2
+								if(output_z_stb_wire4 == 1'b1)
 								begin
-									x <= output_z_wire10;
-									root <= output_z_wire10;
-									y_minus_x_rst <= 1'b1;
-									greater_e_rst2 <= 1'b1;	
-									x_plus_y_rst2 <= 1'b1;
-									by_two_rst2 <= 1'b1;
-									n_by_y_rst <= 1'b1;
+									x <= output_z_wire4;
+									root <= x;
+									n_by_x_rst <= 1'b0;
+									y = n/x;
+									//y = n/x
+									if(output_z_stb_wire5 == 1'b1)
+									begin
+										y <= output_z_wire5;
+										x_minus_y_rst <= 1'b1;
+										greater_e_rst1 <= 1'b1;	
+										x_plus_y_rst1 <= 1'b1;
+										by_two_rst1 <= 1'b1;
+										n_by_x_rst <= 1'b1;
+									end
 								end
 							end
-						end
-					end	
-				end				
+						end	
+					end
+				end
+				else
+				begin //n < 1
+					pos <= 1'b0;
+					greater_e_rst2 <= 1'b0;	
+					if(output_z_stb_wire7 == 1'b1)
+					begin
+						//if(x-y) > e
+						if(output_z_wire7[31] == 1'b0)
+						begin
+							x_plus_y_rst2 <= 1'b0;	
+							//x+y
+							if(output_z_stb_wire8 == 1'b1)
+							begin
+								by_two_rst2 <= 1'b0;
+								//y = (x+y)/2
+								if(output_z_stb_wire9 == 1'b1)
+								begin
+									y <= output_z_wire9;
+									n_by_y_rst <= 1'b0;
+									//x = n/y
+									if(output_z_stb_wire10 == 1'b1)
+									begin
+										x <= output_z_wire10;
+										root <= x;
+										y_minus_x_rst <= 1'b1;
+										greater_e_rst2 <= 1'b1;	
+										x_plus_y_rst2 <= 1'b1;
+										by_two_rst2 <= 1'b1;
+										n_by_y_rst <= 1'b1;
+									end
+								end
+							end
+						end	
+					end				
+				end
 			end
 		end
 	end
