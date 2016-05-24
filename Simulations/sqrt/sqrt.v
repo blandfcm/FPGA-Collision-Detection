@@ -15,6 +15,7 @@ reg [31:0] two = 32'b01000000000000000000000000000000;
 wire CLK2;
 
 //add1
+wire [31:0] x_neg;
 wire [31:0] y_neg;
 wire [31:0] e_neg;
 
@@ -312,7 +313,7 @@ divider divide_n_by_y
 	.input_b_stb(1'b1),
 	.output_z_ack(output_z_ack_wire10),
 	.clk(CLK),
-	.rst(n_by_y_rst2),
+	.rst(n_by_y_rst),
 	.output_z(output_z_wire10),
 	.output_z_stb(output_z_stb_wire10),
 	.input_a_ack(input_a_ack_wire10),
@@ -359,7 +360,6 @@ begin
 									by_two_rst1 <= 1'b1;
 									n_by_x_rst <= 1'b1;
 								end
-							
 							end
 						end
 					end	
@@ -394,7 +394,6 @@ begin
 									by_two_rst2 <= 1'b1;
 									n_by_y_rst <= 1'b1;
 								end
-							
 							end
 						end
 					end	

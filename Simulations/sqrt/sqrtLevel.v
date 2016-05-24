@@ -22,14 +22,14 @@ integer i;
 initial
 begin
 	CLK = 0;
-	//n_reg = 32'b00111111010000000000000000000000; //0.75
-	n_reg = 32'b01000000100000000000000000000000; //4.0
+	n_reg = 32'b00111111010000000000000000000000; //0.75
+	//n_reg = 32'b01000000100000000000000000000000; //4.0
 	//n_reg = 32'd2;
 end
 
 always  
     #1  CLK =  ! CLK; 
 initial 
-	#4000  $stop; //40 for one operation
+	#10000  $stop; //2800 for sqrt(4)
 
 endmodule
