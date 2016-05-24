@@ -3,12 +3,12 @@ module sqrt
 	input CLK,
 	input RST,
 	input [31:0] n,
-	//output reg [31:0] root,
-	output reg [31:0] res,
-	output reg pos
+	output reg pos,
+	output reg [31:0] root
 );
 	
 reg [31:0] x;
+reg [31:0] res;
 reg [31:0] y = 32'b00111111100000000000000000000000;
 reg [31:0] e = 32'b00110101100001100011011110111101;
 reg [31:0] two = 32'b01000000000000000000000000000000;
@@ -322,6 +322,22 @@ divider divide_n_by_y
 
 always @(posedge CLK or negedge RST)
 begin	
+	if(RST == 1'b1)
+	begin
+		y <= 32'b00111111100000000000000000000000;
+		
+		x_minus_y_rst = 1'b1;
+		greater_e_rst1 = 1'b1;
+		x_plus_y_rst1 = 1'b1;
+		by_two_rst1 = 1'b1;
+		n_by_x_rst = 1'b1;
+		
+		y_minus_x_rst = 1'b1;
+		greater_e_rst2 = 1'b1;
+		x_plus_y_rst2 = 1'b1;
+		by_two_rst2 = 1'b1;
+		n_by_y_rst = 1'b1;
+	end
 	if(CLK2 == 1'b1)
 	begin
 		x_minus_y_rst = 1'b0;
@@ -354,6 +370,7 @@ begin
 								if(output_z_stb_wire5 == 1'b1)
 								begin
 									y <= output_z_wire5;
+									root <= output_z_wire4;
 									x_minus_y_rst <= 1'b1;
 									greater_e_rst1 <= 1'b1;	
 									x_plus_y_rst1 <= 1'b1;
@@ -388,6 +405,7 @@ begin
 								if(output_z_stb_wire10 == 1'b1)
 								begin
 									x <= output_z_wire10;
+									root <= output_z_wire10;
 									y_minus_x_rst <= 1'b1;
 									greater_e_rst2 <= 1'b1;	
 									x_plus_y_rst2 <= 1'b1;

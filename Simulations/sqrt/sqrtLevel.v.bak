@@ -5,16 +5,16 @@ module sqrtLevel;
 reg CLK = 1'b0;
 reg RST = 1'b0;
 reg [31:0] n_reg;
-wire [31:0] root_wire;
-wire pos_wire;
+reg [31:0] root_reg;
+reg pos_reg;
 
 sqrt squareRoot
 (
     .CLK(CLK),
 	.RST(RST),
     .n(n_reg),
-	.pos(pos_reg),
-	.root(root_reg)
+	.pos(pos_reg)
+	.root(root_reg),
 );
 
 integer i;
@@ -30,6 +30,6 @@ end
 always  
     #1  CLK =  ! CLK; 
 initial 
-	#2800  $stop; //2800 for sqrt(4)
+	#10000  $stop; //2800 for sqrt(4)
 
 endmodule
