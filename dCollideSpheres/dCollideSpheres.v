@@ -8,31 +8,12 @@ module dCollideSpheres( x1, y1, z1, r1, x2, y2, z2, r2, cx, cy, cz,
 					done;		//done- done flag, ret- arbitrary return value used in C++ code
 					
 	output reg[31:0] test;
-/**
-	dVector3 p1:		x1, y1, z1
-	dReal r1:			r1
-	dVector3 p2:		x2, y2, z2
-	dReal r2:			r2
-	dContactGeom *c:	
-		dVector3 pos		cx, cy, cz
-		dVector3 normal	normalX, normalY, normalZ
-		dReal depth			depth
-		dGeomID g1, g2		g1, g2
-*/
+	
 	reg ret_val, done_flag;
 	
 	reg pt_distFlag = 1'b0;
 	
-	//d = dCalcPointsDistance3(p1, p2)
-	
 	reg CLK, CLK0, CLK1, CLK2, CLK3, CLK4, CLK5, CLK6;
-	
-	/*
-	wire CLK_d;
-	assign CLK_d = 1'b1;
-	wire[31:0] d;
-	assign d = g1;
-	*/
 	
 	wire[31:0] d;
 	wire CLK_d;
@@ -48,8 +29,6 @@ module dCollideSpheres( x1, y1, z1, r1, x2, y2, z2, r2, cx, cy, cz,
 		.res(d),
 		.out_rdy(CLK_d)
 	);
-	
-	
 	
 	//(r1 + r2)
 	wire[31:0] radius_sum;
@@ -70,19 +49,6 @@ module dCollideSpheres( x1, y1, z1, r1, x2, y2, z2, r2, cx, cy, cz,
 		.input_a_ack(input_a_ack_wire0),
 		.input_b_ack(input_b_ack_wire0)
 	);
-
-	
-	
-//if(d > (r1 + r2))
-	//assign CLK0 = (d > radius_sum) && CLK_radius_sum;
-	
-//if(d <= 0)
-	//assign CLK1 = ((d <= 1'd0) && (d <= radius_sum) );
-	//jumps to always@(CLK_FINAL)
-	//no more calculations
-	
-//else
-	//assign CLK2 = ~((d > 1'd0) && (d <= radius_sum) );
 	
 //calculations reliant solely on CLK2
 	
@@ -187,14 +153,6 @@ module dCollideSpheres( x1, y1, z1, r1, x2, y2, z2, r2, cx, cy, cz,
 			.input_a_ack(zsum_input_a_ack),
 			.input_b_ack(zsum_input_b_ack)
 		);
-		//assign CLK_NEG = ~(CLK_xsum && CLK_ysum && CLK_zsum);
-		
-		/*
-		assign CLK_dRecipX = ~(CLK_xsum && CLK_dRecip);
-		assign CLK_dRecipY = ~(CLK_ysum && CLK_dRecip);
-		assign CLK_dRecipZ = ~(CLK_zsum && CLK_dRecip);
-		*/
-		
 		
 			//xsum * d_recip
 			wire CLK_nx;
@@ -314,10 +272,7 @@ module dCollideSpheres( x1, y1, z1, r1, x2, y2, z2, r2, cx, cy, cz,
 					.output_z_stb(CLK_k),
 					.input_a_ack(k_input_a_ack),
 					.input_b_ack(k_input_b_ack)
-				);
-				
-				assign CLK_pos = ~(CLK_nx && CLK_ny && CLK_nz && CLK_k);
-				
+				);			
 					
 					//nx * k
 					wire CLK_nxk;
@@ -459,12 +414,10 @@ module dCollideSpheres( x1, y1, z1, r1, x2, y2, z2, r2, cx, cy, cz,
 						.input_a_ack(dep_input_a_ack),
 						.input_b_ack(dep_input_b_ack)
 					);
-
-						assign CLK2_DONE = CLK_nx && CLK_ny && CLK_nz && CLK_posx && CLK_posy && CLK_posz && CLK_dep;
 	
 	reg CLK_FINAL, clk0, clk1;
 	
-	reg[3:0] S, NS;
+	reg[3:0] NS;
 	
 	parameter	START = 4'd0,
 					CALC0 = 4'd1,
@@ -482,25 +435,19 @@ module dCollideSpheres( x1, y1, z1, r1, x2, y2, z2, r2, cx, cy, cz,
 					PENETRATION_DONE = 4'd13,
 					NONPENETRATION_DONE = 4'd14;	
 					
-	
-	always@(posedge clk or negedge rst)
-	begin
-		S <= NS;
-	end
-	
 	always@(posedge clk)
 	begin
-		case(S)
+		case(NS)
 			START:
 			begin
-				CLK <= 1'b0;
-				CLK0 <= 1'b1;
-				CLK1 <= 1'b1;
-				CLK2 <= 1'b1;
-				CLK3 <= 1'b1;
-				CLK4 <= 1'b1;
-				CLK5 <= 1'b1;
-				CLK6 <= 1'b1;
+				CLK = 1'b0;
+				CLK0 = 1'b1;
+				CLK1 = 1'b1;
+				CLK2 = 1'b1;
+				CLK3 = 1'b1;
+				CLK4 = 1'b1;
+				CLK5 = 1'b1;
+				CLK6 = 1'b1;
 				
 				NS = CALC0;
 			end
@@ -514,8 +461,7 @@ module dCollideSpheres( x1, y1, z1, r1, x2, y2, z2, r2, cx, cy, cz,
 				CLK4 = 1'b1;
 				CLK5 = 1'b1;
 				CLK6 = 1'b1;
-				
-				
+
 				if(CLK_d == 1'b1 && CLK_radius_sum == 1'b1)
 				begin
 					NS = IF1;
@@ -533,7 +479,6 @@ module dCollideSpheres( x1, y1, z1, r1, x2, y2, z2, r2, cx, cy, cz,
 				CLK4 = 1'b1;
 				CLK5 = 1'b1;
 				CLK6 = 1'b1;
-				
 				
 				if(d > radius_sum)
 				begin
@@ -559,7 +504,9 @@ module dCollideSpheres( x1, y1, z1, r1, x2, y2, z2, r2, cx, cy, cz,
 				CLK5 = 1'b1;
 				CLK6 = 1'b1;
 				
-				//return 0;
+				clk0 = 1'b1;
+				clk1 = 1'b0;
+				CLK_FINAL = 1'b1;
 			end
 			PENETRATION:
 			begin
@@ -571,6 +518,10 @@ module dCollideSpheres( x1, y1, z1, r1, x2, y2, z2, r2, cx, cy, cz,
 				CLK4 = 1'b1;
 				CLK5 = 1'b1;
 				CLK6 = 1'b1;
+				
+				clk0 = 1'b0;
+				clk1 = 1'b1;
+				CLK_FINAL = 1'b1;
 			end
 			NONPENETRATION:
 			begin
@@ -582,8 +533,6 @@ module dCollideSpheres( x1, y1, z1, r1, x2, y2, z2, r2, cx, cy, cz,
 				CLK4 = 1'b1;
 				CLK5 = 1'b1;
 				CLK6 = 1'b1;
-				
-			
 				
 				NS = CALC2;
 			end
@@ -597,7 +546,6 @@ module dCollideSpheres( x1, y1, z1, r1, x2, y2, z2, r2, cx, cy, cz,
 				CLK4 = 1'b1;
 				CLK5 = 1'b1;
 				CLK6 = 1'b1;
-				
 				
 				if(CLK_dRecip && CLK_xsum && CLK_ysum && CLK_zsum && CLK_rsum && CLK_dep)
 				begin
@@ -622,7 +570,7 @@ module dCollideSpheres( x1, y1, z1, r1, x2, y2, z2, r2, cx, cy, cz,
 					NS = CALC4;
 				end
 				else
-					NS <= CALC3;
+					NS = CALC3;
 			end
 			CALC4:
 			begin
@@ -674,15 +622,11 @@ module dCollideSpheres( x1, y1, z1, r1, x2, y2, z2, r2, cx, cy, cz,
 			end
 			FALSE_COLLIDE_DONE:
 			begin
-				clk0 = 1'b1;
-				clk1 = 1'b0;
-				CLK_FINAL = 1'b1;
+				
 			end
 			PENETRATION_DONE:
 			begin
-				clk0 = 1'b0;
-				clk1 = 1'b1;
-				CLK_FINAL = 1'b1;
+				
 			end
 			NONPENETRATION_DONE:
 			begin
@@ -692,7 +636,6 @@ module dCollideSpheres( x1, y1, z1, r1, x2, y2, z2, r2, cx, cy, cz,
 			end
 			default:
 			begin
-				NS <= START;
 				NS = START;
 			end
 		endcase
@@ -718,32 +661,5 @@ module dCollideSpheres( x1, y1, z1, r1, x2, y2, z2, r2, cx, cy, cz,
 		done = 1'b1;
 			
 	end
-	
-	
-//	assign_outputs(
-//		.x(cx), 
-//		.y(cy), 
-//		.z(cz),	
-//		.nx(normalx), 
-//		.ny(normaly), 
-//		.nz(normalz), 
-//		.dep(depth), 
-//		.g_1(g1), 
-//		.g_2(g2), 
-//		.ret(ret_value), 
-//		.dn(done_flag), 
-//		.rst(rst)
-//	);
-	//ret done
-	//assign cx = (done_flag == 1'd1) ? cX : 31'd0;
-	
-	//cx, cy, cz, normalx, normaly, normalz, depth;
 
 endmodule
-
-//		module assign_outputs();
-//		
-//		always@(posedge clk)
-//		begin
-//		
-//		end
