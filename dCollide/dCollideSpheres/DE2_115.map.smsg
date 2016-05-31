@@ -1,0 +1,6 @@
+Info (10281): Verilog HDL Declaration information at dCollideSpheres1.v(6): object "cx" differs only in case from object "cX" in the same scope
+Info (10281): Verilog HDL Declaration information at dCollideSpheres1.v(6): object "cy" differs only in case from object "cY" in the same scope
+Info (10281): Verilog HDL Declaration information at dCollideSpheres1.v(6): object "cz" differs only in case from object "cZ" in the same scope
+Info (10281): Verilog HDL Declaration information at dCollideSpheres1.v(6): object "normalx" differs only in case from object "normalX" in the same scope
+Info (10281): Verilog HDL Declaration information at dCollideSpheres1.v(6): object "normaly" differs only in case from object "normalY" in the same scope
+Info (10281): Verilog HDL Declaration information at dCollideSpheres1.v(6): object "normalz" differs only in case from object "normalZ" in the same scope
