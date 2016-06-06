@@ -31,8 +31,8 @@ module dCollideSpheres( x1, y1, z1, r1, x2, y2, z2, r2, cx, cy, cz,
 	jtag_debug debug5(.in_debug(normalz));*/
 	
 	reg [31:0] debug_reg1;
-	jtag_debug jtag8(.in_debug(d));	
-	jtag_debug jtag9(.in_debug(d_recip));	
+	//jtag_debug jtag8(.in_debug(d));	
+	//jtag_debug jtag9(.in_debug(d_recip));	
 								
 
 	reg ret_val, done_flag;

@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE115F29) Path("C:/Users/Lunkferios/Desktop/Summer_Project/FPGA Projects/Backup/fpga_dCollideSpheres_final/") File("fpga_dCollideSpheres.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE115F29) Path("C:/Users/Lunkferios/Desktop/Summer_Project/FPGA Projects/Backup/fpga_dCollideSpheres_final2/") File("fpga_dCollideSpheres.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

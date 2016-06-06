@@ -47,18 +47,11 @@ assign b3_neg = {~b3[31],b3[30:0]};
 
 assign CLK2 = (output_z_stb_wire & output_z_stb_wire1 & output_z_stb_wire2) ? 1:0;
 
-/*jtag_debug debug1(.in_debug(a1));
-jtag_debug debug2(.in_debug(b1));
-jtag_debug debug3(.in_debug(output_z_wire));
-jtag_debug debug4(.in_debug(a2));
-jtag_debug debug5(.in_debug(b2));
-jtag_debug debug6(.in_debug(output_z_wire1));
-jtag_debug debug7(.in_debug(a3));
-jtag_debug debug8(.in_debug(b3));
-jtag_debug debug9(.in_debug(output_z_wire2));
-jtag_debug debug10(.in_debug(res));
-jtag_debug debug11(.in_debug(debugtest1));
-jtag_debug debug12(.in_debug(debugtest2));*/
+//jtag_debug debug3(.in_debug(output_z_wire));
+//
+//jtag_debug debug6(.in_debug(output_z_wire1));
+//
+//jtag_debug debug9(.in_debug(output_z_wire2));
 
 
 
