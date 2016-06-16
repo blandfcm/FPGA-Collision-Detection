@@ -1,0 +1,1341 @@
+
+State Machine - |dCollideSphereBox|S
+Name S.DONE S.CALC_TMP_DMULTIPLY S.CALC_TMP S.NOT_ONBORDER_MIN_DIST S.IF_DEPTH_FALSE S.IF_DEPTH_TRUE S.IF_DEPTH S.CALC_DEPTH2 S.CALC_DEPTH1 S.CALC_DEPTH0 S.CALC_R S.CALC_Q S.NOT_ONBORDER S.IF_ONBORDER S.CALC_T S.CALC_BORDER_TEMPS S.CALC1 S.CALC0 
+S.CALC0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+S.CALC1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+S.CALC_BORDER_TEMPS 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+S.CALC_T 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+S.IF_ONBORDER 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+S.NOT_ONBORDER 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+S.CALC_Q 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+S.CALC_R 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+S.CALC_DEPTH0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+S.CALC_DEPTH1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+S.CALC_DEPTH2 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+S.IF_DEPTH 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+S.IF_DEPTH_TRUE 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+S.IF_DEPTH_FALSE 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+S.NOT_ONBORDER_MIN_DIST 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+S.CALC_TMP 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+S.CALC_TMP_DMULTIPLY 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+S.DONE 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|adder:add_minDist_radius|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_nz|add3:adder|adder:add2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_nz|add3:adder|adder:add1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_nz|multiplier:mult3|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_nz|multiplier:mult2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_nz|multiplier:mult1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_ny|add3:adder|adder:add2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_ny|add3:adder|adder:add1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_ny|multiplier:mult3|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_ny|multiplier:mult2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_ny|multiplier:mult1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_nx|add3:adder|adder:add2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_nx|add3:adder|adder:add1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_nx|multiplier:mult3|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_nx|multiplier:mult2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_nx|multiplier:mult1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|lessThan:lessThanDist12|state
+Name state.done state.put_z state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 1 0 0 1 
+state.align 0 0 0 1 0 0 0 1 
+state.add_0 0 0 1 0 0 0 0 1 
+state.put_z 0 1 0 0 0 0 0 1 
+state.done 1 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|lessThan:lessThanDist02|state
+Name state.done state.put_z state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 1 0 0 1 
+state.align 0 0 0 1 0 0 0 1 
+state.add_0 0 0 1 0 0 0 0 1 
+state.put_z 0 1 0 0 0 0 0 1 
+state.done 1 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|lessThan:lessThanDist01|state
+Name state.done state.put_z state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 1 0 0 1 
+state.align 0 0 0 1 0 0 0 1 
+state.add_0 0 0 1 0 0 0 0 1 
+state.put_z 0 1 0 0 0 0 0 1 
+state.done 1 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|adder:add_l2_abs_t2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|adder:add_l1_abs_t1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|adder:add_l0_abs_t0|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|adder:add_q2_z2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|adder:add_q1_y2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|adder:add_q0_x2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|adder:add_radius_rCalc_sqrt_neg|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|sqrt:sqrt0|divider:divide_n_by_y|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.divide_3 state.divide_2 state.divide_1 state.divide_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.divide_0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.divide_1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.divide_2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.divide_3 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|sqrt:sqrt0|divider:divide_by_two2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.divide_3 state.divide_2 state.divide_1 state.divide_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.divide_0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.divide_1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.divide_2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.divide_3 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|sqrt:sqrt0|adder:add_x_plus_y2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|sqrt:sqrt0|adder:add_greater_e2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|sqrt:sqrt0|adder:add_y_minus_x|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|sqrt:sqrt0|divider:divide_n_by_x|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.divide_3 state.divide_2 state.divide_1 state.divide_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.divide_0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.divide_1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.divide_2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.divide_3 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|sqrt:sqrt0|divider:divide_by_two1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.divide_3 state.divide_2 state.divide_1 state.divide_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.divide_0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.divide_1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.divide_2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.divide_3 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|sqrt:sqrt0|adder:add_x_plus_y1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|sqrt:sqrt0|adder:add_greater_e1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|sqrt:sqrt0|adder:add_x_minus_y|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|sqrt:sqrt0|adder:add_greater_1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_r_r|add3:adder|adder:add2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_r_r|add3:adder|adder:add1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_r_r|multiplier:mult3|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_r_r|multiplier:mult2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_r_r|multiplier:mult1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|adder:add_p2_q2_neg|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|adder:add_p1_q1_neg|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|adder:add_p0_q0_neg|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_q2|add3:adder|adder:add2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_q2|add3:adder|adder:add1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_q2|multiplier:mult3|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_q2|multiplier:mult2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_q2|multiplier:mult1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_q1|add3:adder|adder:add2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_q1|add3:adder|adder:add1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_q1|multiplier:mult3|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_q1|multiplier:mult2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_q1|multiplier:mult1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_q0|add3:adder|adder:add2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_q0|add3:adder|adder:add1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_q0|multiplier:mult3|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_q0|multiplier:mult2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_q0|multiplier:mult1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|lessThan:b21|state
+Name state.done state.put_z state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 1 0 0 1 
+state.align 0 0 0 1 0 0 0 1 
+state.add_0 0 0 1 0 0 0 0 1 
+state.put_z 0 1 0 0 0 0 0 1 
+state.done 1 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|lessThan:b20|state
+Name state.done state.put_z state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 1 0 0 1 
+state.align 0 0 0 1 0 0 0 1 
+state.add_0 0 0 1 0 0 0 0 1 
+state.put_z 0 1 0 0 0 0 0 1 
+state.done 1 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|lessThan:b11|state
+Name state.done state.put_z state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 1 0 0 1 
+state.align 0 0 0 1 0 0 0 1 
+state.add_0 0 0 1 0 0 0 0 1 
+state.put_z 0 1 0 0 0 0 0 1 
+state.done 1 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|lessThan:b10|state
+Name state.done state.put_z state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 1 0 0 1 
+state.align 0 0 0 1 0 0 0 1 
+state.add_0 0 0 1 0 0 0 0 1 
+state.put_z 0 1 0 0 0 0 0 1 
+state.done 1 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|lessThan:b01|state
+Name state.done state.put_z state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 1 0 0 1 
+state.align 0 0 0 1 0 0 0 1 
+state.add_0 0 0 1 0 0 0 0 1 
+state.put_z 0 1 0 0 0 0 0 1 
+state.done 1 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|lessThan:b00|state
+Name state.done state.put_z state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 1 0 0 1 
+state.align 0 0 0 1 0 0 0 1 
+state.add_0 0 0 1 0 0 0 0 1 
+state.put_z 0 1 0 0 0 0 0 1 
+state.done 1 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_t2_test|add3:adder|adder:add2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_t2_test|add3:adder|adder:add1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_t2_test|multiplier:mult3|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_t2_test|multiplier:mult2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_t2_test|multiplier:mult1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_t1_test|add3:adder|adder:add2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_t1_test|add3:adder|adder:add1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_t1_test|multiplier:mult3|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_t1_test|multiplier:mult2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_t1_test|multiplier:mult1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_t0_test|add3:adder|adder:add2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_t0_test|add3:adder|adder:add1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_t0_test|multiplier:mult3|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_t0_test|multiplier:mult2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|dCalcVectorDot3_test:calc_t0_test|multiplier:mult1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|divider:divide_side2_half|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.divide_3 state.divide_2 state.divide_1 state.divide_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.divide_0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.divide_1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.divide_2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.divide_3 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|divider:divide_side1_half|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.divide_3 state.divide_2 state.divide_1 state.divide_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.divide_0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.divide_1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.divide_2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.divide_3 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|divider:divide_side0_two|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.divide_3 state.divide_2 state.divide_1 state.divide_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.divide_0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.divide_1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.divide_2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.divide_3 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|adder:add_z1_z2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|adder:add_y1_y2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |dCollideSphereBox|adder:add_x1_x2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 

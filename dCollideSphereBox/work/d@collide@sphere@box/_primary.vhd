@@ -1,0 +1,66 @@
+library verilog;
+use verilog.vl_types.all;
+entity dCollideSphereBox is
+    generic(
+        START           : vl_logic_vector(0 to 4) := (Hi0, Hi0, Hi0, Hi0, Hi0);
+        CALC0           : vl_logic_vector(0 to 4) := (Hi0, Hi0, Hi0, Hi0, Hi1);
+        CALC1           : vl_logic_vector(0 to 4) := (Hi0, Hi0, Hi0, Hi1, Hi0);
+        CALC_BORDER_TEMPS: vl_logic_vector(0 to 4) := (Hi0, Hi0, Hi0, Hi1, Hi1);
+        CALC_T          : vl_logic_vector(0 to 4) := (Hi0, Hi0, Hi1, Hi0, Hi0);
+        IF_ONBORDER     : vl_logic_vector(0 to 4) := (Hi0, Hi0, Hi1, Hi0, Hi1);
+        NOT_ONBORDER    : vl_logic_vector(0 to 4) := (Hi0, Hi0, Hi1, Hi1, Hi0);
+        CALC_Q          : vl_logic_vector(0 to 4) := (Hi0, Hi0, Hi1, Hi1, Hi1);
+        CALC_R          : vl_logic_vector(0 to 4) := (Hi0, Hi1, Hi0, Hi0, Hi0);
+        CALC_DEPTH0     : vl_logic_vector(0 to 4) := (Hi0, Hi1, Hi0, Hi0, Hi1);
+        CALC_DEPTH1     : vl_logic_vector(0 to 4) := (Hi0, Hi1, Hi0, Hi1, Hi0);
+        CALC_DEPTH2     : vl_logic_vector(0 to 4) := (Hi0, Hi1, Hi0, Hi1, Hi1);
+        IF_DEPTH        : vl_logic_vector(0 to 4) := (Hi0, Hi1, Hi1, Hi0, Hi0);
+        IF_DEPTH_TRUE   : vl_logic_vector(0 to 4) := (Hi0, Hi1, Hi1, Hi0, Hi1);
+        IF_DEPTH_FALSE  : vl_logic_vector(0 to 4) := (Hi0, Hi1, Hi1, Hi1, Hi0);
+        NOT_ONBORDER_MIN_DIST: vl_logic_vector(0 to 4) := (Hi0, Hi1, Hi1, Hi1, Hi1);
+        CALC_TMP        : vl_logic_vector(0 to 4) := (Hi1, Hi0, Hi0, Hi0, Hi0);
+        CALC_TMP_DMULTIPLY: vl_logic_vector(0 to 4) := (Hi1, Hi0, Hi0, Hi0, Hi1);
+        \DONE\          : vl_logic_vector(0 to 4) := (Hi1, Hi1, Hi1, Hi1, Hi1)
+    );
+    port(
+        clk             : in     vl_logic;
+        rst             : in     vl_logic;
+        x1              : in     vl_logic_vector(31 downto 0);
+        y1              : in     vl_logic_vector(31 downto 0);
+        z1              : in     vl_logic_vector(31 downto 0);
+        x2              : in     vl_logic_vector(31 downto 0);
+        y2              : in     vl_logic_vector(31 downto 0);
+        z2              : in     vl_logic_vector(31 downto 0);
+        r0              : inout  vl_logic_vector(31 downto 0);
+        r1              : inout  vl_logic_vector(31 downto 0);
+        r2              : inout  vl_logic_vector(31 downto 0);
+        r4              : inout  vl_logic_vector(31 downto 0);
+        r5              : inout  vl_logic_vector(31 downto 0);
+        r6              : inout  vl_logic_vector(31 downto 0);
+        r8              : inout  vl_logic_vector(31 downto 0);
+        r9              : in     vl_logic_vector(31 downto 0);
+        r10             : in     vl_logic_vector(31 downto 0);
+        ret             : out    vl_logic;
+        done            : out    vl_logic
+    );
+    attribute mti_svvh_generic_type : integer;
+    attribute mti_svvh_generic_type of START : constant is 1;
+    attribute mti_svvh_generic_type of CALC0 : constant is 1;
+    attribute mti_svvh_generic_type of CALC1 : constant is 1;
+    attribute mti_svvh_generic_type of CALC_BORDER_TEMPS : constant is 1;
+    attribute mti_svvh_generic_type of CALC_T : constant is 1;
+    attribute mti_svvh_generic_type of IF_ONBORDER : constant is 1;
+    attribute mti_svvh_generic_type of NOT_ONBORDER : constant is 1;
+    attribute mti_svvh_generic_type of CALC_Q : constant is 1;
+    attribute mti_svvh_generic_type of CALC_R : constant is 1;
+    attribute mti_svvh_generic_type of CALC_DEPTH0 : constant is 1;
+    attribute mti_svvh_generic_type of CALC_DEPTH1 : constant is 1;
+    attribute mti_svvh_generic_type of CALC_DEPTH2 : constant is 1;
+    attribute mti_svvh_generic_type of IF_DEPTH : constant is 1;
+    attribute mti_svvh_generic_type of IF_DEPTH_TRUE : constant is 1;
+    attribute mti_svvh_generic_type of IF_DEPTH_FALSE : constant is 1;
+    attribute mti_svvh_generic_type of NOT_ONBORDER_MIN_DIST : constant is 1;
+    attribute mti_svvh_generic_type of CALC_TMP : constant is 1;
+    attribute mti_svvh_generic_type of CALC_TMP_DMULTIPLY : constant is 1;
+    attribute mti_svvh_generic_type of \DONE\ : constant is 1;
+end dCollideSphereBox;

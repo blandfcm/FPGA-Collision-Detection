@@ -1,0 +1,4 @@
+module dCalcVectorDot3_14(
+	input[31:0] x, y, z, r
+);
+

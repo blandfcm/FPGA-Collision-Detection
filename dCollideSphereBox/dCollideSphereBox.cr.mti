@@ -1,0 +1,85 @@
+C:/Users/katteroa/Desktop/dCollideSphereBox/divider.v {1 {vlog -work work C:/Users/katteroa/Desktop/dCollideSphereBox/divider.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module divider
+
+Top level modules:
+	divider
+
+} {} {}} C:/Users/katteroa/Desktop/dCollideSphereBox/dCollideSphereBox.v {1 {vlog -work work C:/Users/katteroa/Desktop/dCollideSphereBox/dCollideSphereBox.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module dCollideSphereBox
+
+Top level modules:
+	dCollideSphereBox
+
+} {} {}} C:/Users/katteroa/Desktop/dCollideSphereBox/dCalcVectorDot3_14.v {1 {vlog -work work C:/Users/katteroa/Desktop/dCollideSphereBox/dCalcVectorDot3_14.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module dCalcVectorDot3_14
+
+Top level modules:
+	dCalcVectorDot3_14
+
+} {} {}} C:/Users/katteroa/Desktop/dCollideSphereBox/toplevel.v {1 {vlog -work work C:/Users/katteroa/Desktop/dCollideSphereBox/toplevel.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module toplevel
+
+Top level modules:
+	toplevel
+
+} {} {}} C:/Users/katteroa/Desktop/dCollideSphereBox/adder.v {1 {vlog -work work C:/Users/katteroa/Desktop/dCollideSphereBox/adder.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} C:/Users/katteroa/Desktop/dCollideSphereBox/multiply.v {1 {vlog -work work C:/Users/katteroa/Desktop/dCollideSphereBox/multiply.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module multiplier
+
+Top level modules:
+	multiplier
+
+} {} {}} C:/Users/katteroa/Desktop/dCollideSphereBox/DE2_115.v {1 {vlog -work work C:/Users/katteroa/Desktop/dCollideSphereBox/DE2_115.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module DE2_115
+
+Top level modules:
+	DE2_115
+
+} {} {}} C:/Users/katteroa/Desktop/dCollideSphereBox/lessThan.v {1 {vlog -work work C:/Users/katteroa/Desktop/dCollideSphereBox/lessThan.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module lessThan
+
+Top level modules:
+	lessThan
+
+} {} {}} C:/Users/katteroa/Desktop/dCollideSphereBox/sqrt.v {1 {vlog -work work C:/Users/katteroa/Desktop/dCollideSphereBox/sqrt.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module sqrt
+
+Top level modules:
+	sqrt
+
+} {} {}} C:/Users/katteroa/Desktop/dCollideSphereBox/dCalcVectorDot3_test.v {1 {vlog -work work C:/Users/katteroa/Desktop/dCollideSphereBox/dCalcVectorDot3_test.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module dCalcVectorDot3_test
+
+Top level modules:
+	dCalcVectorDot3_test
+
+} {} {}} C:/Users/katteroa/Desktop/dCollideSphereBox/dCalcVectorDot3.v {1 {vlog -work work C:/Users/katteroa/Desktop/dCollideSphereBox/dCalcVectorDot3.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module dCalcVectorDot3
+
+Top level modules:
+	dCalcVectorDot3
+
+} {} {}} C:/Users/katteroa/Desktop/dCollideSphereBox/add3.v {1 {vlog -work work C:/Users/katteroa/Desktop/dCollideSphereBox/add3.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module add3
+
+Top level modules:
+	add3
+
+} {} {}}
