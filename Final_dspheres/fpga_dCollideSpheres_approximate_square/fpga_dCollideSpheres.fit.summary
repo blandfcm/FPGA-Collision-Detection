@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Jun 22 13:03:04 2016
+Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+Revision Name : fpga_dCollideSpheres
+Top-level Entity Name : fpga_dCollideSpheres
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 28,625 / 114,480 ( 25 % )
+    Total combinational functions : 17,345 / 114,480 ( 15 % )
+    Dedicated logic registers : 19,393 / 114,480 ( 17 % )
+Total registers : 19393
+Total pins : 8 / 529 ( 2 % )
+Total virtual pins : 0
+Total memory bits : 109,952 / 3,981,312 ( 3 % )
+Embedded Multiplier 9-bit elements : 63 / 532 ( 12 % )
+Total PLLs : 0 / 4 ( 0 % )

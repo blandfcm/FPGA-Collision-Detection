@@ -1,0 +1,420 @@
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|adder:add_z1_nzk|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|adder:add_y1_nyk|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|adder:add_x1_nxk|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|multiplier:multiply_nz_k|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|multiplier:multiply_ny_k|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|multiplier:multiply_nx_k|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|divider:divide_drsum_2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.divide_3 state.divide_2 state.divide_1 state.divide_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.divide_0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.divide_1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.divide_2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.divide_3 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|multiplier:multiply_zsum_dRecip|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|multiplier:multiply_ysum_dRecip|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|multiplier:multiply_xsum_dRecip|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|adder:add_rsum_dneg|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|adder:add_radius_sum_dneg|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|adder:addDiff|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|divider2:divide_1_d|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.divide_3 state.divide_2 state.divide_1 state.divide_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.divide_0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.divide_1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.divide_2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.divide_3 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|adder:add_r2_r1neg|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|adder:add_z1_z2neg|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|adder:add_y1_y2neg|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|adder:add_x1_x2neg|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|adder:add0|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|dCalcPointsDistance3:dCalcPointsDist0|dCalcVectorLength3:calcLen|add3:adder|adder:add2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|dCalcPointsDistance3:dCalcPointsDist0|dCalcVectorLength3:calcLen|add3:adder|adder:add1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|dCalcPointsDistance3:dCalcPointsDist0|dCalcVectorLength3:calcLen|multiplier:mult3|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|dCalcPointsDistance3:dCalcPointsDist0|dCalcVectorLength3:calcLen|multiplier:mult2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|dCalcPointsDistance3:dCalcPointsDist0|dCalcVectorLength3:calcLen|multiplier:mult1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.multiply_1 state.multiply_0 state.normalise_b state.normalise_a state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.normalise_a 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.normalise_b 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.multiply_0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.multiply_1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|dCalcPointsDistance3:dCalcPointsDist0|adder:add3|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|dCalcPointsDistance3:dCalcPointsDist0|adder:add2|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_dCollideSpheres|dCollideSpheres:test0|dCalcPointsDistance3:dCalcPointsDist0|adder:add1|state
+Name state.put_z state.pack state.round state.normalise_2 state.normalise_1 state.add_1 state.add_0 state.align state.special_cases state.unpack state.get_b state.get_a 
+state.get_a 0 0 0 0 0 0 0 0 0 0 0 0 
+state.get_b 0 0 0 0 0 0 0 0 0 0 1 1 
+state.unpack 0 0 0 0 0 0 0 0 0 1 0 1 
+state.special_cases 0 0 0 0 0 0 0 0 1 0 0 1 
+state.align 0 0 0 0 0 0 0 1 0 0 0 1 
+state.add_0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.add_1 0 0 0 0 0 1 0 0 0 0 0 1 
+state.normalise_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state.normalise_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round 0 0 1 0 0 0 0 0 0 0 0 1 
+state.pack 0 1 0 0 0 0 0 0 0 0 0 1 
+state.put_z 1 0 0 0 0 0 0 0 0 0 0 1 
