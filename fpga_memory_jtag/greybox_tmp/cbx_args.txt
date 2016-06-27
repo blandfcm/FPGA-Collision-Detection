@@ -1,0 +1,11 @@
+INTENDED_DEVICE_FAMILY="Cyclone IV E"
+LPM_HINT=RAM_BLOCK_TYPE=M9K
+LPM_TYPE=altshift_taps
+NUMBER_OF_TAPS=8
+TAP_DISTANCE=1
+WIDTH=32
+DEVICE_FAMILY="Cyclone IV E"
+clock
+shiftin
+shiftout
+taps
