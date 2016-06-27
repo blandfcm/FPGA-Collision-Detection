@@ -1,0 +1,372 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\14.0
+vadd3
+Z1 !s100 W;lC9ROhafT2`WUR4eML;3
+Z2 I<Xm@37V3M<@J6V:Gl46BO3
+Z3 Vo]9UoS67G5zJ=Fda2GVbR3
+Z4 dC:\altera\14.0\Collsion_Detection\Memory\Simulation_nopipeline_dataFetch
+Z5 w1466781332
+Z6 8C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/add3.v
+Z7 FC:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/add3.v
+L0 1
+Z8 OV;L;10.1e;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/add3.v|
+Z10 o-work work -O0
+Z11 !s108 1466796805.531000
+Z12 !s107 C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/add3.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vadder
+Z13 !s100 49dZh3?m^zVKzBLK3]4DH1
+Z14 I]GWhW]MegJ7Hc_B?P08zz0
+Z15 VO;aXbhlD>Jb0E7Fmo@;D?2
+R4
+R5
+Z16 8C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/adder.v
+Z17 FC:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/adder.v
+L0 6
+R8
+r1
+31
+Z18 !s90 -reportprogress|300|-work|work|C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/adder.v|
+R10
+Z19 !s108 1466796805.868000
+Z20 !s107 C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/adder.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vapprox_fp_sqrt
+Z21 !s100 Y7_cd8D5H>51C_K_JId8G0
+Z22 Il4CWh=]2YKeZ[eH1LN^:D3
+Z23 V0kHn[fG=>19JlGBO9d>7`2
+R4
+R5
+Z24 8C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/approx_fp_sqrt.v
+Z25 FC:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/approx_fp_sqrt.v
+L0 23
+R8
+r1
+31
+Z26 !s90 -reportprogress|300|-work|work|C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/approx_fp_sqrt.v|
+R10
+Z27 !s108 1466796806.144000
+Z28 !s107 C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/approx_fp_sqrt.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdCalcPointsDistance3
+Z29 !s100 `3am;2^_RZcLDldc;^9WW0
+Z30 I;>VzWn<Vcm?>I^CKf8=2^0
+Z31 VH98jFKhcEXnY74Om_8eA40
+R4
+R5
+Z32 8C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/DistanceCalc.v
+Z33 FC:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/DistanceCalc.v
+L0 1
+R8
+r1
+31
+Z34 !s90 -reportprogress|300|-work|work|C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/DistanceCalc.v|
+R10
+Z35 nd@calc@points@distance3
+Z36 !s108 1466796807.076000
+Z37 !s107 C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/DistanceCalc.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdCalcVectorLength3
+Z38 !s100 3Z^m6_eGRDlanB53eL5Wf2
+Z39 IjHz4Te[ZTE^YJamPPnjeL3
+Z40 V:VOzPNSAY?@4`mbH1;R^C2
+R4
+R5
+Z41 8C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/dCalcVectorLength3.v
+Z42 FC:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/dCalcVectorLength3.v
+L0 1
+R8
+r1
+31
+Z43 !s90 -reportprogress|300|-work|work|C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/dCalcVectorLength3.v|
+R10
+Z44 nd@calc@vector@length3
+Z45 !s108 1466796806.335000
+Z46 !s107 C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/dCalcVectorLength3.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdCollideSpheres
+Z47 !s100 H<al1dBIbBlA6aR[A77de0
+Z48 IV0B^NkSJDMCm?c=WQ;LHS1
+Z49 VZkXGcCXk?kjYMDN15dOfV2
+R4
+Z50 w1466781490
+Z51 8C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/dCollideSpheres.v
+Z52 FC:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/dCollideSpheres.v
+L0 1
+R8
+r1
+31
+Z53 !s90 -reportprogress|300|-work|work|C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/dCollideSpheres.v|
+R10
+Z54 nd@collide@spheres
+Z55 !s108 1466796806.559000
+Z56 !s107 C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/dCollideSpheres.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vDE2_115
+Z57 !s100 dgE47Qlz9:djD^IJczmz[1
+Z58 Iz0E6f<Vi]=22UEDB8Ol9H0
+Z59 Vj599P389?K0<Nc4hzHAO_1
+R4
+R5
+Z60 8C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/DE2_115.v
+Z61 FC:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/DE2_115.v
+L0 6
+R8
+r1
+31
+Z62 !s90 -reportprogress|300|-work|work|C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/DE2_115.v|
+R10
+Z63 n@d@e2_115
+Z64 !s108 1466796806.812000
+Z65 !s107 C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/DE2_115.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdivider
+Z66 !s100 QLikS1>DP=cCYMJ>a;W7]0
+Z67 IoF5:h<:oNZP4>R<RTlk_I2
+Z68 VQO:P2KfOMYCb]7]h=7z`R1
+R4
+R5
+Z69 8C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/divider.v
+Z70 FC:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/divider.v
+L0 5
+R8
+r1
+31
+Z71 !s90 -reportprogress|300|-work|work|C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/divider.v|
+R10
+Z72 !s108 1466796807.331000
+Z73 !s107 C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/divider.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdivider2
+!i10b 1
+Z74 !s100 5YMj;^ZN8gVeizDaQE;Af3
+Z75 IoT@o>0BVmz52n^z7_l=UI2
+Z76 V^XJG9nWaSP>@^A8WhKk0a3
+R4
+R5
+Z77 8C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/Verilog1.v
+Z78 FC:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/Verilog1.v
+L0 5
+R8
+r1
+!s85 0
+31
+!s108 1466796812.443000
+!s107 C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/Verilog1.v|
+Z79 !s90 -reportprogress|300|-work|work|C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/Verilog1.v|
+!s101 -O0
+R10
+vfpga_dCollideSpheres
+Z80 !s100 fa6;hkFRCCil89mLMQK^H1
+Z81 IZg6n6zaYh2;HEgc7PoD_`3
+Z82 VFz[<6ooObge8:m`;2@e=G2
+R4
+R5
+Z83 8C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/fpga_dCollideSpheres.v
+Z84 FC:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/fpga_dCollideSpheres.v
+L0 6
+R8
+r1
+31
+Z85 !s90 -reportprogress|300|-work|work|C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/fpga_dCollideSpheres.v|
+R10
+Z86 nfpga_d@collide@spheres
+Z87 !s108 1466796807.572000
+Z88 !s107 C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/fpga_dCollideSpheres.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vjtag_debug
+Z89 !s100 i;nWAiN_CVOaY<Ug`NnRE1
+Z90 I@R0k11Mbf5DA=T4EzM5Gg2
+Z91 V]WmZ^@dLRT_em9@QI4YEU3
+R4
+R5
+Z92 8C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/jtag_debug.v
+Z93 FC:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/jtag_debug.v
+L0 1
+R8
+r1
+31
+Z94 !s90 -reportprogress|300|-work|work|C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/jtag_debug.v|
+R10
+Z95 !s108 1466796807.797000
+Z96 !s107 C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/jtag_debug.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vjtag_rxtx
+Z97 !s100 6Jfk?lnbA[TUlSI=b88Uz0
+Z98 IK=1:bARF2:m[0b6DMK7a=1
+Z99 V_JY4DmHbdMd:1IiFg6O@72
+R4
+R5
+Z100 8C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/jtag_rxtx.v
+Z101 FC:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/jtag_rxtx.v
+L0 1
+R8
+r1
+31
+Z102 !s90 -reportprogress|300|-work|work|C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/jtag_rxtx.v|
+R10
+Z103 !s108 1466796807.967000
+Z104 !s107 C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/jtag_rxtx.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vjtag_rxtx_rdy
+Z105 !s100 n3gbB]33M=fVKgDa^7mbI0
+Z106 IS^=j6Uc;PkV?l`1f7C_Y<2
+Z107 VP6a?Zh?Le;BQ_Cj`90Cbd1
+R4
+R5
+Z108 8C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/jtag_rxtx_rdy.v
+Z109 FC:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/jtag_rxtx_rdy.v
+L0 1
+R8
+r1
+31
+Z110 !s90 -reportprogress|300|-work|work|C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/jtag_rxtx_rdy.v|
+R10
+Z111 !s108 1466796808.231000
+Z112 !s107 C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/jtag_rxtx_rdy.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vjtag_tx
+Z113 !s100 Z>fnj3a9=8[>^IFbfiGeV1
+Z114 IZL2DZa_a]z0cZ2Q]3U@I:1
+Z115 Vz^IbWAkTP]a2fBkS3caNN2
+R4
+R5
+Z116 8C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/jtag_tx.v
+Z117 FC:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/jtag_tx.v
+L0 1
+R8
+r1
+31
+Z118 !s90 -reportprogress|300|-work|work|C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/jtag_tx.v|
+R10
+Z119 !s108 1466796808.467000
+Z120 !s107 C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/jtag_tx.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmemoryController
+Z121 !s100 cQ<BSVZnz_gPfIkAc_o5W3
+Z122 IzL^Q>gm=ETRhEQdR?zNEW0
+Z123 Vk^?nI4ijk[jkkWWzKHRj^1
+R4
+Z124 w1466793971
+Z125 8C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/memoryController.v
+Z126 FC:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/memoryController.v
+L0 1
+R8
+r1
+31
+Z127 !s90 -reportprogress|300|-work|work|C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/memoryController.v|
+R10
+Z128 nmemory@controller
+Z129 !s108 1466796810.327000
+Z130 !s107 C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/memoryController.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmultiplier
+Z131 !s100 lWQKl:7N=0WljcO>I@WF41
+Z132 IPX_<gN_[[]mO8k]7]UbcG1
+Z133 VZLN<_DUF?kXiHP7k=IAbJ0
+R4
+R5
+Z134 8C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/multiply.v
+Z135 FC:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/multiply.v
+L0 4
+R8
+r1
+31
+Z136 !s90 -reportprogress|300|-work|work|C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/multiply.v|
+R10
+Z137 !s108 1466796811.294000
+Z138 !s107 C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/multiply.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmyjtag
+Z139 !s100 46^aHbD8YWQAM`XA0^Ia60
+Z140 I6hHAY[UM[bG78ObQVRIXT3
+Z141 V0?M3kIo>DL?3Q54P_e_O91
+R4
+R5
+Z142 8C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/myjtag.v
+Z143 FC:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/myjtag.v
+L0 40
+R8
+r1
+31
+Z144 !s90 -reportprogress|300|-work|work|C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/myjtag.v|
+R10
+Z145 !s108 1466796811.710000
+Z146 !s107 C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/myjtag.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsqrt
+Z147 !s100 A63DJjA<OFloP<SZS;VJi2
+Z148 I`dEUbW^YEJ@;V`6Om_Uh92
+Z149 VE?d`zmeVbCb>0;eZ:lU=73
+R4
+R5
+Z150 8C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/sqrt.v
+Z151 FC:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/sqrt.v
+L0 1
+R8
+r1
+31
+Z152 !s90 -reportprogress|300|-work|work|C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/sqrt.v|
+R10
+Z153 !s108 1466796811.955000
+Z154 !s107 C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/sqrt.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtoplevel
+Z155 I]TLQ@fAha:`R_ZlHT?2aW0
+Z156 V^o2m[f0V>lRT@_Km?aG_i0
+R4
+Z157 w1466796801
+Z158 8C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/toplevel.v
+Z159 FC:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/toplevel.v
+L0 3
+R8
+r1
+31
+Z160 !s90 -reportprogress|300|-work|work|C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/toplevel.v|
+R10
+!i10b 1
+Z161 !s100 ^Wa;^]`;Z>[BA_c<mW3>A2
+!s85 0
+Z162 !s108 1466796812.220000
+Z163 !s107 C:/altera/14.0/Collsion_Detection/Memory/Simulation_nopipeline_dataFetch/toplevel.v|
+!s101 -O0
