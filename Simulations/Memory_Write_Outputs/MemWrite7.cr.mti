@@ -1,0 +1,155 @@
+C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/rstCtrl.v {1 {vlog -work work C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/rstCtrl.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module rst_Ctrl
+
+Top level modules:
+	rst_Ctrl
+
+} {} {}} C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/DistanceCalc.v {1 {vlog -work work C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/DistanceCalc.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module dCalcPointsDistance3
+
+Top level modules:
+	dCalcPointsDistance3
+
+} {} {}} C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/fpga_dCollideSpheres.v {1 {vlog -work work C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/fpga_dCollideSpheres.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module toplevel
+
+Top level modules:
+	toplevel
+
+} {} {}} C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/ram_sp_sr_sw.v {1 {vlog -work work C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/ram_sp_sr_sw.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module ram_sp_sr_sw
+
+Top level modules:
+	ram_sp_sr_sw
+
+} {} {}} C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/jtag_tx_rdy.v {1 {vlog -work work C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/jtag_tx_rdy.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module jtag_tx_rdy
+
+Top level modules:
+	jtag_tx_rdy
+
+} {} {}} C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/divider.v {1 {vlog -work work {C:\altera\14.0\Collsion_Detection\Simulation_memory_noPipeline_approximateSquare\divider.v}
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module divider
+
+Top level modules:
+	divider
+
+} {} {}} C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/ram_sp_sr_sw_7_outputs.v {1 {vlog -work work C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/ram_sp_sr_sw_7_outputs.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module ram_sp_sr_sw_7_outputs
+
+Top level modules:
+	ram_sp_sr_sw_7_outputs
+
+} {} {}} C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/multiply.v {1 {vlog -work work C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/multiply.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module multiplier
+
+Top level modules:
+	multiplier
+
+} {} {}} C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/Verilog1.v {1 {vlog -work work C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/Verilog1.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module divider2
+
+Top level modules:
+	divider2
+
+} {} {}} C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/sqrt.v {1 {vlog -work work C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/sqrt.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module sqrt
+
+Top level modules:
+	sqrt
+
+} {} {}} C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/dCollideSpheres.v {1 {vlog -work work C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/dCollideSpheres.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module dCollideSpheres
+
+Top level modules:
+	dCollideSpheres
+
+} {} {}} C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/jtag_rxtx.v {1 {vlog -work work C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/jtag_rxtx.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module jtag_rxtx
+
+Top level modules:
+	jtag_rxtx
+
+} {} {}} C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/add3.v {1 {vlog -work work C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/add3.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module add3
+
+Top level modules:
+	add3
+
+} {} {}} C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/dCalcVectorLength3.v {1 {vlog -work work C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/dCalcVectorLength3.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module dCalcVectorLength3
+
+Top level modules:
+	dCalcVectorLength3
+
+} {} {}} C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/approx_fp_sqrt.v {1 {vlog -work work C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/approx_fp_sqrt.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module approx_fp_sqrt
+
+Top level modules:
+	approx_fp_sqrt
+
+} {} {}} C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/adder.v {1 {vlog -work work C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/adder.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/jtag_rxtx_rdy.v {1 {vlog -work work C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/jtag_rxtx_rdy.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module jtag_rxtx_rdy
+
+Top level modules:
+	jtag_rxtx_rdy
+
+} {} {}} C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/DE2_115.v {1 {vlog -work work C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/DE2_115.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module DE2_115
+
+Top level modules:
+	DE2_115
+
+} {} {}} C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/jtag_tx.v {1 {vlog -work work C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/jtag_tx.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module jtag_tx
+
+Top level modules:
+	jtag_tx
+
+} {} {}} C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/jtag_debug.v {1 {vlog -work work C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/jtag_debug.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module jtag_debug
+
+Top level modules:
+	jtag_debug
+
+} {} {}} C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/myjtag.v {1 {vlog -work work C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/myjtag.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module myjtag
+
+Top level modules:
+	myjtag
+
+} {} {}} C:/altera/14.0/Collsion_Detection/Simulation_memory_noPipeline_approximateSquare/MemoryController.v {1 {vlog -work work {C:\altera\14.0\Collsion_Detection\Simulation_memory_noPipeline_approximateSquare\MemoryController.v}
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module memoryController
+
+Top level modules:
+	memoryController
+
+} {} {}}
