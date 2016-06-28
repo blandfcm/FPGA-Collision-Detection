@@ -1,0 +1,74 @@
+module jtag_rxtx(
+ input [31:0] in_data,
+ output reg [31:0] out_data
+);
+
+reg [31:0] aux_input;
+reg  tdo;
+reg [31:0]shift_dr_in;
+wire [2:0]ir_in; //IR command register
+wire tck, tdi;
+wire cdr, eldr, e2dr, pdr, sdr, udr, uir, cir, tms;			
+reg reset;	
+reg [8:0] counter;
+
+myjtag myjtag_inst(
+	.tdo (tdo),
+	.tck (tck),
+	.tdi (tdi),
+	.ir_in(ir_in),
+	.ir_out(),
+	.virtual_state_cdr (cdr),
+	.virtual_state_e1dr(e1dr),
+	.virtual_state_e2dr(e2dr),
+	.virtual_state_pdr (pdr),
+	.virtual_state_sdr (sdr),
+	.virtual_state_udr (udr),
+	.virtual_state_uir (uir),
+	.virtual_state_cir (cir)
+	);
+	
+always @(posedge tck)
+	if(sdr && (ir_in==3'b001) )
+	begin
+		shift_dr_in <= { tdi, shift_dr_in[31:1] };
+	end
+
+//data receiver
+//write received data (during PUSH command) into LED register 
+always @(posedge tck)
+begin
+	if(reset == 1'b1)
+		reset <= 1'b0;
+	if(udr && (ir_in==3'b001) )
+	begin
+		reset <=1'b1;	
+		out_data <= shift_dr_in;
+	end
+end
+//data sender
+reg [31:0]shift_dr_out;
+always @(posedge tck)
+	if(cdr && (ir_in==3'b010) )
+	begin
+		//capture data for send during command POP
+		shift_dr_out <= in_data;
+		counter <= counter + 1;
+	end
+	else
+	if(sdr && (ir_in==3'b010) )
+		//shift out data durng command POP
+		shift_dr_out <= { tdi, shift_dr_out[31:1] };
+
+//pass or bypass data via tdo reg
+always @*
+begin
+	case(ir_in)
+	4'b001: tdo = shift_dr_in [0];
+	4'b010: tdo = shift_dr_out[0];
+	default:
+			  tdo = tdi;
+	endcase
+end
+
+endmodule

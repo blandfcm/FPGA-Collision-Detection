@@ -1,0 +1,148 @@
+{C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/dCollideSpheres.v} {1 {vlog -work work -stats=none {C:\Users\Lunkferios\Desktop\oh boy, here we go again\fpga_jtag_data_ready_test\Simulation_memory\dCollideSpheres.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module dCollideSpheres
+
+Top level modules:
+	dCollideSpheres
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/jtag_rxtx.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/jtag_rxtx.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module jtag_rxtx
+
+Top level modules:
+	jtag_rxtx
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/myjtag.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/myjtag.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module myjtag
+
+Top level modules:
+	myjtag
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/jtag_debug.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/jtag_debug.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module jtag_debug
+
+Top level modules:
+	jtag_debug
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/MemoryController.v} {1 {vlog -work work -stats=none {C:\Users\Lunkferios\Desktop\oh boy, here we go again\fpga_jtag_data_ready_test\Simulation_memory\MemoryController.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module memoryController
+
+Top level modules:
+	memoryController
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/DistanceCalc.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/DistanceCalc.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module dCalcPointsDistance3
+
+Top level modules:
+	dCalcPointsDistance3
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/ram_sp_sr_sw.v} {1 {vlog -work work -stats=none {C:\Users\Lunkferios\Desktop\oh boy, here we go again\fpga_jtag_data_ready_test\Simulation_memory\ram_sp_sr_sw.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module ram_sp_sr_sw
+
+Top level modules:
+	ram_sp_sr_sw
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/fpga_dCollideSpheres.v} {1 {vlog -work work -stats=none {C:\Users\Lunkferios\Desktop\oh boy, here we go again\fpga_jtag_data_ready_test\Simulation_memory\fpga_dCollideSpheres.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module toplevel
+
+Top level modules:
+	toplevel
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/multiply.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/multiply.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module multiplier
+
+Top level modules:
+	multiplier
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/adder.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/adder.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/DE2_115.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/DE2_115.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module DE2_115
+
+Top level modules:
+	DE2_115
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/jtag_tx.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/jtag_tx.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module jtag_tx
+
+Top level modules:
+	jtag_tx
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/jtag_rxtx_rdy.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/jtag_rxtx_rdy.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module jtag_rxtx_rdy
+
+Top level modules:
+	jtag_rxtx_rdy
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/Verilog1.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/Verilog1.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module divider2
+
+Top level modules:
+	divider2
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/sqrt.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/sqrt.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module sqrt
+
+Top level modules:
+	sqrt
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/add3.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/add3.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module add3
+
+Top level modules:
+	add3
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/rstCtrl.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/rstCtrl.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module rst_Ctrl
+
+Top level modules:
+	rst_Ctrl
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/jtag_tx_rdy.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/jtag_tx_rdy.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module jtag_tx_rdy
+
+Top level modules:
+	jtag_tx_rdy
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/dCalcVectorLength3.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/dCalcVectorLength3.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module dCalcVectorLength3
+
+Top level modules:
+	dCalcVectorLength3
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/divider.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/divider.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module divider
+
+Top level modules:
+	divider
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/approx_fp_sqrt.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_jtag_data_ready_test/Simulation_memory/approx_fp_sqrt.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module approx_fp_sqrt
+
+Top level modules:
+	approx_fp_sqrt
+
+} {} {}}
