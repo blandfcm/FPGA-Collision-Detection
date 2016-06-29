@@ -1,0 +1,13 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,capsule_computeAABB:test0|multiplier:mult_r2_lz|lpm_mult:Mult0|mult_bdt:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,capsule_computeAABB:test0|multiplier:mult_r2_lz|lpm_mult:Mult0|mult_bdt:auto_generated|mac_out8,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,capsule_computeAABB:test0|multiplier:mult_r6_lz|lpm_mult:Mult0|mult_bdt:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,capsule_computeAABB:test0|multiplier:mult_r6_lz|lpm_mult:Mult0|mult_bdt:auto_generated|mac_out8,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,capsule_computeAABB:test0|multiplier:mult_r10_lz|lpm_mult:Mult0|mult_bdt:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,capsule_computeAABB:test0|multiplier:mult_r10_lz|lpm_mult:Mult0|mult_bdt:auto_generated|mac_out8,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,capsule_computeAABB:test0|multiplier:mult_r2_lz|lpm_mult:Mult0|mult_bdt:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,capsule_computeAABB:test0|multiplier:mult_r6_lz|lpm_mult:Mult0|mult_bdt:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,capsule_computeAABB:test0|multiplier:mult_r10_lz|lpm_mult:Mult0|mult_bdt:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,capsule_computeAABB:test0|multiplier:mult_r2_lz|lpm_mult:Mult0|mult_bdt:auto_generated|mac_out6,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,capsule_computeAABB:test0|multiplier:mult_r6_lz|lpm_mult:Mult0|mult_bdt:auto_generated|mac_out6,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,capsule_computeAABB:test0|multiplier:mult_r10_lz|lpm_mult:Mult0|mult_bdt:auto_generated|mac_out6,
