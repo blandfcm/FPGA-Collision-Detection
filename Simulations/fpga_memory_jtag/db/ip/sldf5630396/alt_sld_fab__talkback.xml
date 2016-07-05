@@ -11,12 +11,12 @@
    <SOPCModuleParameter>
     <C>2</C>
     <Name>DESIGN_HASH</Name>
-    <Value>5602815f006acc6d2289</Value>
+    <Value>63cd8eb8d3ca54e543b8</Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
     <C>3</C>
     <Name>NODE_COUNT</Name>
-    <Value>4</Value>
+    <Value>3</Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
     <C>4</C>
@@ -26,12 +26,12 @@
    <SOPCModuleParameter>
     <C>5</C>
     <Name>SETTINGS</Name>
-    <Value>{fabric sld dir agent mfr_code 110 type_code 8 version 0 instance 0 ir_width 3 psig f63706bb} {fabric sld dir agent mfr_code 110 type_code 8 version 0 instance 1 ir_width 3 psig f63706bb} {fabric sld dir agent mfr_code 110 type_code 8 version 0 instance 2 ir_width 3 psig f63706bb} {fabric sld dir agent mfr_code 110 type_code 0 version 6 instance 0 ir_width 10 psig f63706bb} </Value>
+    <Value>{fabric sld dir agent mfr_code 110 type_code 8 version 0 instance 0 ir_width 3 psig f63706bb} {fabric sld dir agent mfr_code 110 type_code 8 version 0 instance 1 ir_width 3 psig f63706bb} {fabric sld dir agent mfr_code 110 type_code 0 version 6 instance 0 ir_width 10 psig f63706bb} </Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
     <C>6</C>
     <Name>CLOCKS</Name>
-    <Value>{id {} } {id {} } {id {} } {id {} } </Value>
+    <Value>{id {} } {id {} } {id {} } </Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
     <C>7</C>
@@ -41,7 +41,7 @@
    <SOPCModuleParameter>
     <C>8</C>
     <Name>EP_INFOS</Name>
-    <Value>{hpath {jtag_tx_rdy:jtag0|myjtag:myjtag_inst|sld_virtual_jtag:sld_virtual_jtag_component|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst} } {hpath {jtag_debug:jtag1|myjtag:myjtag_inst|sld_virtual_jtag:sld_virtual_jtag_component|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst} } {hpath {jtag_debug:jtag2|myjtag:myjtag_inst|sld_virtual_jtag:sld_virtual_jtag_component|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst} } {hpath {sld_signaltap:auto_signaltap_0} } </Value>
+    <Value>{hpath {jtag_tx_rdy:jtag0|myjtag:myjtag_inst|sld_virtual_jtag:sld_virtual_jtag_component|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst} } {hpath {jtag_debug:jtag1|myjtag:myjtag_inst|sld_virtual_jtag:sld_virtual_jtag_component|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst} } {hpath {sld_signaltap:auto_signaltap_0} } </Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
     <C>9</C>
@@ -56,7 +56,7 @@
    <SOPCModuleParameter>
     <C>11</C>
     <Name>COMPOSED_SETTINGS</Name>
-    <Value>{fabric sld dir agent mfr_code 110 type_code 8 version 0 instance 0 ir_width 3 prefer_host {} } {fabric sld dir agent mfr_code 110 type_code 8 version 0 instance 1 ir_width 3 prefer_host {} } {fabric sld dir agent mfr_code 110 type_code 8 version 0 instance 2 ir_width 3 prefer_host {} } {fabric sld dir agent mfr_code 110 type_code 0 version 6 instance 0 ir_width 10 prefer_host {} } </Value>
+    <Value>{fabric sld dir agent mfr_code 110 type_code 8 version 0 instance 0 ir_width 3 prefer_host {} } {fabric sld dir agent mfr_code 110 type_code 8 version 0 instance 1 ir_width 3 prefer_host {} } {fabric sld dir agent mfr_code 110 type_code 0 version 6 instance 0 ir_width 10 prefer_host {} } </Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
     <C>12</C>
@@ -74,7 +74,7 @@
     <Value>Unknown</Value>
    </SOPCModuleParameter>
   </SOPCModule>
-  <SystemID>2129119240</SystemID>
+  <SystemID>393416638</SystemID>
  </SOPCSystem>
  <SchemaVersion>schema_2013-01-18</SchemaVersion>
 </ProgramExecution>

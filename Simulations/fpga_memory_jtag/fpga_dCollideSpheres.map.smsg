@@ -1,12 +1,12 @@
-Warning (10268): Verilog HDL information at rstCtrl.v(20): always construct contains both blocking and non-blocking assignments
-Info (10281): Verilog HDL Declaration information at dCollideSpheres.v(4): object "clk" differs only in case from object "CLK" in the same scope
-Info (10281): Verilog HDL Declaration information at dCollideSpheres.v(43): object "CLK0" differs only in case from object "clk0" in the same scope
-Info (10281): Verilog HDL Declaration information at dCollideSpheres.v(43): object "CLK1" differs only in case from object "clk1" in the same scope
-Warning (10273): Verilog HDL warning at ram_sp_sr_sw.v(68): extended using "x" or "z"
-Warning (10273): Verilog HDL warning at ram_sp_sr_sw.v(69): extended using "x" or "z"
-Warning (10273): Verilog HDL warning at ram_sp_sr_sw.v(70): extended using "x" or "z"
-Warning (10273): Verilog HDL warning at ram_sp_sr_sw.v(71): extended using "x" or "z"
-Warning (10273): Verilog HDL warning at ram_sp_sr_sw.v(72): extended using "x" or "z"
-Warning (10273): Verilog HDL warning at ram_sp_sr_sw.v(73): extended using "x" or "z"
-Warning (10273): Verilog HDL warning at ram_sp_sr_sw.v(74): extended using "x" or "z"
-Warning (10273): Verilog HDL warning at ram_sp_sr_sw.v(75): extended using "x" or "z"
+Warning (10268): Verilog HDL information at rstCtrl.v(20): always construct contains both blocking and non-blocking assignments File: C:/Users/Lunkferios/Desktop/Summer_Project/FPGA-Collision-Detection/Simulations/fpga_memory_jtag/rstCtrl.v Line: 20
+Info (10281): Verilog HDL Declaration information at dCollideSpheres.v(4): object "clk" differs only in case from object "CLK" in the same scope File: C:/Users/Lunkferios/Desktop/Summer_Project/FPGA-Collision-Detection/Simulations/fpga_memory_jtag/dCollideSpheres.v Line: 4
+Info (10281): Verilog HDL Declaration information at dCollideSpheres.v(43): object "CLK0" differs only in case from object "clk0" in the same scope File: C:/Users/Lunkferios/Desktop/Summer_Project/FPGA-Collision-Detection/Simulations/fpga_memory_jtag/dCollideSpheres.v Line: 43
+Info (10281): Verilog HDL Declaration information at dCollideSpheres.v(43): object "CLK1" differs only in case from object "clk1" in the same scope File: C:/Users/Lunkferios/Desktop/Summer_Project/FPGA-Collision-Detection/Simulations/fpga_memory_jtag/dCollideSpheres.v Line: 43
+Warning (10273): Verilog HDL warning at ram_sp_sr_sw.v(68): extended using "x" or "z" File: C:/Users/Lunkferios/Desktop/Summer_Project/FPGA-Collision-Detection/Simulations/fpga_memory_jtag/ram_sp_sr_sw.v Line: 68
+Warning (10273): Verilog HDL warning at ram_sp_sr_sw.v(69): extended using "x" or "z" File: C:/Users/Lunkferios/Desktop/Summer_Project/FPGA-Collision-Detection/Simulations/fpga_memory_jtag/ram_sp_sr_sw.v Line: 69
+Warning (10273): Verilog HDL warning at ram_sp_sr_sw.v(70): extended using "x" or "z" File: C:/Users/Lunkferios/Desktop/Summer_Project/FPGA-Collision-Detection/Simulations/fpga_memory_jtag/ram_sp_sr_sw.v Line: 70
+Warning (10273): Verilog HDL warning at ram_sp_sr_sw.v(71): extended using "x" or "z" File: C:/Users/Lunkferios/Desktop/Summer_Project/FPGA-Collision-Detection/Simulations/fpga_memory_jtag/ram_sp_sr_sw.v Line: 71
+Warning (10273): Verilog HDL warning at ram_sp_sr_sw.v(72): extended using "x" or "z" File: C:/Users/Lunkferios/Desktop/Summer_Project/FPGA-Collision-Detection/Simulations/fpga_memory_jtag/ram_sp_sr_sw.v Line: 72
+Warning (10273): Verilog HDL warning at ram_sp_sr_sw.v(73): extended using "x" or "z" File: C:/Users/Lunkferios/Desktop/Summer_Project/FPGA-Collision-Detection/Simulations/fpga_memory_jtag/ram_sp_sr_sw.v Line: 73
+Warning (10273): Verilog HDL warning at ram_sp_sr_sw.v(74): extended using "x" or "z" File: C:/Users/Lunkferios/Desktop/Summer_Project/FPGA-Collision-Detection/Simulations/fpga_memory_jtag/ram_sp_sr_sw.v Line: 74
+Warning (10273): Verilog HDL warning at ram_sp_sr_sw.v(75): extended using "x" or "z" File: C:/Users/Lunkferios/Desktop/Summer_Project/FPGA-Collision-Detection/Simulations/fpga_memory_jtag/ram_sp_sr_sw.v Line: 75

@@ -71,10 +71,9 @@ wire we_w;
 
 reg [7:0] addressreg;*/
 
-reg [31:0] inaddress = 32'b0;
-reg [31:0] outaddress = 32'b0;
-reg [31:0] debug = 32'b0;
-reg reset = 1'b1;
+reg [31:0] inaddress;
+reg [31:0] outaddress;
+reg [31:0] debug;
 reg flag = 1'b0;
 reg flagDatain = 1'b0;
 reg flagDataout = 1'b0;

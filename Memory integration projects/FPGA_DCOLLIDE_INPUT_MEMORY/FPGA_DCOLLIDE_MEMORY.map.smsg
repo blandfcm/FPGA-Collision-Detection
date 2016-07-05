@@ -1,0 +1,11 @@
+Warning (10273): Verilog HDL warning at ram_sp_sr_sw.v(95): extended using "x" or "z" File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/FPGA_DCOLLIDE_MEMORY/ram_sp_sr_sw.v Line: 95
+Warning (10273): Verilog HDL warning at ram_sp_sr_sw.v(96): extended using "x" or "z" File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/FPGA_DCOLLIDE_MEMORY/ram_sp_sr_sw.v Line: 96
+Warning (10273): Verilog HDL warning at ram_sp_sr_sw.v(97): extended using "x" or "z" File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/FPGA_DCOLLIDE_MEMORY/ram_sp_sr_sw.v Line: 97
+Warning (10273): Verilog HDL warning at ram_sp_sr_sw.v(98): extended using "x" or "z" File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/FPGA_DCOLLIDE_MEMORY/ram_sp_sr_sw.v Line: 98
+Warning (10273): Verilog HDL warning at ram_sp_sr_sw.v(99): extended using "x" or "z" File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/FPGA_DCOLLIDE_MEMORY/ram_sp_sr_sw.v Line: 99
+Warning (10273): Verilog HDL warning at ram_sp_sr_sw.v(100): extended using "x" or "z" File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/FPGA_DCOLLIDE_MEMORY/ram_sp_sr_sw.v Line: 100
+Warning (10273): Verilog HDL warning at ram_sp_sr_sw.v(101): extended using "x" or "z" File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/FPGA_DCOLLIDE_MEMORY/ram_sp_sr_sw.v Line: 101
+Warning (10273): Verilog HDL warning at ram_sp_sr_sw.v(102): extended using "x" or "z" File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/FPGA_DCOLLIDE_MEMORY/ram_sp_sr_sw.v Line: 102
+Info (10281): Verilog HDL Declaration information at dCollideSpheres.v(4): object "clk" differs only in case from object "CLK" in the same scope File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/FPGA_DCOLLIDE_MEMORY/dCollideSpheres.v Line: 4
+Info (10281): Verilog HDL Declaration information at dCollideSpheres.v(43): object "CLK0" differs only in case from object "clk0" in the same scope File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/FPGA_DCOLLIDE_MEMORY/dCollideSpheres.v Line: 43
+Info (10281): Verilog HDL Declaration information at dCollideSpheres.v(43): object "CLK1" differs only in case from object "clk1" in the same scope File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/FPGA_DCOLLIDE_MEMORY/dCollideSpheres.v Line: 43

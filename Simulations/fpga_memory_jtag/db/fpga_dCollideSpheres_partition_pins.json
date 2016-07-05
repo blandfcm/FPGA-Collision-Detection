@@ -8,10 +8,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "KEY[0]",
-					"strict" : false
-				},
-				{
 					"name" : "altera_reserved_tms",
 					"strict" : false
 				},

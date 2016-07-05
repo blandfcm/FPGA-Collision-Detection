@@ -112,6 +112,23 @@ wire [31:0] check16;
 reg [31:0] counter4 = 31'b0;
 reg [31:0] debug4 = 31'b0;
 
+wire [31:0] rst_reg5;
+wire [31:0] x1_reg5;
+wire [31:0] y1_reg5;
+wire [31:0] z1_reg5;
+wire [31:0] r1_reg5;
+wire [31:0] x2_reg5;
+wire [31:0] y2_reg5;
+wire [31:0] z2_reg5;
+wire [31:0] r2_reg5, g1c5, g2c5;
+wire [31:0] outs5 [8:0];
+wire [31:0] check17;
+wire [31:0] check18;
+wire [31:0] check19;
+wire [31:0] check20;
+reg [31:0] counter5 = 31'b0;
+reg [31:0] debug5 = 31'b0;
+
 // jtag signals
 assign key0 = ~KEY[0];
 
@@ -184,7 +201,23 @@ jtag_tx jtag30( .out_data(z2_reg4) );
 					 
 jtag_tx jtag31( .out_data(r2_reg4) );	
 
-jtag_tx jtag32( .out_data(rst_reg) );
+jtag_tx jtag241( .out_data(x1_reg5) );
+				 
+jtag_tx jtag251( .out_data(y1_reg5) );
+					 
+jtag_tx jtag261( .out_data(z1_reg5) );
+				 
+jtag_tx jtag271( .out_data(r1_reg5) );		
+					 
+jtag_tx jtag281( .out_data(x2_reg5) );
+					 
+jtag_tx jtag291( .out_data(y2_reg5) );
+					 
+jtag_tx jtag301( .out_data(z2_reg5) );			
+					 
+jtag_tx jtag311( .out_data(r2_reg5) );	
+
+jtag_tx jtag321( .out_data(rst_reg) );
 
 jtag_debug jtag33(.in_debug(outs[0]));
 jtag_debug jtag34(.in_debug(outs[1]));
@@ -208,17 +241,6 @@ jtag_debug jtag50(.in_debug(outs2[7]));
 jtag_debug jtag51(.in_debug(outs2[8]));
 jtag_debug jtag52(.in_debug(debug2));
 
-jtag_debug jtag53(.in_debug(outs2[0]));
-jtag_debug jtag54(.in_debug(outs2[1]));
-jtag_debug jtag55(.in_debug(outs2[2]));
-jtag_debug jtag56(.in_debug(outs2[3]));
-jtag_debug jtag57(.in_debug(outs2[4]));
-jtag_debug jtag58(.in_debug(outs2[5]));
-jtag_debug jtag59(.in_debug(outs2[6]));
-jtag_debug jtag60(.in_debug(outs2[7]));
-jtag_debug jtag61(.in_debug(outs2[8]));
-jtag_debug jtag62(.in_debug(debug3));
-
 jtag_debug jtag63(.in_debug(outs3[0]));
 jtag_debug jtag64(.in_debug(outs3[1]));
 jtag_debug jtag65(.in_debug(outs3[2]));
@@ -228,7 +250,29 @@ jtag_debug jtag68(.in_debug(outs3[5]));
 jtag_debug jtag69(.in_debug(outs3[6]));
 jtag_debug jtag70(.in_debug(outs3[7]));
 jtag_debug jtag71(.in_debug(outs3[8]));
-jtag_debug jtag72(.in_debug(debug4));
+jtag_debug jtag72(.in_debug(debug3));
+
+jtag_debug jtag632(.in_debug(outs4[0]));
+jtag_debug jtag642(.in_debug(outs4[1]));
+jtag_debug jtag652(.in_debug(outs4[2]));
+jtag_debug jtag662(.in_debug(outs4[3]));
+jtag_debug jtag672(.in_debug(outs4[4]));
+jtag_debug jtag682(.in_debug(outs4[5]));
+jtag_debug jtag692(.in_debug(outs4[6]));
+jtag_debug jtag702(.in_debug(outs4[7]));
+jtag_debug jtag712(.in_debug(outs4[8]));
+jtag_debug jtag722(.in_debug(debug4));
+
+jtag_debug jtag631(.in_debug(outs5[0]));
+jtag_debug jtag641(.in_debug(outs5[1]));
+jtag_debug jtag651(.in_debug(outs5[2]));
+jtag_debug jtag661(.in_debug(outs5[3]));
+jtag_debug jtag671(.in_debug(outs5[4]));
+jtag_debug jtag681(.in_debug(outs5[5]));
+jtag_debug jtag691(.in_debug(outs5[6]));
+jtag_debug jtag701(.in_debug(outs5[7]));
+jtag_debug jtag711(.in_debug(outs5[8]));
+jtag_debug jtag721(.in_debug(debug5));
 
 
 
@@ -344,6 +388,34 @@ dCollideSpheres test3(
    .test4(check16)
 );
 
+dCollideSpheres test4(
+	.x1(x1_reg5), 
+	.y1(y1_reg5), 
+	.z1(z1_reg5), 
+	.r1(r1_reg5), 
+	.x2(x2_reg5), 
+	.y2(y2_reg5), 
+	.z2(z2_reg5), 
+	.r2(r2_reg5), 	
+	.cx(outs5[0]), 
+	.cy(outs5[1]), 
+	.cz(outs5[2]), 
+	.normalx(outs5[3]), 
+	.normaly(outs5[4]), 
+	.normalz(outs5[5]), 
+	.depth(outs5[6]), 
+	.g1(32'd1), 
+	.g2(32'd1), 
+	.ret(outs5[7]), 
+	.clk(CLOCK_50), 
+	.rst(rst_reg[0]), 
+	.done(outs5[8]),
+	.test(check17),
+	.test2(check18),
+	.test3(check19),
+   .test4(check20)
+);
+
 always @(posedge CLOCK_50 or negedge rst_reg[0])
 begin
 if(rst_reg[0] == 1'b0)
@@ -352,6 +424,7 @@ begin
 	counter2 <= 32'd0;
 	counter3 <= 32'd0;
 	counter4 <= 32'd0;
+	counter5 <= 32'd0;
 end
 else
 begin
@@ -386,7 +459,15 @@ begin
 	else
 	begin
 		counter4 <= counter4 + 1;
-	end		
+	end	
+	if(outs5[8] == 1'b1)
+	begin
+		debug5 <= counter5;	
+	end
+	else
+	begin
+		counter5 <= counter5 + 1;
+	end	
 end
 
 		
