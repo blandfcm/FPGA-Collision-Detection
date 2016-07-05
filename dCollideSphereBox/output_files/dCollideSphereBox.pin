@@ -1,0 +1,851 @@
+ -- Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, the Altera Quartus II License Agreement,
+ -- the Altera MegaCore Function License Agreement, or other 
+ -- applicable license agreement, including, without limitation, 
+ -- that your use is for the sole purpose of programming logic 
+ -- devices manufactured by Altera and sold by Altera or its 
+ -- authorized distributors.  Please refer to the applicable 
+ -- agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 1:		2.5V
+ --					Bank 2:		2.5V
+ --					Bank 3:		2.5V
+ --					Bank 4:		2.5V
+ --					Bank 5:		2.5V
+ --					Bank 6:		2.5V
+ --					Bank 7:		2.5V
+ --					Bank 8:		2.5V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --           	    or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
+CHIP  "dCollideSphereBox"  ASSIGNED TO AN: EP4CE115F29C7
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+VCCIO8                       : A2        : power  :                   : 2.5V    : 8         :                
+r4[16]                       : A3        : bidir  : 2.5 V             :         : 8         : N              
+r4[7]                        : A4        : bidir  : 2.5 V             :         : 8         : N              
+VCCIO8                       : A5        : power  :                   : 2.5V    : 8         :                
+r2[26]                       : A6        : bidir  : 2.5 V             :         : 8         : N              
+r2[20]                       : A7        : bidir  : 2.5 V             :         : 8         : N              
+r5[1]                        : A8        : bidir  : 2.5 V             :         : 8         : N              
+VCCIO8                       : A9        : power  :                   : 2.5V    : 8         :                
+r4[23]                       : A10       : bidir  : 2.5 V             :         : 8         : N              
+r4[11]                       : A11       : bidir  : 2.5 V             :         : 8         : N              
+r4[2]                        : A12       : bidir  : 2.5 V             :         : 8         : N              
+VCCIO8                       : A13       : power  :                   : 2.5V    : 8         :                
+GND+                         : A14       :        :                   :         : 8         :                
+GND+                         : A15       :        :                   :         : 7         :                
+VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
+r1[15]                       : A17       : bidir  : 2.5 V             :         : 7         : N              
+r1[23]                       : A18       : bidir  : 2.5 V             :         : 7         : N              
+r1[17]                       : A19       : bidir  : 2.5 V             :         : 7         : N              
+VCCIO7                       : A20       : power  :                   : 2.5V    : 7         :                
+r0[7]                        : A21       : bidir  : 2.5 V             :         : 7         : N              
+r0[1]                        : A22       : bidir  : 2.5 V             :         : 7         : N              
+r1[1]                        : A23       : bidir  : 2.5 V             :         : 7         : N              
+VCCIO7                       : A24       : power  :                   : 2.5V    : 7         :                
+r0[15]                       : A25       : bidir  : 2.5 V             :         : 7         : N              
+r0[12]                       : A26       : bidir  : 2.5 V             :         : 7         : N              
+VCCIO7                       : A27       : power  :                   : 2.5V    : 7         :                
+VCCIO2                       : AA1       : power  :                   : 2.5V    : 2         :                
+GND                          : AA2       : gnd    :                   :         :           :                
+x1[17]                       : AA3       : input  : 2.5 V             :         : 2         : N              
+x1[16]                       : AA4       : input  : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA5       :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA6       :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA7       :        :                   :         : 2         :                
+r10[15]                      : AA8       : input  : 2.5 V             :         : 3         : N              
+GNDA1                        : AA9       : gnd    :                   :         :           :                
+r10[16]                      : AA10      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AA11      : power  :                   : 2.5V    : 3         :                
+r9[16]                       : AA12      : input  : 2.5 V             :         : 3         : N              
+r9[18]                       : AA13      : input  : 2.5 V             :         : 3         : N              
+r9[19]                       : AA14      : input  : 2.5 V             :         : 3         : N              
+x2[7]                        : AA15      : input  : 2.5 V             :         : 4         : N              
+z2[11]                       : AA16      : input  : 2.5 V             :         : 4         : N              
+y2[8]                        : AA17      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AA18      : power  :                   : 2.5V    : 4         :                
+x2[30]                       : AA19      : input  : 2.5 V             :         : 4         : N              
+GNDA4                        : AA20      : gnd    :                   :         :           :                
+x2[4]                        : AA21      : input  : 2.5 V             :         : 4         : N              
+x2[13]                       : AA22      : input  : 2.5 V             :         : 5         : N              
+x2[17]                       : AA23      : input  : 2.5 V             :         : 5         : N              
+y1[10]                       : AA24      : input  : 2.5 V             :         : 5         : N              
+z1[0]                        : AA25      : input  : 2.5 V             :         : 5         : N              
+z1[30]                       : AA26      : input  : 2.5 V             :         : 5         : N              
+GND                          : AA27      : gnd    :                   :         :           :                
+VCCIO5                       : AA28      : power  :                   : 2.5V    : 5         :                
+x1[2]                        : AB1       : input  : 2.5 V             :         : 2         : N              
+x1[1]                        : AB2       : input  : 2.5 V             :         : 2         : N              
+x1[15]                       : AB3       : input  : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB4       :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB5       :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB6       :        :                   :         : 2         :                
+r10[13]                      : AB7       : input  : 2.5 V             :         : 3         : N              
+r10[9]                       : AB8       : input  : 2.5 V             :         : 3         : N              
+r10[8]                       : AB9       : input  : 2.5 V             :         : 3         : N              
+r9[2]                        : AB10      : input  : 2.5 V             :         : 3         : N              
+z2[30]                       : AB11      : input  : 2.5 V             :         : 3         : N              
+r9[9]                        : AB12      : input  : 2.5 V             :         : 3         : N              
+z2[0]                        : AB13      : input  : 2.5 V             :         : 3         : N              
+r9[20]                       : AB14      : input  : 2.5 V             :         : 3         : N              
+z2[13]                       : AB15      : input  : 2.5 V             :         : 4         : N              
+z2[12]                       : AB16      : input  : 2.5 V             :         : 4         : N              
+y2[9]                        : AB17      : input  : 2.5 V             :         : 4         : N              
+y2[21]                       : AB18      : input  : 2.5 V             :         : 4         : N              
+y2[20]                       : AB19      : input  : 2.5 V             :         : 4         : N              
+x2[9]                        : AB20      : input  : 2.5 V             :         : 4         : N              
+x2[1]                        : AB21      : input  : 2.5 V             :         : 4         : N              
+x2[0]                        : AB22      : input  : 2.5 V             :         : 4         : N              
+x2[14]                       : AB23      : input  : 2.5 V             :         : 5         : N              
+x2[12]                       : AB24      : input  : 2.5 V             :         : 5         : N              
+z1[29]                       : AB25      : input  : 2.5 V             :         : 5         : N              
+z1[28]                       : AB26      : input  : 2.5 V             :         : 5         : N              
+z1[2]                        : AB27      : input  : 2.5 V             :         : 5         : N              
+z1[1]                        : AB28      : input  : 2.5 V             :         : 5         : N              
+x1[10]                       : AC1       : input  : 2.5 V             :         : 2         : N              
+x1[9]                        : AC2       : input  : 2.5 V             :         : 2         : N              
+x1[11]                       : AC3       : input  : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC4       :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC5       :        :                   :         : 2         :                
+GND                          : AC6       : gnd    :                   :         :           :                
+r10[5]                       : AC7       : input  : 2.5 V             :         : 3         : N              
+r10[14]                      : AC8       : input  : 2.5 V             :         : 3         : N              
+GND                          : AC9       : gnd    :                   :         :           :                
+r9[3]                        : AC10      : input  : 2.5 V             :         : 3         : N              
+r9[13]                       : AC11      : input  : 2.5 V             :         : 3         : N              
+r9[8]                        : AC12      : input  : 2.5 V             :         : 3         : N              
+GND                          : AC13      : gnd    :                   :         :           :                
+z2[23]                       : AC14      : input  : 2.5 V             :         : 3         : N              
+z2[3]                        : AC15      : input  : 2.5 V             :         : 4         : N              
+GND                          : AC16      : gnd    :                   :         :           :                
+z2[20]                       : AC17      : input  : 2.5 V             :         : 4         : N              
+x2[8]                        : AC18      : input  : 2.5 V             :         : 4         : N              
+y2[14]                       : AC19      : input  : 2.5 V             :         : 4         : N              
+GND                          : AC20      : gnd    :                   :         :           :                
+x2[24]                       : AC21      : input  : 2.5 V             :         : 4         : N              
+x2[2]                        : AC22      : input  : 2.5 V             :         : 4         : N              
+GND                          : AC23      : gnd    :                   :         :           :                
+x2[11]                       : AC24      : input  : 2.5 V             :         : 5         : N              
+x2[10]                       : AC25      : input  : 2.5 V             :         : 5         : N              
+x2[19]                       : AC26      : input  : 2.5 V             :         : 5         : N              
+z1[27]                       : AC27      : input  : 2.5 V             :         : 5         : N              
+z1[26]                       : AC28      : input  : 2.5 V             :         : 5         : N              
+x1[14]                       : AD1       : input  : 2.5 V             :         : 2         : N              
+x1[13]                       : AD2       : input  : 2.5 V             :         : 2         : N              
+x1[12]                       : AD3       : input  : 2.5 V             :         : 2         : N              
+r10[23]                      : AD4       : input  : 2.5 V             :         : 3         : N              
+rst                          : AD5       : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD6       : power  :                   : 2.5V    : 3         :                
+r10[27]                      : AD7       : input  : 2.5 V             :         : 3         : N              
+r10[4]                       : AD8       : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD9       : power  :                   : 2.5V    : 3         :                
+r10[10]                      : AD10      : input  : 2.5 V             :         : 3         : N              
+r9[14]                       : AD11      : input  : 2.5 V             :         : 3         : N              
+r9[10]                       : AD12      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
+z2[24]                       : AD14      : input  : 2.5 V             :         : 3         : N              
+z2[4]                        : AD15      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AD16      : power  :                   : 2.5V    : 4         :                
+z2[21]                       : AD17      : input  : 2.5 V             :         : 4         : N              
+y2[5]                        : AD18      : input  : 2.5 V             :         : 4         : N              
+y2[15]                       : AD19      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
+x2[25]                       : AD21      : input  : 2.5 V             :         : 4         : N              
+x2[3]                        : AD22      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AD23      : power  :                   : 2.5V    : 4         :                
+x2[26]                       : AD24      : input  : 2.5 V             :         : 4         : N              
+y2[22]                       : AD25      : input  : 2.5 V             :         : 4         : N              
+x2[18]                       : AD26      : input  : 2.5 V             :         : 5         : N              
+z1[23]                       : AD27      : input  : 2.5 V             :         : 5         : N              
+x2[22]                       : AD28      : input  : 2.5 V             :         : 5         : N              
+x1[21]                       : AE1       : input  : 2.5 V             :         : 2         : N              
+x1[20]                       : AE2       : input  : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE3       :        :                   :         : 2         :                
+r10[25]                      : AE4       : input  : 2.5 V             :         : 3         : N              
+r10[28]                      : AE5       : input  : 2.5 V             :         : 3         : N              
+clk                          : AE6       : input  : 2.5 V             :         : 3         : N              
+r10[19]                      : AE7       : input  : 2.5 V             :         : 3         : N              
+r10[22]                      : AE8       : input  : 2.5 V             :         : 3         : N              
+r9[24]                       : AE9       : input  : 2.5 V             :         : 3         : N              
+r9[25]                       : AE10      : input  : 2.5 V             :         : 3         : N              
+r9[0]                        : AE11      : input  : 2.5 V             :         : 3         : N              
+r9[29]                       : AE12      : input  : 2.5 V             :         : 3         : N              
+r9[6]                        : AE13      : input  : 2.5 V             :         : 3         : N              
+r9[11]                       : AE14      : input  : 2.5 V             :         : 3         : N              
+z2[5]                        : AE15      : input  : 2.5 V             :         : 4         : N              
+z2[9]                        : AE16      : input  : 2.5 V             :         : 4         : N              
+z2[14]                       : AE17      : input  : 2.5 V             :         : 4         : N              
+y2[24]                       : AE18      : input  : 2.5 V             :         : 4         : N              
+y2[30]                       : AE19      : input  : 2.5 V             :         : 4         : N              
+y2[3]                        : AE20      : input  : 2.5 V             :         : 4         : N              
+y2[6]                        : AE21      : input  : 2.5 V             :         : 4         : N              
+y2[18]                       : AE22      : input  : 2.5 V             :         : 4         : N              
+x2[27]                       : AE23      : input  : 2.5 V             :         : 4         : N              
+x2[23]                       : AE24      : input  : 2.5 V             :         : 4         : N              
+y2[10]                       : AE25      : input  : 2.5 V             :         : 4         : N              
+x2[16]                       : AE26      : input  : 2.5 V             :         : 5         : N              
+x2[21]                       : AE27      : input  : 2.5 V             :         : 5         : N              
+x2[20]                       : AE28      : input  : 2.5 V             :         : 5         : N              
+GND                          : AF1       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF2       :        :                   :         : 2         :                
+r10[0]                       : AF3       : input  : 2.5 V             :         : 3         : N              
+r10[24]                      : AF4       : input  : 2.5 V             :         : 3         : N              
+r10[29]                      : AF5       : input  : 2.5 V             :         : 3         : N              
+r10[1]                       : AF6       : input  : 2.5 V             :         : 3         : N              
+r10[20]                      : AF7       : input  : 2.5 V             :         : 3         : N              
+r9[23]                       : AF8       : input  : 2.5 V             :         : 3         : N              
+r10[21]                      : AF9       : input  : 2.5 V             :         : 3         : N              
+r9[26]                       : AF10      : input  : 2.5 V             :         : 3         : N              
+r9[1]                        : AF11      : input  : 2.5 V             :         : 3         : N              
+r9[30]                       : AF12      : input  : 2.5 V             :         : 3         : N              
+r9[7]                        : AF13      : input  : 2.5 V             :         : 3         : N              
+r9[12]                       : AF14      : input  : 2.5 V             :         : 3         : N              
+z2[6]                        : AF15      : input  : 2.5 V             :         : 4         : N              
+z2[10]                       : AF16      : input  : 2.5 V             :         : 4         : N              
+z2[15]                       : AF17      : input  : 2.5 V             :         : 4         : N              
+y2[25]                       : AF18      : input  : 2.5 V             :         : 4         : N              
+y2[0]                        : AF19      : input  : 2.5 V             :         : 4         : N              
+y2[4]                        : AF20      : input  : 2.5 V             :         : 4         : N              
+y2[7]                        : AF21      : input  : 2.5 V             :         : 4         : N              
+y2[19]                       : AF22      : input  : 2.5 V             :         : 4         : N              
+x2[28]                       : AF23      : input  : 2.5 V             :         : 4         : N              
+y2[1]                        : AF24      : input  : 2.5 V             :         : 4         : N              
+y2[2]                        : AF25      : input  : 2.5 V             :         : 4         : N              
+y2[11]                       : AF26      : input  : 2.5 V             :         : 4         : N              
+x2[15]                       : AF27      : input  : 2.5 V             :         : 5         : N              
+GND                          : AF28      : gnd    :                   :         :           :                
+VCCIO2                       : AG1       : power  :                   : 2.5V    : 2         :                
+GND                          : AG2       : gnd    :                   :         :           :                
+r10[26]                      : AG3       : input  : 2.5 V             :         : 3         : N              
+r10[2]                       : AG4       : input  : 2.5 V             :         : 3         : N              
+GND                          : AG5       : gnd    :                   :         :           :                
+r10[6]                       : AG6       : input  : 2.5 V             :         : 3         : N              
+r10[11]                      : AG7       : input  : 2.5 V             :         : 3         : N              
+r10[17]                      : AG8       : input  : 2.5 V             :         : 3         : N              
+GND                          : AG9       : gnd    :                   :         :           :                
+r9[27]                       : AG10      : input  : 2.5 V             :         : 3         : N              
+r9[4]                        : AG11      : input  : 2.5 V             :         : 3         : N              
+r9[21]                       : AG12      : input  : 2.5 V             :         : 3         : N              
+GND                          : AG13      : gnd    :                   :         :           :                
+z2[27]                       : AG14      : input  : 2.5 V             :         : 3         : N              
+z2[1]                        : AG15      : input  : 2.5 V             :         : 4         : N              
+GND                          : AG16      : gnd    :                   :         :           :                
+z2[7]                        : AG17      : input  : 2.5 V             :         : 4         : N              
+z2[16]                       : AG18      : input  : 2.5 V             :         : 4         : N              
+z2[18]                       : AG19      : input  : 2.5 V             :         : 4         : N              
+GND                          : AG20      : gnd    :                   :         :           :                
+z2[22]                       : AG21      : input  : 2.5 V             :         : 4         : N              
+y2[26]                       : AG22      : input  : 2.5 V             :         : 4         : N              
+y2[28]                       : AG23      : input  : 2.5 V             :         : 4         : N              
+GND                          : AG24      : gnd    :                   :         :           :                
+y2[12]                       : AG25      : input  : 2.5 V             :         : 4         : N              
+x2[5]                        : AG26      : input  : 2.5 V             :         : 4         : N              
+GND                          : AG27      : gnd    :                   :         :           :                
+VCCIO5                       : AG28      : power  :                   : 2.5V    : 5         :                
+VCCIO3                       : AH2       : power  :                   : 2.5V    : 3         :                
+r10[30]                      : AH3       : input  : 2.5 V             :         : 3         : N              
+r10[3]                       : AH4       : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AH5       : power  :                   : 2.5V    : 3         :                
+r10[7]                       : AH6       : input  : 2.5 V             :         : 3         : N              
+r10[12]                      : AH7       : input  : 2.5 V             :         : 3         : N              
+r10[18]                      : AH8       : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AH9       : power  :                   : 2.5V    : 3         :                
+r9[28]                       : AH10      : input  : 2.5 V             :         : 3         : N              
+r9[5]                        : AH11      : input  : 2.5 V             :         : 3         : N              
+r9[22]                       : AH12      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AH13      : power  :                   : 2.5V    : 3         :                
+z2[28]                       : AH14      : input  : 2.5 V             :         : 3         : N              
+z2[2]                        : AH15      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH16      : power  :                   : 2.5V    : 4         :                
+z2[8]                        : AH17      : input  : 2.5 V             :         : 4         : N              
+z2[17]                       : AH18      : input  : 2.5 V             :         : 4         : N              
+z2[19]                       : AH19      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH20      : power  :                   : 2.5V    : 4         :                
+y2[23]                       : AH21      : input  : 2.5 V             :         : 4         : N              
+y2[27]                       : AH22      : input  : 2.5 V             :         : 4         : N              
+y2[29]                       : AH23      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH24      : power  :                   : 2.5V    : 4         :                
+y2[13]                       : AH25      : input  : 2.5 V             :         : 4         : N              
+x2[6]                        : AH26      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH27      : power  :                   : 2.5V    : 4         :                
+VCCIO1                       : B1        : power  :                   : 2.5V    : 1         :                
+GND                          : B2        : gnd    :                   :         :           :                
+r4[13]                       : B3        : bidir  : 2.5 V             :         : 8         : N              
+r4[10]                       : B4        : bidir  : 2.5 V             :         : 8         : N              
+GND                          : B5        : gnd    :                   :         :           :                
+r2[29]                       : B6        : bidir  : 2.5 V             :         : 8         : N              
+r2[23]                       : B7        : bidir  : 2.5 V             :         : 8         : N              
+r5[4]                        : B8        : bidir  : 2.5 V             :         : 8         : N              
+GND                          : B9        : gnd    :                   :         :           :                
+r4[26]                       : B10       : bidir  : 2.5 V             :         : 8         : N              
+r4[14]                       : B11       : bidir  : 2.5 V             :         : 8         : N              
+GND                          : B12       : gnd    :                   :         :           :                
+GND                          : B13       : gnd    :                   :         :           :                
+GND+                         : B14       :        :                   :         : 8         :                
+GND+                         : B15       :        :                   :         : 7         :                
+GND                          : B16       : gnd    :                   :         :           :                
+r1[18]                       : B17       : bidir  : 2.5 V             :         : 7         : N              
+r1[26]                       : B18       : bidir  : 2.5 V             :         : 7         : N              
+r1[20]                       : B19       : bidir  : 2.5 V             :         : 7         : N              
+GND                          : B20       : gnd    :                   :         :           :                
+r0[10]                       : B21       : bidir  : 2.5 V             :         : 7         : N              
+r0[4]                        : B22       : bidir  : 2.5 V             :         : 7         : N              
+r1[4]                        : B23       : bidir  : 2.5 V             :         : 7         : N              
+GND                          : B24       : gnd    :                   :         :           :                
+r0[18]                       : B25       : bidir  : 2.5 V             :         : 7         : N              
+r0[3]                        : B26       : bidir  : 2.5 V             :         : 7         : N              
+GND                          : B27       : gnd    :                   :         :           :                
+VCCIO6                       : B28       : power  :                   : 2.5V    : 6         :                
+GND                          : C1        : gnd    :                   :         :           :                
+r8[2]                        : C2        : bidir  : 2.5 V             :         : 1         : N              
+r5[7]                        : C3        : bidir  : 2.5 V             :         : 8         : N              
+r4[28]                       : C4        : bidir  : 2.5 V             :         : 8         : N              
+r4[25]                       : C5        : bidir  : 2.5 V             :         : 8         : N              
+r4[19]                       : C6        : bidir  : 2.5 V             :         : 8         : N              
+r2[9]                        : C7        : bidir  : 2.5 V             :         : 8         : N              
+r5[6]                        : C8        : bidir  : 2.5 V             :         : 8         : N              
+r4[12]                       : C9        : bidir  : 2.5 V             :         : 8         : N              
+r5[3]                        : C10       : bidir  : 2.5 V             :         : 8         : N              
+r4[6]                        : C11       : bidir  : 2.5 V             :         : 8         : N              
+r2[22]                       : C12       : bidir  : 2.5 V             :         : 8         : N              
+r2[10]                       : C13       : bidir  : 2.5 V             :         : 8         : N              
+r2[16]                       : C14       : bidir  : 2.5 V             :         : 8         : N              
+r2[1]                        : C15       : bidir  : 2.5 V             :         : 7         : N              
+r1[9]                        : C16       : bidir  : 2.5 V             :         : 7         : N              
+r1[11]                       : C17       : bidir  : 2.5 V             :         : 7         : N              
+r0[19]                       : C18       : bidir  : 2.5 V             :         : 7         : N              
+r1[5]                        : C19       : bidir  : 2.5 V             :         : 7         : N              
+r0[25]                       : C20       : bidir  : 2.5 V             :         : 7         : N              
+r1[31]                       : C21       : bidir  : 2.5 V             :         : 7         : N              
+r1[19]                       : C22       : bidir  : 2.5 V             :         : 7         : N              
+r1[10]                       : C23       : bidir  : 2.5 V             :         : 7         : N              
+r1[13]                       : C24       : bidir  : 2.5 V             :         : 7         : N              
+r0[30]                       : C25       : bidir  : 2.5 V             :         : 7         : N              
+r0[0]                        : C26       : bidir  : 2.5 V             :         : 7         : N              
+r5[17]                       : C27       : bidir  : 2.5 V             :         : 6         : N              
+GND                          : C28       : gnd    :                   :         :           :                
+r8[8]                        : D1        : bidir  : 2.5 V             :         : 1         : N              
+r8[5]                        : D2        : bidir  : 2.5 V             :         : 1         : N              
+GND                          : D3        : gnd    :                   :         :           :                
+r4[31]                       : D4        : bidir  : 2.5 V             :         : 8         : N              
+r4[22]                       : D5        : bidir  : 2.5 V             :         : 8         : N              
+r2[18]                       : D6        : bidir  : 2.5 V             :         : 8         : N              
+r2[12]                       : D7        : bidir  : 2.5 V             :         : 8         : N              
+r2[7]                        : D8        : bidir  : 2.5 V             :         : 8         : N              
+r4[15]                       : D9        : bidir  : 2.5 V             :         : 8         : N              
+r2[6]                        : D10       : bidir  : 2.5 V             :         : 8         : N              
+r4[9]                        : D11       : bidir  : 2.5 V             :         : 8         : N              
+r2[25]                       : D12       : bidir  : 2.5 V             :         : 8         : N              
+r2[13]                       : D13       : bidir  : 2.5 V             :         : 8         : N              
+r2[19]                       : D14       : bidir  : 2.5 V             :         : 8         : N              
+r2[2]                        : D15       : bidir  : 2.5 V             :         : 7         : N              
+r1[12]                       : D16       : bidir  : 2.5 V             :         : 7         : N              
+r1[14]                       : D17       : bidir  : 2.5 V             :         : 7         : N              
+r0[22]                       : D18       : bidir  : 2.5 V             :         : 7         : N              
+r1[8]                        : D19       : bidir  : 2.5 V             :         : 7         : N              
+r0[28]                       : D20       : bidir  : 2.5 V             :         : 7         : N              
+r1[22]                       : D21       : bidir  : 2.5 V             :         : 7         : N              
+r0[6]                        : D22       : bidir  : 2.5 V             :         : 7         : N              
+r1[7]                        : D23       : bidir  : 2.5 V             :         : 7         : N              
+r1[16]                       : D24       : bidir  : 2.5 V             :         : 7         : N              
+r0[27]                       : D25       : bidir  : 2.5 V             :         : 7         : N              
+r5[20]                       : D26       : bidir  : 2.5 V             :         : 6         : N              
+r5[14]                       : D27       : bidir  : 2.5 V             :         : 6         : N              
+r5[12]                       : D28       : bidir  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E1        :        :                   :         : 1         :                
+~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E2        : input  : 2.5 V             :         : 1         : N              
+r8[17]                       : E3        : bidir  : 2.5 V             :         : 1         : N              
+r5[2]                        : E4        : bidir  : 2.5 V             :         : 8         : N              
+r5[5]                        : E5        : bidir  : 2.5 V             :         : 8         : N              
+VCCIO8                       : E6        : power  :                   : 2.5V    : 8         :                
+r2[15]                       : E7        : bidir  : 2.5 V             :         : 8         : N              
+r2[21]                       : E8        : bidir  : 2.5 V             :         : 8         : N              
+VCCIO8                       : E9        : power  :                   : 2.5V    : 8         :                
+r4[30]                       : E10       : bidir  : 2.5 V             :         : 8         : N              
+r2[14]                       : E11       : bidir  : 2.5 V             :         : 8         : N              
+r2[8]                        : E12       : bidir  : 2.5 V             :         : 8         : N              
+VCCIO8                       : E13       : power  :                   : 2.5V    : 8         :                
+r4[8]                        : E14       : bidir  : 2.5 V             :         : 8         : N              
+r1[30]                       : E15       : bidir  : 2.5 V             :         : 7         : N              
+VCCIO7                       : E16       : power  :                   : 2.5V    : 7         :                
+r1[0]                        : E17       : bidir  : 2.5 V             :         : 7         : N              
+r0[13]                       : E18       : bidir  : 2.5 V             :         : 7         : N              
+r1[28]                       : E19       : bidir  : 2.5 V             :         : 7         : N              
+VCCIO7                       : E20       : power  :                   : 2.5V    : 7         :                
+r0[21]                       : E21       : bidir  : 2.5 V             :         : 7         : N              
+r0[9]                        : E22       : bidir  : 2.5 V             :         : 7         : N              
+VCCIO7                       : E23       : power  :                   : 2.5V    : 7         :                
+r0[31]                       : E24       : bidir  : 2.5 V             :         : 7         : N              
+r1[2]                        : E25       : bidir  : 2.5 V             :         : 7         : N              
+r6[27]                       : E26       : bidir  : 2.5 V             :         : 6         : N              
+r6[20]                       : E27       : bidir  : 2.5 V             :         : 6         : N              
+r6[17]                       : E28       : bidir  : 2.5 V             :         : 6         : N              
+r8[6]                        : F1        : bidir  : 2.5 V             :         : 1         : N              
+r8[3]                        : F2        : bidir  : 2.5 V             :         : 1         : N              
+r8[20]                       : F3        : bidir  : 2.5 V             :         : 1         : N              
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : F4        : input  : 2.5 V             :         : 1         : N              
+r8[23]                       : F5        : bidir  : 2.5 V             :         : 1         : N              
+GND                          : F6        : gnd    :                   :         :           :                
+r4[4]                        : F7        : bidir  : 2.5 V             :         : 8         : N              
+r2[24]                       : F8        : bidir  : 2.5 V             :         : 8         : N              
+GND                          : F9        : gnd    :                   :         :           :                
+r4[18]                       : F10       : bidir  : 2.5 V             :         : 8         : N              
+r2[17]                       : F11       : bidir  : 2.5 V             :         : 8         : N              
+r2[11]                       : F12       : bidir  : 2.5 V             :         : 8         : N              
+GND                          : F13       : gnd    :                   :         :           :                
+r4[5]                        : F14       : bidir  : 2.5 V             :         : 8         : N              
+r1[27]                       : F15       : bidir  : 2.5 V             :         : 7         : N              
+GND                          : F16       : gnd    :                   :         :           :                
+r0[29]                       : F17       : bidir  : 2.5 V             :         : 7         : N              
+r0[16]                       : F18       : bidir  : 2.5 V             :         : 7         : N              
+r1[25]                       : F19       : bidir  : 2.5 V             :         : 7         : N              
+GND                          : F20       : gnd    :                   :         :           :                
+r0[24]                       : F21       : bidir  : 2.5 V             :         : 7         : N              
+r2[3]                        : F22       : bidir  : 2.5 V             :         : 7         : N              
+GND                          : F23       : gnd    :                   :         :           :                
+r6[24]                       : F24       : bidir  : 2.5 V             :         : 6         : N              
+r6[21]                       : F25       : bidir  : 2.5 V             :         : 6         : N              
+r6[29]                       : F26       : bidir  : 2.5 V             :         : 6         : N              
+r6[14]                       : F27       : bidir  : 2.5 V             :         : 6         : N              
+r6[11]                       : F28       : bidir  : 2.5 V             :         : 6         : N              
+r8[21]                       : G1        : bidir  : 2.5 V             :         : 1         : N              
+r8[18]                       : G2        : bidir  : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G3        :        :                   :         : 1         :                
+r8[29]                       : G4        : bidir  : 2.5 V             :         : 1         : N              
+r8[14]                       : G5        : bidir  : 2.5 V             :         : 1         : N              
+r8[11]                       : G6        : bidir  : 2.5 V             :         : 1         : N              
+r4[1]                        : G7        : bidir  : 2.5 V             :         : 8         : N              
+r2[27]                       : G8        : bidir  : 2.5 V             :         : 8         : N              
+r5[10]                       : G9        : bidir  : 2.5 V             :         : 8         : N              
+r4[21]                       : G10       : bidir  : 2.5 V             :         : 8         : N              
+r4[0]                        : G11       : bidir  : 2.5 V             :         : 8         : N              
+r5[9]                        : G12       : bidir  : 2.5 V             :         : 8         : N              
+r4[29]                       : G13       : bidir  : 2.5 V             :         : 8         : N              
+r5[8]                        : G14       : bidir  : 2.5 V             :         : 8         : N              
+r2[5]                        : G15       : bidir  : 2.5 V             :         : 7         : N              
+r0[23]                       : G16       : bidir  : 2.5 V             :         : 7         : N              
+r2[4]                        : G17       : bidir  : 2.5 V             :         : 7         : N              
+r0[20]                       : G18       : bidir  : 2.5 V             :         : 7         : N              
+r0[17]                       : G19       : bidir  : 2.5 V             :         : 7         : N              
+r1[29]                       : G20       : bidir  : 2.5 V             :         : 7         : N              
+r2[0]                        : G21       : bidir  : 2.5 V             :         : 7         : N              
+r0[11]                       : G22       : bidir  : 2.5 V             :         : 7         : N              
+r6[28]                       : G23       : bidir  : 2.5 V             :         : 6         : N              
+r6[26]                       : G24       : bidir  : 2.5 V             :         : 6         : N              
+r6[18]                       : G25       : bidir  : 2.5 V             :         : 6         : N              
+r6[15]                       : G26       : bidir  : 2.5 V             :         : 6         : N              
+r5[31]                       : G27       : bidir  : 2.5 V             :         : 6         : N              
+r5[28]                       : G28       : bidir  : 2.5 V             :         : 6         : N              
+VCCIO1                       : H1        : power  :                   : 2.5V    : 1         :                
+GND                          : H2        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H3        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H4        :        :                   :         : 1         :                
+r8[9]                        : H5        : bidir  : 2.5 V             :         : 1         : N              
+r8[26]                       : H6        : bidir  : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H7        :        :                   :         : 1         :                
+r2[30]                       : H8        : bidir  : 2.5 V             :         : 8         : N              
+GNDA3                        : H9        : gnd    :                   :         :           :                
+r4[24]                       : H10       : bidir  : 2.5 V             :         : 8         : N              
+VCCIO8                       : H11       : power  :                   : 2.5V    : 8         :                
+r4[3]                        : H12       : bidir  : 2.5 V             :         : 8         : N              
+r5[0]                        : H13       : bidir  : 2.5 V             :         : 8         : N              
+r2[28]                       : H14       : bidir  : 2.5 V             :         : 8         : N              
+r1[21]                       : H15       : bidir  : 2.5 V             :         : 7         : N              
+r1[6]                        : H16       : bidir  : 2.5 V             :         : 7         : N              
+r0[26]                       : H17       : bidir  : 2.5 V             :         : 7         : N              
+VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
+r0[2]                        : H19       : bidir  : 2.5 V             :         : 7         : N              
+GNDA2                        : H20       : gnd    :                   :         :           :                
+r0[8]                        : H21       : bidir  : 2.5 V             :         : 7         : N              
+r6[30]                       : H22       : bidir  : 2.5 V             :         : 6         : N              
+r6[12]                       : H23       : bidir  : 2.5 V             :         : 6         : N              
+r6[9]                        : H24       : bidir  : 2.5 V             :         : 6         : N              
+r6[25]                       : H25       : bidir  : 2.5 V             :         : 6         : N              
+r6[23]                       : H26       : bidir  : 2.5 V             :         : 6         : N              
+GND                          : H27       : gnd    :                   :         :           :                
+VCCIO6                       : H28       : power  :                   : 2.5V    : 6         :                
+GND+                         : J1        :        :                   :         : 1         :                
+GND                          : J2        : gnd    :                   :         :           :                
+r8[15]                       : J3        : bidir  : 2.5 V             :         : 1         : N              
+r8[12]                       : J4        : bidir  : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J5        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J6        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J7        :        :                   :         : 1         :                
+VCCA3                        : J8        : power  :                   : 2.5V    :           :                
+VCCD_PLL3                    : J9        : power  :                   : 1.2V    :           :                
+r4[27]                       : J10       : bidir  : 2.5 V             :         : 8         : N              
+GND                          : J11       : gnd    :                   :         :           :                
+r4[20]                       : J12       : bidir  : 2.5 V             :         : 8         : N              
+r4[17]                       : J13       : bidir  : 2.5 V             :         : 8         : N              
+r2[31]                       : J14       : bidir  : 2.5 V             :         : 8         : N              
+r1[24]                       : J15       : bidir  : 2.5 V             :         : 7         : N              
+r1[3]                        : J16       : bidir  : 2.5 V             :         : 7         : N              
+r0[14]                       : J17       : bidir  : 2.5 V             :         : 7         : N              
+GND                          : J18       : gnd    :                   :         :           :                
+r0[5]                        : J19       : bidir  : 2.5 V             :         : 7         : N              
+VCCD_PLL2                    : J20       : power  :                   : 1.2V    :           :                
+VCCA2                        : J21       : power  :                   : 2.5V    :           :                
+r8[1]                        : J22       : bidir  : 2.5 V             :         : 6         : N              
+r6[0]                        : J23       : bidir  : 2.5 V             :         : 6         : N              
+r5[29]                       : J24       : bidir  : 2.5 V             :         : 6         : N              
+r5[25]                       : J25       : bidir  : 2.5 V             :         : 6         : N              
+r5[22]                       : J26       : bidir  : 2.5 V             :         : 6         : N              
+GND+                         : J27       :        :                   :         : 6         :                
+GND+                         : J28       :        :                   :         : 6         :                
+r8[27]                       : K1        : bidir  : 2.5 V             :         : 1         : N              
+r8[24]                       : K2        : bidir  : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K3        :        :                   :         : 1         :                
+r8[30]                       : K4        : bidir  : 2.5 V             :         : 1         : N              
+VCCIO1                       : K5        : power  :                   : 2.5V    : 1         :                
+GND                          : K6        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K7        :        :                   :         : 1         :                
+r8[4]                        : K8        : bidir  : 2.5 V             :         : 1         : N              
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+GND                          : K10       : gnd    :                   :         :           :                
+VCCINT                       : K11       : power  :                   : 1.2V    :           :                
+GND                          : K12       : gnd    :                   :         :           :                
+VCCINT                       : K13       : power  :                   : 1.2V    :           :                
+GND                          : K14       : gnd    :                   :         :           :                
+VCCINT                       : K15       : power  :                   : 1.2V    :           :                
+GND                          : K16       : gnd    :                   :         :           :                
+VCCINT                       : K17       : power  :                   : 1.2V    :           :                
+GND                          : K18       : gnd    :                   :         :           :                
+VCCINT                       : K19       : power  :                   : 1.2V    :           :                
+GND                          : K20       : gnd    :                   :         :           :                
+r6[6]                        : K21       : bidir  : 2.5 V             :         : 6         : N              
+r6[3]                        : K22       : bidir  : 2.5 V             :         : 6         : N              
+GND                          : K23       : gnd    :                   :         :           :                
+VCCIO6                       : K24       : power  :                   : 2.5V    : 6         :                
+r6[8]                        : K25       : bidir  : 2.5 V             :         : 6         : N              
+r6[5]                        : K26       : bidir  : 2.5 V             :         : 6         : N              
+r5[16]                       : K27       : bidir  : 2.5 V             :         : 6         : N              
+r5[13]                       : K28       : bidir  : 2.5 V             :         : 6         : N              
+r8[31]                       : L1        : bidir  : 2.5 V             :         : 1         : N              
+r8[28]                       : L2        : bidir  : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L3        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L4        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L5        :        :                   :         : 1         :                
+r8[13]                       : L6        : bidir  : 2.5 V             :         : 1         : N              
+r8[10]                       : L7        : bidir  : 2.5 V             :         : 1         : N              
+r8[7]                        : L8        : bidir  : 2.5 V             :         : 1         : N              
+GND                          : L9        : gnd    :                   :         :           :                
+VCCINT                       : L10       : power  :                   : 1.2V    :           :                
+GND                          : L11       : gnd    :                   :         :           :                
+VCCINT                       : L12       : power  :                   : 1.2V    :           :                
+GND                          : L13       : gnd    :                   :         :           :                
+VCCINT                       : L14       : power  :                   : 1.2V    :           :                
+GND                          : L15       : gnd    :                   :         :           :                
+VCCINT                       : L16       : power  :                   : 1.2V    :           :                
+GND                          : L17       : gnd    :                   :         :           :                
+VCCINT                       : L18       : power  :                   : 1.2V    :           :                
+GND                          : L19       : gnd    :                   :         :           :                
+VCCINT                       : L20       : power  :                   : 1.2V    :           :                
+r5[26]                       : L21       : bidir  : 2.5 V             :         : 6         : N              
+r5[23]                       : L22       : bidir  : 2.5 V             :         : 6         : N              
+r5[11]                       : L23       : bidir  : 2.5 V             :         : 6         : N              
+r6[22]                       : L24       : bidir  : 2.5 V             :         : 6         : N              
+r6[2]                        : L25       : bidir  : 2.5 V             :         : 6         : N              
+r5[19]                       : L26       : bidir  : 2.5 V             :         : 6         : N              
+r6[19]                       : L27       : bidir  : 2.5 V             :         : 6         : N              
+r6[16]                       : L28       : bidir  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M1        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M2        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M3        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M4        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M5        :        :                   :         : 1         :                
+nSTATUS                      : M6        :        :                   :         : 1         :                
+r8[25]                       : M7        : bidir  : 2.5 V             :         : 1         : N              
+r8[22]                       : M8        : bidir  : 2.5 V             :         : 1         : N              
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+GND                          : M10       : gnd    :                   :         :           :                
+VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GND                          : M12       : gnd    :                   :         :           :                
+VCCINT                       : M13       : power  :                   : 1.2V    :           :                
+GND                          : M14       : gnd    :                   :         :           :                
+VCCINT                       : M15       : power  :                   : 1.2V    :           :                
+GND                          : M16       : gnd    :                   :         :           :                
+VCCINT                       : M17       : power  :                   : 1.2V    :           :                
+GND                          : M18       : gnd    :                   :         :           :                
+VCCINT                       : M19       : power  :                   : 1.2V    :           :                
+GND                          : M20       : gnd    :                   :         :           :                
+r8[0]                        : M21       : bidir  : 2.5 V             :         : 6         : N              
+MSEL2                        : M22       :        :                   :         : 6         :                
+r5[15]                       : M23       : bidir  : 2.5 V             :         : 6         : N              
+r5[24]                       : M24       : bidir  : 2.5 V             :         : 6         : N              
+r6[13]                       : M25       : bidir  : 2.5 V             :         : 6         : N              
+r6[10]                       : M26       : bidir  : 2.5 V             :         : 6         : N              
+r6[7]                        : M27       : bidir  : 2.5 V             :         : 6         : N              
+r6[4]                        : M28       : bidir  : 2.5 V             :         : 6         : N              
+VCCIO1                       : N1        : power  :                   : 2.5V    : 1         :                
+GND                          : N2        : gnd    :                   :         :           :                
+r8[19]                       : N3        : bidir  : 2.5 V             :         : 1         : N              
+r8[16]                       : N4        : bidir  : 2.5 V             :         : 1         : N              
+VCCIO1                       : N5        : power  :                   : 2.5V    : 1         :                
+GND                          : N6        : gnd    :                   :         :           :                
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : N7        : input  : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : N8        :        :                   :         : 1         :                
+GND                          : N9        : gnd    :                   :         :           :                
+VCCINT                       : N10       : power  :                   : 1.2V    :           :                
+GND                          : N11       : gnd    :                   :         :           :                
+VCCINT                       : N12       : power  :                   : 1.2V    :           :                
+GND                          : N13       : gnd    :                   :         :           :                
+VCCINT                       : N14       : power  :                   : 1.2V    :           :                
+GND                          : N15       : gnd    :                   :         :           :                
+VCCINT                       : N16       : power  :                   : 1.2V    :           :                
+GND                          : N17       : gnd    :                   :         :           :                
+VCCINT                       : N18       : power  :                   : 1.2V    :           :                
+GND                          : N19       : gnd    :                   :         :           :                
+VCCINT                       : N20       : power  :                   : 1.2V    :           :                
+r6[31]                       : N21       : bidir  : 2.5 V             :         : 6         : N              
+MSEL0                        : N22       :        :                   :         : 6         :                
+GND                          : N23       : gnd    :                   :         :           :                
+VCCIO6                       : N24       : power  :                   : 2.5V    : 6         :                
+r6[1]                        : N25       : bidir  : 2.5 V             :         : 6         : N              
+r5[30]                       : N26       : bidir  : 2.5 V             :         : 6         : N              
+GND                          : N27       : gnd    :                   :         :           :                
+VCCIO6                       : N28       : power  :                   : 2.5V    : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P1        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P2        :        :                   :         : 1         :                
+~ALTERA_DCLK~                : P3        : output : 2.5 V             :         : 1         : N              
+nCONFIG                      : P4        :        :                   :         : 1         :                
+TCK                          : P5        : input  :                   :         : 1         :                
+TDO                          : P6        : output :                   :         : 1         :                
+TDI                          : P7        : input  :                   :         : 1         :                
+TMS                          : P8        : input  :                   :         : 1         :                
+VCCINT                       : P9        : power  :                   : 1.2V    :           :                
+GND                          : P10       : gnd    :                   :         :           :                
+VCCINT                       : P11       : power  :                   : 1.2V    :           :                
+GND                          : P12       : gnd    :                   :         :           :                
+VCCINT                       : P13       : power  :                   : 1.2V    :           :                
+GND                          : P14       : gnd    :                   :         :           :                
+VCCINT                       : P15       : power  :                   : 1.2V    :           :                
+GND                          : P16       : gnd    :                   :         :           :                
+VCCINT                       : P17       : power  :                   : 1.2V    :           :                
+GND                          : P18       : gnd    :                   :         :           :                
+VCCINT                       : P19       : power  :                   : 1.2V    :           :                
+GND                          : P20       : gnd    :                   :         :           :                
+y1[7]                        : P21       : input  : 2.5 V             :         : 5         : N              
+MSEL3                        : P22       :        :                   :         : 6         :                
+MSEL1                        : P23       :        :                   :         : 6         :                
+CONF_DONE                    : P24       :        :                   :         : 6         :                
+r5[21]                       : P25       : bidir  : 2.5 V             :         : 6         : N              
+r5[18]                       : P26       : bidir  : 2.5 V             :         : 6         : N              
+r5[27]                       : P27       : bidir  : 2.5 V             :         : 6         : N              
+~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : P28       : output : 2.5 V             :         : 6         : N              
+y1[16]                       : R1        : input  : 2.5 V             :         : 2         : N              
+y1[15]                       : R2        : input  : 2.5 V             :         : 2         : N              
+y1[21]                       : R3        : input  : 2.5 V             :         : 2         : N              
+y1[22]                       : R4        : input  : 2.5 V             :         : 2         : N              
+x1[25]                       : R5        : input  : 2.5 V             :         : 2         : N              
+y1[18]                       : R6        : input  : 2.5 V             :         : 2         : N              
+y1[17]                       : R7        : input  : 2.5 V             :         : 2         : N              
+nCE                          : R8        :        :                   :         : 1         :                
+GND                          : R9        : gnd    :                   :         :           :                
+VCCINT                       : R10       : power  :                   : 1.2V    :           :                
+GND                          : R11       : gnd    :                   :         :           :                
+VCCINT                       : R12       : power  :                   : 1.2V    :           :                
+GND                          : R13       : gnd    :                   :         :           :                
+VCCINT                       : R14       : power  :                   : 1.2V    :           :                
+GND                          : R15       : gnd    :                   :         :           :                
+VCCINT                       : R16       : power  :                   : 1.2V    :           :                
+GND                          : R17       : gnd    :                   :         :           :                
+VCCINT                       : R18       : power  :                   : 1.2V    :           :                
+GND                          : R19       : gnd    :                   :         :           :                
+VCCINT                       : R20       : power  :                   : 1.2V    :           :                
+y1[6]                        : R21       : input  : 2.5 V             :         : 5         : N              
+y1[5]                        : R22       : input  : 2.5 V             :         : 5         : N              
+y1[4]                        : R23       : input  : 2.5 V             :         : 5         : N              
+y1[3]                        : R24       : input  : 2.5 V             :         : 5         : N              
+y1[0]                        : R25       : input  : 2.5 V             :         : 5         : N              
+y1[30]                       : R26       : input  : 2.5 V             :         : 5         : N              
+y1[2]                        : R27       : input  : 2.5 V             :         : 5         : N              
+y1[1]                        : R28       : input  : 2.5 V             :         : 5         : N              
+VCCIO2                       : T1        : power  :                   : 2.5V    : 2         :                
+GND                          : T2        : gnd    :                   :         :           :                
+x1[24]                       : T3        : input  : 2.5 V             :         : 2         : N              
+x1[23]                       : T4        : input  : 2.5 V             :         : 2         : N              
+VCCIO2                       : T5        : power  :                   : 2.5V    : 2         :                
+GND                          : T6        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T7        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T8        :        :                   :         : 2         :                
+VCCINT                       : T9        : power  :                   : 1.2V    :           :                
+GND                          : T10       : gnd    :                   :         :           :                
+VCCINT                       : T11       : power  :                   : 1.2V    :           :                
+GND                          : T12       : gnd    :                   :         :           :                
+VCCINT                       : T13       : power  :                   : 1.2V    :           :                
+GND                          : T14       : gnd    :                   :         :           :                
+VCCINT                       : T15       : power  :                   : 1.2V    :           :                
+GND                          : T16       : gnd    :                   :         :           :                
+VCCINT                       : T17       : power  :                   : 1.2V    :           :                
+GND                          : T18       : gnd    :                   :         :           :                
+VCCINT                       : T19       : power  :                   : 1.2V    :           :                
+GND                          : T20       : gnd    :                   :         :           :                
+y1[29]                       : T21       : input  : 2.5 V             :         : 5         : N              
+y1[28]                       : T22       : input  : 2.5 V             :         : 5         : N              
+GND                          : T23       : gnd    :                   :         :           :                
+VCCIO5                       : T24       : power  :                   : 2.5V    : 5         :                
+y1[27]                       : T25       : input  : 2.5 V             :         : 5         : N              
+y1[26]                       : T26       : input  : 2.5 V             :         : 5         : N              
+GND                          : T27       : gnd    :                   :         :           :                
+VCCIO5                       : T28       : power  :                   : 2.5V    : 5         :                
+x1[27]                       : U1        : input  : 2.5 V             :         : 2         : N              
+x1[26]                       : U2        : input  : 2.5 V             :         : 2         : N              
+y1[19]                       : U3        : input  : 2.5 V             :         : 2         : N              
+y1[20]                       : U4        : input  : 2.5 V             :         : 2         : N              
+x1[6]                        : U5        : input  : 2.5 V             :         : 2         : N              
+x1[5]                        : U6        : input  : 2.5 V             :         : 2         : N              
+x1[18]                       : U7        : input  : 2.5 V             :         : 2         : N              
+x1[19]                       : U8        : input  : 2.5 V             :         : 2         : N              
+GND                          : U9        : gnd    :                   :         :           :                
+VCCINT                       : U10       : power  :                   : 1.2V    :           :                
+GND                          : U11       : gnd    :                   :         :           :                
+VCCINT                       : U12       : power  :                   : 1.2V    :           :                
+GND                          : U13       : gnd    :                   :         :           :                
+VCCINT                       : U14       : power  :                   : 1.2V    :           :                
+GND                          : U15       : gnd    :                   :         :           :                
+VCCINT                       : U16       : power  :                   : 1.2V    :           :                
+GND                          : U17       : gnd    :                   :         :           :                
+VCCINT                       : U18       : power  :                   : 1.2V    :           :                
+GND                          : U19       : gnd    :                   :         :           :                
+VCCINT                       : U20       : power  :                   : 1.2V    :           :                
+y1[23]                       : U21       : input  : 2.5 V             :         : 5         : N              
+z1[18]                       : U22       : input  : 2.5 V             :         : 5         : N              
+y1[11]                       : U23       : input  : 2.5 V             :         : 5         : N              
+y1[12]                       : U24       : input  : 2.5 V             :         : 5         : N              
+z1[20]                       : U25       : input  : 2.5 V             :         : 5         : N              
+z1[19]                       : U26       : input  : 2.5 V             :         : 5         : N              
+z1[22]                       : U27       : input  : 2.5 V             :         : 5         : N              
+z1[21]                       : U28       : input  : 2.5 V             :         : 5         : N              
+x1[0]                        : V1        : input  : 2.5 V             :         : 2         : N              
+x1[30]                       : V2        : input  : 2.5 V             :         : 2         : N              
+x1[29]                       : V3        : input  : 2.5 V             :         : 2         : N              
+x1[28]                       : V4        : input  : 2.5 V             :         : 2         : N              
+z2[31]                       : V5        : input  : 2.5 V             :         : 2         : N              
+x1[22]                       : V6        : input  : 2.5 V             :         : 2         : N              
+x2[31]                       : V7        : input  : 2.5 V             :         : 2         : N              
+y2[31]                       : V8        : input  : 2.5 V             :         : 2         : N              
+VCCINT                       : V9        : power  :                   : 1.2V    :           :                
+GND                          : V10       : gnd    :                   :         :           :                
+VCCINT                       : V11       : power  :                   : 1.2V    :           :                
+GND                          : V12       : gnd    :                   :         :           :                
+VCCINT                       : V13       : power  :                   : 1.2V    :           :                
+GND                          : V14       : gnd    :                   :         :           :                
+VCCINT                       : V15       : power  :                   : 1.2V    :           :                
+GND                          : V16       : gnd    :                   :         :           :                
+VCCINT                       : V17       : power  :                   : 1.2V    :           :                
+GND                          : V18       : gnd    :                   :         :           :                
+VCCINT                       : V19       : power  :                   : 1.2V    :           :                
+GND                          : V20       : gnd    :                   :         :           :                
+z1[16]                       : V21       : input  : 2.5 V             :         : 5         : N              
+z1[17]                       : V22       : input  : 2.5 V             :         : 5         : N              
+z1[14]                       : V23       : input  : 2.5 V             :         : 5         : N              
+z1[13]                       : V24       : input  : 2.5 V             :         : 5         : N              
+z1[12]                       : V25       : input  : 2.5 V             :         : 5         : N              
+z1[11]                       : V26       : input  : 2.5 V             :         : 5         : N              
+z1[10]                       : V27       : input  : 2.5 V             :         : 5         : N              
+z1[9]                        : V28       : input  : 2.5 V             :         : 5         : N              
+x1[4]                        : W1        : input  : 2.5 V             :         : 2         : N              
+x1[3]                        : W2        : input  : 2.5 V             :         : 2         : N              
+y1[31]                       : W3        : input  : 2.5 V             :         : 2         : N              
+z1[31]                       : W4        : input  : 2.5 V             :         : 2         : N              
+VCCIO2                       : W5        : power  :                   : 2.5V    : 2         :                
+GND                          : W6        : gnd    :                   :         :           :                
+r9[31]                       : W7        : input  : 2.5 V             :         : 2         : N              
+ret                          : W8        : output : 2.5 V             :         : 2         : N              
+GND                          : W9        : gnd    :                   :         :           :                
+VCCINT                       : W10       : power  :                   : 1.2V    :           :                
+GND                          : W11       : gnd    :                   :         :           :                
+VCCINT                       : W12       : power  :                   : 1.2V    :           :                
+GND                          : W13       : gnd    :                   :         :           :                
+VCCINT                       : W14       : power  :                   : 1.2V    :           :                
+GND                          : W15       : gnd    :                   :         :           :                
+VCCINT                       : W16       : power  :                   : 1.2V    :           :                
+GND                          : W17       : gnd    :                   :         :           :                
+VCCINT                       : W18       : power  :                   : 1.2V    :           :                
+GND                          : W19       : gnd    :                   :         :           :                
+VCCINT                       : W20       : power  :                   : 1.2V    :           :                
+z1[15]                       : W21       : input  : 2.5 V             :         : 5         : N              
+y1[25]                       : W22       : input  : 2.5 V             :         : 5         : N              
+GND                          : W23       : gnd    :                   :         :           :                
+VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
+z1[6]                        : W25       : input  : 2.5 V             :         : 5         : N              
+z1[5]                        : W26       : input  : 2.5 V             :         : 5         : N              
+z1[7]                        : W27       : input  : 2.5 V             :         : 5         : N              
+z1[8]                        : W28       : input  : 2.5 V             :         : 5         : N              
+y1[14]                       : Y1        : input  : 2.5 V             :         : 2         : N              
+y1[13]                       : Y2        : input  : 2.5 V             :         : 2         : N              
+x1[8]                        : Y3        : input  : 2.5 V             :         : 2         : N              
+x1[7]                        : Y4        : input  : 2.5 V             :         : 2         : N              
+r10[31]                      : Y5        : input  : 2.5 V             :         : 2         : N              
+x1[31]                       : Y6        : input  : 2.5 V             :         : 2         : N              
+done                         : Y7        : output : 2.5 V             :         : 2         : N              
+VCCA1                        : Y8        : power  :                   : 2.5V    :           :                
+VCCD_PLL1                    : Y9        : power  :                   : 1.2V    :           :                
+z2[29]                       : Y10       : input  : 2.5 V             :         : 3         : N              
+GND                          : Y11       : gnd    :                   :         :           :                
+r9[15]                       : Y12       : input  : 2.5 V             :         : 3         : N              
+r9[17]                       : Y13       : input  : 2.5 V             :         : 3         : N              
+z2[25]                       : Y14       : input  : 2.5 V             :         : 3         : N              
+z2[26]                       : Y15       : input  : 2.5 V             :         : 3         : N              
+y2[17]                       : Y16       : input  : 2.5 V             :         : 4         : N              
+y2[16]                       : Y17       : input  : 2.5 V             :         : 4         : N              
+GND                          : Y18       : gnd    :                   :         :           :                
+x2[29]                       : Y19       : input  : 2.5 V             :         : 4         : N              
+VCCD_PLL4                    : Y20       : power  :                   : 1.2V    :           :                
+VCCA4                        : Y21       : power  :                   : 2.5V    :           :                
+y1[24]                       : Y22       : input  : 2.5 V             :         : 5         : N              
+z1[25]                       : Y23       : input  : 2.5 V             :         : 5         : N              
+z1[24]                       : Y24       : input  : 2.5 V             :         : 5         : N              
+z1[4]                        : Y25       : input  : 2.5 V             :         : 5         : N              
+z1[3]                        : Y26       : input  : 2.5 V             :         : 5         : N              
+y1[9]                        : Y27       : input  : 2.5 V             :         : 5         : N              
+y1[8]                        : Y28       : input  : 2.5 V             :         : 5         : N              

@@ -1,0 +1,258 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\14.0
+vadd3
+Z1 !s100 QFhf=`Y5m8nhi4@Pm9knU3
+Z2 I554mVN<h67BOEd4QZ8M@Q2
+Z3 Vo]9UoS67G5zJ=Fda2GVbR3
+Z4 dC:\Users\katteroa\Desktop\dCollideSphereBox
+Z5 w1465850004
+Z6 8C:/Users/katteroa/Desktop/dCollideSphereBox/add3.v
+Z7 FC:/Users/katteroa/Desktop/dCollideSphereBox/add3.v
+L0 1
+Z8 OV;L;10.1e;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|C:/Users/katteroa/Desktop/dCollideSphereBox/add3.v|
+Z10 o-work work -O0
+Z11 !s108 1466101136.669000
+Z12 !s107 C:/Users/katteroa/Desktop/dCollideSphereBox/add3.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vadder
+Z13 !s100 3EQo3]kK0I4F_<d6d89:32
+Z14 I`5b;IPnJYa^n;2HbMdYU^3
+Z15 VEb;m4PQkN0g6E37hB0_jF0
+R4
+Z16 w1465491426
+Z17 8C:/Users/katteroa/Desktop/dCollideSphereBox/adder.v
+Z18 FC:/Users/katteroa/Desktop/dCollideSphereBox/adder.v
+L0 6
+R8
+r1
+31
+Z19 !s90 -reportprogress|300|-work|work|C:/Users/katteroa/Desktop/dCollideSphereBox/adder.v|
+R10
+Z20 !s108 1466101135.079000
+Z21 !s107 C:/Users/katteroa/Desktop/dCollideSphereBox/adder.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdCalcVectorDot3
+Z22 !s100 AW<ScUN<@ICdHSNKfkc162
+Z23 IngIKz?F:<WX[cOYamP@3k0
+Z24 Vl7FRnQB??APU8mV5IMNJV3
+R4
+Z25 w1465504007
+Z26 8C:/Users/katteroa/Desktop/dCollideSphereBox/dCalcVectorDot3.v
+Z27 FC:/Users/katteroa/Desktop/dCollideSphereBox/dCalcVectorDot3.v
+L0 1
+R8
+r1
+31
+Z28 !s90 -reportprogress|300|-work|work|C:/Users/katteroa/Desktop/dCollideSphereBox/dCalcVectorDot3.v|
+R10
+Z29 nd@calc@vector@dot3
+Z30 !s108 1466101135.288000
+Z31 !s107 C:/Users/katteroa/Desktop/dCollideSphereBox/dCalcVectorDot3.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdCalcVectorDot3_14
+Z32 !s100 gojFJ1UHhT5zR:lRi<nIT0
+Z33 Io5F[cG:EZ?48[NkS^7cBV3
+Z34 V^6@0e=GLDE=FW7>^2]W4D3
+R4
+Z35 w1465501233
+Z36 8C:/Users/katteroa/Desktop/dCollideSphereBox/dCalcVectorDot3_14.v
+Z37 FC:/Users/katteroa/Desktop/dCollideSphereBox/dCalcVectorDot3_14.v
+L0 1
+R8
+r1
+31
+Z38 !s90 -reportprogress|300|-work|work|C:/Users/katteroa/Desktop/dCollideSphereBox/dCalcVectorDot3_14.v|
+R10
+Z39 nd@calc@vector@dot3_14
+Z40 !s108 1466101135.414000
+Z41 !s107 C:/Users/katteroa/Desktop/dCollideSphereBox/dCalcVectorDot3_14.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdCalcVectorDot3_test
+Z42 !s100 I87fzQO6kW[LkZbOPjegg0
+Z43 IldT]XFB<OP3OH6MgXVZhe0
+Z44 Vb]WLd[gL@:<IM]YOF_4k@1
+R4
+Z45 w1465850760
+Z46 8C:/Users/katteroa/Desktop/dCollideSphereBox/dCalcVectorDot3_test.v
+Z47 FC:/Users/katteroa/Desktop/dCollideSphereBox/dCalcVectorDot3_test.v
+L0 1
+R8
+r1
+31
+Z48 !s90 -reportprogress|300|-work|work|C:/Users/katteroa/Desktop/dCollideSphereBox/dCalcVectorDot3_test.v|
+R10
+Z49 nd@calc@vector@dot3_test
+Z50 !s108 1466101136.511000
+Z51 !s107 C:/Users/katteroa/Desktop/dCollideSphereBox/dCalcVectorDot3_test.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdCollideSphereBox
+Z52 I[Te`Szja^R;4UlR30aLH82
+Z53 V^>PT>Dmje@N1jfTbFKGAP2
+R4
+Z54 w1466101132
+Z55 8C:/Users/katteroa/Desktop/dCollideSphereBox/dCollideSphereBox.v
+Z56 FC:/Users/katteroa/Desktop/dCollideSphereBox/dCollideSphereBox.v
+L0 1
+R8
+r1
+31
+Z57 !s90 -reportprogress|300|-work|work|C:/Users/katteroa/Desktop/dCollideSphereBox/dCollideSphereBox.v|
+R10
+Z58 nd@collide@sphere@box
+Z59 !s100 cYI=RTjLSNE68Ho9:Ue;o2
+Z60 !s108 1466101135.557000
+Z61 !s107 C:/Users/katteroa/Desktop/dCollideSphereBox/dCollideSphereBox.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vDE2_115
+Z62 !s100 0ii`XcGlLIXB[b[@@CCdg0
+Z63 Ij@>oH9n7acm=j1K9Y6IIg3
+Z64 Vj599P389?K0<Nc4hzHAO_1
+R4
+Z65 w1465491373
+Z66 8C:/Users/katteroa/Desktop/dCollideSphereBox/DE2_115.v
+Z67 FC:/Users/katteroa/Desktop/dCollideSphereBox/DE2_115.v
+L0 6
+R8
+r1
+31
+Z68 !s90 -reportprogress|300|-work|work|C:/Users/katteroa/Desktop/dCollideSphereBox/DE2_115.v|
+R10
+Z69 n@d@e2_115
+Z70 !s108 1466101135.730000
+Z71 !s107 C:/Users/katteroa/Desktop/dCollideSphereBox/DE2_115.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdivider
+Z72 !s100 zXCAC9gXJeP5Z?I]JZOHk2
+Z73 IPR83nL_e7V4ZdMjEh?E^@2
+Z74 VXaUj3MP67mczl7SoUJ@^k3
+R4
+Z75 w1465491452
+Z76 8C:/Users/katteroa/Desktop/dCollideSphereBox/divider.v
+Z77 FC:/Users/katteroa/Desktop/dCollideSphereBox/divider.v
+L0 5
+R8
+r1
+31
+Z78 !s90 -reportprogress|300|-work|work|C:/Users/katteroa/Desktop/dCollideSphereBox/divider.v|
+R10
+Z79 !s108 1466101135.905000
+Z80 !s107 C:/Users/katteroa/Desktop/dCollideSphereBox/divider.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vlessThan
+Z81 !s100 ahzA701HY83M]E3OJozTa2
+Z82 I[Nmn;bUCP9F;ND`VSSE6;2
+Z83 VR5DiZ6Hd=7OgRHKBz@EZe3
+R4
+Z84 w1466097584
+Z85 8C:/Users/katteroa/Desktop/dCollideSphereBox/lessThan.v
+Z86 FC:/Users/katteroa/Desktop/dCollideSphereBox/lessThan.v
+L0 7
+R8
+r1
+31
+Z87 !s90 -reportprogress|300|-work|work|C:/Users/katteroa/Desktop/dCollideSphereBox/lessThan.v|
+R10
+Z88 nless@than
+!i10b 1
+!s85 0
+Z89 !s108 1466101136.888000
+Z90 !s107 C:/Users/katteroa/Desktop/dCollideSphereBox/lessThan.v|
+!s101 -O0
+vmultiplier
+Z91 !s100 ?FfbbEU8`d1`VF8hGCcV_3
+Z92 If`nSI:z<QH;E^HB]MokJ91
+Z93 VZLN<_DUF?kXiHP7k=IAbJ0
+R4
+Z94 w1465580640
+Z95 8C:/Users/katteroa/Desktop/dCollideSphereBox/multiply.v
+Z96 FC:/Users/katteroa/Desktop/dCollideSphereBox/multiply.v
+L0 4
+R8
+r1
+31
+Z97 !s90 -reportprogress|300|-work|work|C:/Users/katteroa/Desktop/dCollideSphereBox/multiply.v|
+R10
+Z98 !s108 1466101136.126000
+Z99 !s107 C:/Users/katteroa/Desktop/dCollideSphereBox/multiply.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsqrt
+!i10b 1
+Z100 !s100 g2cCzHdUFbS3OiA8UP2zQ3
+Z101 I^4ec_gcL=K:3`nNW?bk`g1
+Z102 VE?d`zmeVbCb>0;eZ:lU=73
+R4
+Z103 w1466015680
+Z104 8C:/Users/katteroa/Desktop/dCollideSphereBox/sqrt.v
+Z105 FC:/Users/katteroa/Desktop/dCollideSphereBox/sqrt.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1466101137.067000
+!s107 C:/Users/katteroa/Desktop/dCollideSphereBox/sqrt.v|
+Z106 !s90 -reportprogress|300|-work|work|C:/Users/katteroa/Desktop/dCollideSphereBox/sqrt.v|
+!s101 -O0
+R10
+vtoplevel
+Z107 !s100 PJ<lO^ndgPWh?5DmGI8RI1
+Z108 IHXARUmfF`zX3^i;8U2g]P0
+Z109 V^o2m[f0V>lRT@_Km?aG_i0
+R4
+Z110 w1465851561
+Z111 8C:/Users/katteroa/Desktop/dCollideSphereBox/toplevel.v
+Z112 FC:/Users/katteroa/Desktop/dCollideSphereBox/toplevel.v
+L0 3
+R8
+r1
+31
+Z113 !s90 -reportprogress|300|-work|work|C:/Users/katteroa/Desktop/dCollideSphereBox/toplevel.v|
+R10
+Z114 !s108 1466101136.338000
+Z115 !s107 C:/Users/katteroa/Desktop/dCollideSphereBox/toplevel.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtoplevel0
+Z116 !s100 d@15hf7b6z5_9j>U:0UUJ1
+Z117 I_kiF7]6M^IadlK1mzJ:740
+Z118 VQfb2Q?;aZlQObzES[l<@W3
+R4
+Z119 w1465844054
+R111
+R112
+L0 3
+R8
+r1
+31
+R113
+R10
+Z120 !s108 1465846531.504000
+R115
+!i10b 1
+!s85 0
+!s101 -O0

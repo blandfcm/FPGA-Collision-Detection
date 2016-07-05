@@ -1,0 +1,146 @@
+`timescale 1ns / 1ps
+
+module toplevel;
+
+reg CLK = 1'b0;
+
+//=======================================================
+//  PARAMETER declarations
+//=======================================================
+
+
+//=======================================================
+//  PORT declarations
+//=======================================================
+
+//////////// CLOCK //////////
+input 		          		CLOCK_50;
+input 		          		CLOCK2_50;
+input 		          		CLOCK3_50;
+
+//////////// KEY //////////
+input 		     [3:0]		KEY;
+input 		          		SW;
+
+
+//=======================================================
+//  REG/WIRE declarations
+//=======================================================
+
+wire [31:0] rst_reg;
+wire [31:0] x1_reg;
+wire [31:0] y1_reg;
+wire [31:0] z1_reg;
+wire [31:0] r1_reg;
+wire [31:0] x2_reg;
+wire [31:0] y2_reg;
+wire [31:0] z2_reg;
+wire [31:0] r2_reg, g1c, g2c;
+wire [31:0] outs [8:0];
+wire [31:0] check1;
+wire [31:0] check2;
+wire [31:0] check3;
+wire [31:0] check4;
+wire key0;
+wire ret_val, done_flag;
+wire rst_data;
+reg rst_wire;
+reg [31:0] counter = 31'b0;
+reg [31:0] debug = 31'b0;
+reg reset = 1'b1;
+reg flag = 1'b0;
+
+// jtag signals
+assign key0 = ~KEY[0];
+
+
+//=======================================================
+//  Structural coding
+//=======================================================
+
+
+
+dCollideSpheres test0(
+	.x1(x1_reg), 
+	.y1(y1_reg), 
+	.z1(z1_reg), 
+	.r1(r1_reg), 
+	.x2(x2_reg), 
+	.y2(y2_reg), 
+	.z2(z2_reg), 
+	.r2(r2_reg), 	
+	.cx(outs[0]), 
+	.cy(outs[1]), 
+	.cz(outs[2]), 
+	.normalx(outs[3]), 
+	.normaly(outs[4]), 
+	.normalz(outs[5]), 
+	.depth(outs[6]), 
+	.g1(32'd1), 
+	.g2(32'd1), 
+	.ret(outs[7]), 
+	.clk(CLOCK_50), 
+	.rst(rst_reg[0]), 
+	.done(outs[8]),
+	.test(check1),
+	.test2(check2),
+	.test3(check3),
+   .test4(check4)
+);
+
+always @(posedge CLOCK_50 or negedge rst_reg[0])
+begin
+	if(rst_reg[0] == 1'b0)
+	begin
+		counter <= 32'd0;
+	end
+	else
+	begin
+		if(outs[8] == 1'b1)
+		begin
+			debug <= counter;	
+		end
+		else
+		begin
+			counter <= counter + 1;
+		end
+	end
+end	
+
+integer i;
+
+initial
+begin
+
+CLK = 0;
+key0 = 1'b1;
+
+
+x1_reg  <= 32'b10111110111111000100011101011110;
+y1_reg  <= 32'b00000000000000000000000000000000;
+z1_reg  <= 32'b00111111110000000000000000000000;
+r1_reg  <= 32'b00111111000000000000000000000000;
+x2_reg  <= 32'b00111110111111000100011101011110;
+y2_reg  <= 32'b00000000000000000000000000000000;
+z2_reg  <= 32'b00111111110000000000000000000000;
+r2_reg  <= 32'b00111111000000000000000000000000;
+
+rst_data <= 1'b1;
+
+end
+
+always
+    #1  CLK =  ! CLK; 
+	
+initial
+	#600  key0 =  ! key0; 
+	
+initial
+	#1200  key0 =  ! key0; 	
+initial 
+	#18000  $stop; 
+
+
+
+
+endmodule
