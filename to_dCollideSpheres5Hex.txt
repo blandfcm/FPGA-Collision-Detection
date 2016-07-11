@@ -1,0 +1,72 @@
+push 0 0xbe9023ea
+push 1 0x3e9023ea
+push 2 0x40800000
+push 3 0x3f000000
+push 4 0xbf9bf716
+push 5 0x00000000
+push 6 0x40800000
+push 7 0x3f000000
+push 8 0x00000000
+push 8 0x00000001
+pop 9
+pop 10
+pop 11
+pop 12
+pop 13
+pop 14
+pop 15
+popfile 18
+push 0 0xbe9023ea
+push 1 0x3e9023ea
+push 2 0x40800000
+push 3 0x3f000000
+push 4 0x00000000
+push 5 0x3f9bf716
+push 6 0x40800000
+push 7 0x3f000000
+push 8 0x00000000
+push 8 0x00000001
+pop 9
+pop 10
+pop 11
+pop 12
+pop 13
+pop 14
+pop 15
+popfile 18
+push 0 0xbfa14dad
+push 1 0xbcd8cf3a
+push 2 0x40800000
+push 3 0x3f000000
+push 4 0xbe885682
+push 5 0x3e885682
+push 6 0x40800000
+push 7 0x3f000000
+push 8 0x00000000
+push 8 0x00000001
+pop 9
+pop 10
+pop 11
+pop 12
+pop 13
+pop 14
+pop 15
+popfile 18
+push 0 0xbe885682
+push 1 0x3e885682
+push 2 0x40800000
+push 3 0x3f000000
+push 4 0x3cd8cf3a
+push 5 0x3fa14dad
+push 6 0x40800000
+push 7 0x3f000000
+push 8 0x00000000
+push 8 0x00000001
+pop 9
+pop 10
+pop 11
+pop 12
+pop 13
+pop 14
+pop 15
+popfile 18
