@@ -1,0 +1,334 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Lunkferios/Desktop/Summer_Project/Simulations/CalcVectorLength
+vadd3
+Z0 !s110 1466609753
+!i10b 1
+!s100 oabAf0<3Yn@zDggk^0oFo2
+Ij<7g=^an9]nZU1N_Yj[zm2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint
+w1465502952
+8C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/add3.v
+FC:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/add3.v
+L0 1
+Z3 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z4 !s108 1466609753.000000
+!s107 C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/add3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/add3.v|
+!i113 1
+Z5 o-work work
+vadder
+R0
+!i10b 1
+!s100 mW6NN@i>lkK@7KCUb`WcO0
+IVN4?:_?9J<HHN]nfo68bD1
+R1
+R2
+w1465570720
+8C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/adder.v
+FC:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/adder.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/adder.v|
+!i113 1
+R5
+vapprox_fp_sqrt
+!s110 1466612240
+!i10b 1
+!s100 Ijf4RT:>Wz9HUa[fcd@n<1
+I>bL<n<LZTGDAT^G1m0h0n3
+R1
+R2
+w1466612229
+8C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/approx_fp_sqrt.v
+FC:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/approx_fp_sqrt.v
+Z6 L0 23
+R3
+r1
+!s85 0
+31
+!s108 1466612240.000000
+!s107 C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/approx_fp_sqrt.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/approx_fp_sqrt.v|
+!i113 1
+R5
+vdCalcPointsDistance3
+R0
+!i10b 1
+!s100 oCVQ]ZFfT;Y[Fb1M=5SIR1
+I]T3^H57j3o6XnLe1_Gjj62
+R1
+R2
+w1465584262
+8C:\Users\Lunkferios\Desktop\oh boy, here we go again\fpga_dCollideSpheres_5stage_pipeline\Simulation_FixedPoint\DistanceCalc.v
+FC:\Users\Lunkferios\Desktop\oh boy, here we go again\fpga_dCollideSpheres_5stage_pipeline\Simulation_FixedPoint\DistanceCalc.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:\Users\Lunkferios\Desktop\oh boy, here we go again\fpga_dCollideSpheres_5stage_pipeline\Simulation_FixedPoint\DistanceCalc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\Lunkferios\Desktop\oh boy, here we go again\fpga_dCollideSpheres_5stage_pipeline\Simulation_FixedPoint\DistanceCalc.v|
+!i113 1
+R5
+nd@calc@points@distance3
+vdCalcVectorLength3
+R0
+!i10b 1
+!s100 6Zh]1mE:fJeB3beCnWT=R0
+IQWF@HHgPF65>I9KYnzB2=3
+R1
+R2
+w1465584240
+8C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/dCalcVectorLength3.v
+FC:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/dCalcVectorLength3.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/dCalcVectorLength3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/dCalcVectorLength3.v|
+!i113 1
+R5
+nd@calc@vector@length3
+vdCollideSpheres
+R0
+!i10b 1
+!s100 IFJL@P9ngC83OK<`i_SHe0
+Ia9UjT9A8S2amAbTHeC8kS1
+R1
+R2
+w1466535193
+8C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/dCollideSpheres.v
+FC:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/dCollideSpheres.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/dCollideSpheres.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/dCollideSpheres.v|
+!i113 1
+R5
+nd@collide@spheres
+vDE2_115
+R0
+!i10b 1
+!s100 gc1E_gZHMk?]zYV35Z_hT1
+I4V2fMl3ARQb>E=K4:BX0D3
+R1
+R2
+w1464191950
+8C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/DE2_115.v
+FC:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/DE2_115.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/DE2_115.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/DE2_115.v|
+!i113 1
+R5
+n@d@e2_115
+vdivider
+R0
+!i10b 1
+!s100 @@:Ei`]WFkjJ`_c^E`FO=2
+IOCaaBMkVb0VWWjDHbK?le1
+R1
+R2
+w1465590656
+8C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/divider.v
+FC:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/divider.v
+L0 5
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/divider.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/divider.v|
+!i113 1
+R5
+vdivider2
+Z7 !s110 1466609754
+!i10b 1
+!s100 ekoEn^?eg]bg[YEJh<R^k3
+IUTL`c^k[Y9EHXMQSi5NnW2
+R1
+R2
+w1465839000
+8C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/Verilog1.v
+FC:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/Verilog1.v
+L0 5
+R3
+r1
+!s85 0
+31
+Z8 !s108 1466609754.000000
+!s107 C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/Verilog1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/Verilog1.v|
+!i113 1
+R5
+vfixed_to_float
+R7
+!i10b 1
+!s100 1<R=Zz_7Wd]<=WLAVZ;nS3
+IbCLEHCTAIzIQlzmFDOee71
+R1
+R2
+w1466609740
+8C:\Users\Lunkferios\Desktop\oh boy, here we go again\fpga_dCollideSpheres_5stage_pipeline\Simulation_FixedPoint\fixed_to_float.v
+FC:\Users\Lunkferios\Desktop\oh boy, here we go again\fpga_dCollideSpheres_5stage_pipeline\Simulation_FixedPoint\fixed_to_float.v
+R6
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:\Users\Lunkferios\Desktop\oh boy, here we go again\fpga_dCollideSpheres_5stage_pipeline\Simulation_FixedPoint\fixed_to_float.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\Lunkferios\Desktop\oh boy, here we go again\fpga_dCollideSpheres_5stage_pipeline\Simulation_FixedPoint\fixed_to_float.v|
+!i113 1
+R5
+vfloat_to_fixed
+R7
+!i10b 1
+!s100 0CB6g?c6Rd:405P<7hD>12
+If538fPN2Jj4X@?b`AZ>5G1
+R1
+R2
+w1466609746
+8C:\Users\Lunkferios\Desktop\oh boy, here we go again\fpga_dCollideSpheres_5stage_pipeline\Simulation_FixedPoint\float_to_fixed.v
+FC:\Users\Lunkferios\Desktop\oh boy, here we go again\fpga_dCollideSpheres_5stage_pipeline\Simulation_FixedPoint\float_to_fixed.v
+R6
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:\Users\Lunkferios\Desktop\oh boy, here we go again\fpga_dCollideSpheres_5stage_pipeline\Simulation_FixedPoint\float_to_fixed.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\Lunkferios\Desktop\oh boy, here we go again\fpga_dCollideSpheres_5stage_pipeline\Simulation_FixedPoint\float_to_fixed.v|
+!i113 1
+R5
+vmultiplier
+R7
+!i10b 1
+!s100 Nm@K2hS[B3DTEf1`X^aBY2
+I<>zNf?7mREH<jQenR2J:c0
+R1
+R2
+w1465569719
+8C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/multiply.v
+FC:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/multiply.v
+L0 4
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/multiply.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/multiply.v|
+!i113 1
+R5
+vmyjtag
+R7
+!i10b 1
+!s100 25^Ll@HG0X>j`D4H@R]V71
+IL<Vi3l;?eB?Eijl7J=SPz0
+R1
+R2
+w1464021386
+8C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/myjtag.v
+FC:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/myjtag.v
+L0 40
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/myjtag.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/myjtag.v|
+!i113 1
+R5
+vscale_up
+R7
+!i10b 1
+!s100 >Wlz1ZKgB?ZEiVnZD_JSB2
+I1G`ggTER3=1mblOTn?2di3
+R1
+R2
+w1466609727
+8C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/scale_up.v
+FC:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/scale_up.v
+L0 29
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/scale_up.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/scale_up.v|
+!i113 1
+R5
+vsqrt
+R7
+!i10b 1
+!s100 cKC>:9T<FK347<RS:`@l00
+I8FPl`57o0^4FXCLLSdA3X2
+R1
+R2
+w1466519740
+8C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/sqrt.v
+FC:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/sqrt.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/sqrt.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/sqrt.v|
+!i113 1
+R5
+vtoplevel
+!s110 1466611759
+!i10b 1
+!s100 f6c^W[f5o_=?[;F?M>@ai3
+Ik]bOFS0ZIZ_ZG?<ZMK;X[1
+R1
+R2
+w1466611747
+8C:\Users\Lunkferios\Desktop\oh boy, here we go again\fpga_dCollideSpheres_5stage_pipeline\Simulation_FixedPoint\fpga_dCollideSpheres.v
+FC:\Users\Lunkferios\Desktop\oh boy, here we go again\fpga_dCollideSpheres_5stage_pipeline\Simulation_FixedPoint\fpga_dCollideSpheres.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1466611759.000000
+!s107 C:\Users\Lunkferios\Desktop\oh boy, here we go again\fpga_dCollideSpheres_5stage_pipeline\Simulation_FixedPoint\fpga_dCollideSpheres.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\Lunkferios\Desktop\oh boy, here we go again\fpga_dCollideSpheres_5stage_pipeline\Simulation_FixedPoint\fpga_dCollideSpheres.v|
+!i113 1
+R5

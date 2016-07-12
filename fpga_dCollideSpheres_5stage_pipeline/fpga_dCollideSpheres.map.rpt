@@ -1,0 +1,226 @@
+Analysis & Synthesis report for fpga_dCollideSpheres
+Wed Jun 22 14:01:26 2016
+Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+  6. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Wed Jun 22 14:01:26 2016           ;
+; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
+; Revision Name                      ; fpga_dCollideSpheres                        ;
+; Top-level Entity Name              ; fpga_dCollideSpheres                        ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
++------------------------------------+---------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                            ;
++----------------------------------------------------------------------------+----------------------+----------------------+
+; Option                                                                     ; Setting              ; Default Value        ;
++----------------------------------------------------------------------------+----------------------+----------------------+
+; Device                                                                     ; EP4CE115F29C7        ;                      ;
+; Top-level entity name                                                      ; fpga_dCollideSpheres ; fpga_dCollideSpheres ;
+; Family name                                                                ; Cyclone IV E         ; Cyclone V            ;
+; Use smart compilation                                                      ; Off                  ; Off                  ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                   ; On                   ;
+; Enable compact report table                                                ; Off                  ; Off                  ;
+; Restructure Multiplexers                                                   ; Auto                 ; Auto                 ;
+; Create Debugging Nodes for IP Cores                                        ; Off                  ; Off                  ;
+; Preserve fewer node names                                                  ; On                   ; On                   ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                  ; Off                  ;
+; Verilog Version                                                            ; Verilog_2001         ; Verilog_2001         ;
+; VHDL Version                                                               ; VHDL_1993            ; VHDL_1993            ;
+; State Machine Processing                                                   ; Auto                 ; Auto                 ;
+; Safe State Machine                                                         ; Off                  ; Off                  ;
+; Extract Verilog State Machines                                             ; On                   ; On                   ;
+; Extract VHDL State Machines                                                ; On                   ; On                   ;
+; Ignore Verilog initial constructs                                          ; Off                  ; Off                  ;
+; Iteration limit for constant Verilog loops                                 ; 5000                 ; 5000                 ;
+; Iteration limit for non-constant Verilog loops                             ; 250                  ; 250                  ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                   ; On                   ;
+; Infer RAMs from Raw Logic                                                  ; On                   ; On                   ;
+; Parallel Synthesis                                                         ; On                   ; On                   ;
+; DSP Block Balancing                                                        ; Auto                 ; Auto                 ;
+; NOT Gate Push-Back                                                         ; On                   ; On                   ;
+; Power-Up Don't Care                                                        ; On                   ; On                   ;
+; Remove Redundant Logic Cells                                               ; Off                  ; Off                  ;
+; Remove Duplicate Registers                                                 ; On                   ; On                   ;
+; Ignore CARRY Buffers                                                       ; Off                  ; Off                  ;
+; Ignore CASCADE Buffers                                                     ; Off                  ; Off                  ;
+; Ignore GLOBAL Buffers                                                      ; Off                  ; Off                  ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                  ; Off                  ;
+; Ignore LCELL Buffers                                                       ; Off                  ; Off                  ;
+; Ignore SOFT Buffers                                                        ; On                   ; On                   ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                  ; Off                  ;
+; Optimization Technique                                                     ; Balanced             ; Balanced             ;
+; Carry Chain Length                                                         ; 70                   ; 70                   ;
+; Auto Carry Chains                                                          ; On                   ; On                   ;
+; Auto Open-Drain Pins                                                       ; On                   ; On                   ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                  ; Off                  ;
+; Auto ROM Replacement                                                       ; On                   ; On                   ;
+; Auto RAM Replacement                                                       ; On                   ; On                   ;
+; Auto DSP Block Replacement                                                 ; On                   ; On                   ;
+; Auto Shift Register Replacement                                            ; Auto                 ; Auto                 ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto                 ; Auto                 ;
+; Auto Clock Enable Replacement                                              ; On                   ; On                   ;
+; Strict RAM Replacement                                                     ; Off                  ; Off                  ;
+; Allow Synchronous Control Signals                                          ; On                   ; On                   ;
+; Force Use of Synchronous Clear Signals                                     ; Off                  ; Off                  ;
+; Auto RAM Block Balancing                                                   ; On                   ; On                   ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                  ; Off                  ;
+; Auto Resource Sharing                                                      ; Off                  ; Off                  ;
+; Allow Any RAM Size For Recognition                                         ; Off                  ; Off                  ;
+; Allow Any ROM Size For Recognition                                         ; Off                  ; Off                  ;
+; Allow Any Shift Register Size For Recognition                              ; Off                  ; Off                  ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                   ; On                   ;
+; Ignore translate_off and synthesis_off directives                          ; Off                  ; Off                  ;
+; Timing-Driven Synthesis                                                    ; On                   ; On                   ;
+; Report Parameter Settings                                                  ; On                   ; On                   ;
+; Report Source Assignments                                                  ; On                   ; On                   ;
+; Report Connectivity Checks                                                 ; On                   ; On                   ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                  ; Off                  ;
+; Synchronization Register Chain Length                                      ; 2                    ; 2                    ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation   ; Normal compilation   ;
+; HDL message level                                                          ; Level2               ; Level2               ;
+; Suppress Register Optimization Related Messages                            ; Off                  ; Off                  ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000                 ; 5000                 ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                 ; 5000                 ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                  ; 100                  ;
+; Clock MUX Protection                                                       ; On                   ; On                   ;
+; Auto Gated Clock Conversion                                                ; Off                  ; Off                  ;
+; Block Design Naming                                                        ; Auto                 ; Auto                 ;
+; SDC constraint protection                                                  ; Off                  ; Off                  ;
+; Synthesis Effort                                                           ; Auto                 ; Auto                 ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                   ; On                   ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                  ; Off                  ;
+; Analysis & Synthesis Message Level                                         ; Medium               ; Medium               ;
+; Disable Register Merging Across Hierarchies                                ; Auto                 ; Auto                 ;
+; Resource Aware Inference For Block RAM                                     ; On                   ; On                   ;
+; Synthesis Seed                                                             ; 1                    ; 1                    ;
++----------------------------------------------------------------------------+----------------------+----------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+    Info: Processing started: Wed Jun 22 14:01:16 2016
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fpga_dCollideSpheres -c fpga_dCollideSpheres
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file myjtag.v
+    Info (12023): Found entity 1: myjtag File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/myjtag.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file sqrt.v
+    Info (12023): Found entity 1: sqrt File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/sqrt.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file multiply.v
+    Info (12023): Found entity 1: multiplier File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/multiply.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file divider.v
+    Info (12023): Found entity 1: divider File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/divider.v Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file distancecalc.v
+    Info (12023): Found entity 1: dCalcPointsDistance3 File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/DistanceCalc.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file de2_115.v
+    Info (12023): Found entity 1: DE2_115 File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/DE2_115.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file dcollidespheres.v
+    Info (12023): Found entity 1: dCollideSpheres File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/dCollideSpheres.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file dcalcvectorlength3.v
+    Info (12023): Found entity 1: dCalcVectorLength3 File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/dCalcVectorLength3.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file adder.v
+    Info (12023): Found entity 1: adder File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/adder.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file add3.v
+    Info (12023): Found entity 1: add3 File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/add3.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file jtag_debug.v
+    Info (12023): Found entity 1: jtag_debug File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/jtag_debug.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file jtag_rxtx.v
+    Info (12023): Found entity 1: jtag_rxtx File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/jtag_rxtx.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file jtag_rxtx_rdy.v
+    Info (12023): Found entity 1: jtag_rxtx_rdy File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/jtag_rxtx_rdy.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file verilog1.v
+    Info (12023): Found entity 1: divider2 File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Verilog1.v Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file jtag_tx.v
+    Info (12023): Found entity 1: jtag_tx File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/jtag_tx.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at jtag_debug.v(20): created implicit net for "e1dr" File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/jtag_debug.v Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at jtag_rxtx.v(22): created implicit net for "e1dr" File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/jtag_rxtx.v Line: 22
+Warning (10236): Verilog HDL Implicit Net warning at jtag_rxtx_rdy.v(23): created implicit net for "e1dr" File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/jtag_rxtx_rdy.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at jtag_tx.v(21): created implicit net for "e1dr" File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/jtag_tx.v Line: 21
+Warning (12125): Using design file fpga_dcollidespheres.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: fpga_dCollideSpheres File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/fpga_dcollidespheres.v Line: 6
+Info (12127): Elaborating entity "fpga_dCollideSpheres" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at fpga_dcollidespheres.v(56): object "key0" assigned a value but never read File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/fpga_dcollidespheres.v Line: 56
+Warning (10036): Verilog HDL or VHDL warning at fpga_dcollidespheres.v(62): object "reset" assigned a value but never read File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/fpga_dcollidespheres.v Line: 62
+Warning (10036): Verilog HDL or VHDL warning at fpga_dcollidespheres.v(63): object "flag" assigned a value but never read File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/fpga_dcollidespheres.v Line: 63
+Warning (10646): Verilog HDL Event Control warning at fpga_dcollidespheres.v(138): posedge or negedge of vector "<multi-bit expression>" depends solely on its least-significant bit File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/fpga_dcollidespheres.v Line: 138
+Error (10239): Verilog HDL Always Construct error at fpga_dcollidespheres.v(138): event control cannot test for both positive and negative edges of variable "outs[8][0]" File: C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/fpga_dcollidespheres.v Line: 138
+Error (12153): Can't elaborate top-level user hierarchy
+Info (144001): Generated suppressed messages file C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/fpga_dCollideSpheres.map.smsg
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 9 warnings
+    Error: Peak virtual memory: 796 megabytes
+    Error: Processing ended: Wed Jun 22 14:01:26 2016
+    Error: Elapsed time: 00:00:10
+    Error: Total CPU time (on all processors): 00:00:23
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/fpga_dCollideSpheres.map.smsg.
+
+
