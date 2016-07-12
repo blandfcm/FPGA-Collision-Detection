@@ -1,0 +1,108 @@
+push 0 0xc014e069
+push 1 0xbe800000
+push 2 0x40800000
+push 3 0x3f000000
+push 4 0xbfab1f9b
+push 5 0x00000000
+push 6 0x40800000
+push 7 0x3f000000
+push 8 0x00000000
+push 8 0x00000001
+pop 9
+pop 10
+pop 11
+pop 12
+pop 13
+pop 14
+pop 15
+popfile 18
+push 0 0xc0126e93
+push 1 0xbe800000
+push 2 0x40800000
+push 3 0x3f000000
+push 4 0xbfad9168
+push 5 0x00000000
+push 6 0x40800000
+push 7 0x3f000000
+push 8 0x00000000
+push 8 0x00000001
+pop 9
+pop 10
+pop 11
+pop 12
+pop 13
+pop 14
+pop 15
+popfile 18
+push 0 0xc0135b9a
+push 1 0xbe860d02
+push 2 0x40800000
+push 3 0x3f000000
+push 4 0xbfa9458d
+push 5 0x3c41a049
+push 6 0x40800000
+push 7 0x3f000000
+push 8 0x00000000
+push 8 0x00000001
+pop 9
+pop 10
+pop 11
+pop 12
+pop 13
+pop 14
+pop 15
+popfile 18
+push 0 0x3f5fec9a
+push 1 0x3e800000
+push 2 0x40800000
+push 3 0x3f000000
+push 4 0xbde9a134
+push 5 0x3edfdfa0
+push 6 0x40800000
+push 7 0x3f000000
+push 8 0x00000000
+push 8 0x00000001
+pop 9
+pop 10
+pop 11
+pop 12
+pop 13
+pop 14
+pop 15
+popfile 18
+push 0 0x3f562542
+push 1 0x3e800000
+push 2 0x40800000
+push 3 0x3f000000
+push 4 0xbda4e37a
+push 5 0x3ee5ec81
+push 6 0x40800000
+push 7 0x3f000000
+push 8 0x00000000
+push 8 0x00000001
+pop 9
+pop 10
+pop 11
+pop 12
+pop 13
+pop 14
+pop 15
+popfile 18
+push 0 0x3f5d1f71
+push 1 0x3e76a876
+push 2 0x40800000
+push 3 0x3f000000
+push 4 0xbde630ec
+push 5 0x3ef0a548
+push 6 0x40800000
+push 7 0x3f000000
+push 8 0x00000000
+push 8 0x00000001
+pop 9
+pop 10
+pop 11
+pop 12
+pop 13
+pop 14
+pop 15
+popfile 18
