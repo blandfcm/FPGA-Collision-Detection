@@ -1,0 +1,113 @@
+{C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/scale_up.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/scale_up.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module scale_up
+
+Top level modules:
+	scale_up
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/myjtag.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/myjtag.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module myjtag
+
+Top level modules:
+	myjtag
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/DistanceCalc.v} {1 {vlog -work work -stats=none {C:\Users\Lunkferios\Desktop\oh boy, here we go again\fpga_dCollideSpheres_5stage_pipeline\Simulation_FixedPoint\DistanceCalc.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module dCalcPointsDistance3
+
+Top level modules:
+	dCalcPointsDistance3
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/fpga_dCollideSpheres.v} {1 {vlog -work work -stats=none {C:\Users\Lunkferios\Desktop\oh boy, here we go again\fpga_dCollideSpheres_5stage_pipeline\Simulation_FixedPoint\fpga_dCollideSpheres.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module toplevel
+
+Top level modules:
+	toplevel
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/adder.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/adder.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/multiply.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/multiply.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module multiplier
+
+Top level modules:
+	multiplier
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/DE2_115.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/DE2_115.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module DE2_115
+
+Top level modules:
+	DE2_115
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/Verilog1.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/Verilog1.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module divider2
+
+Top level modules:
+	divider2
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/sqrt.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/sqrt.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module sqrt
+
+Top level modules:
+	sqrt
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/add3.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/add3.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module add3
+
+Top level modules:
+	add3
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/divider.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/divider.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module divider
+
+Top level modules:
+	divider
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/dCalcVectorLength3.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/dCalcVectorLength3.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module dCalcVectorLength3
+
+Top level modules:
+	dCalcVectorLength3
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/fixed_to_float.v} {1 {vlog -work work -stats=none {C:\Users\Lunkferios\Desktop\oh boy, here we go again\fpga_dCollideSpheres_5stage_pipeline\Simulation_FixedPoint\fixed_to_float.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module fixed_to_float
+
+Top level modules:
+	fixed_to_float
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/float_to_fixed.v} {1 {vlog -work work -stats=none {C:\Users\Lunkferios\Desktop\oh boy, here we go again\fpga_dCollideSpheres_5stage_pipeline\Simulation_FixedPoint\float_to_fixed.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module float_to_fixed
+
+Top level modules:
+	float_to_fixed
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/approx_fp_sqrt.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/approx_fp_sqrt.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module approx_fp_sqrt
+
+Top level modules:
+	approx_fp_sqrt
+
+} {} {}} {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/dCollideSpheres.v} {1 {vlog -work work -stats=none {C:/Users/Lunkferios/Desktop/oh boy, here we go again/fpga_dCollideSpheres_5stage_pipeline/Simulation_FixedPoint/dCollideSpheres.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module dCollideSpheres
+
+Top level modules:
+	dCollideSpheres
+
+} {} {}}
